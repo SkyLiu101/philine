@@ -1,0 +1,12 @@
+{
+  "screen_width": 800,
+  "screen_height": 600,
+  "fps": 60,
+  "note_speed": 5,
+  "key_bindings": {
+    "a": "K_a",
+    "s": "K_s",
+    "d": "K_d",
+    "f": "K_f"
+  }
+}
