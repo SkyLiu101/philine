@@ -1,9 +1,9 @@
 import pygame
 import json
-import sys
 from lines import Line
 from notes import Note
 from clock import GameClock
+
 class Game:
     def __init__(self, screen, chart_path, config):
         self.screen = screen
@@ -26,10 +26,10 @@ class Game:
             if key_binding not in key_bindings:
                 raise KeyError(f"Key binding '{key_binding}' not found in config key_bindings.")
             self.lines.append(Line(
-                start_pos=line_data['start_pos'],
-                end_pos=line_data['end_pos'],
+                judgment_pos=line_data['judgment_pos'],
+                angle=line_data['angle'],
                 key_binding=key_bindings[key_binding],
-                movement=line_data['movement']
+                movement=line_data.get('movement', [])
             ))
         self.note_data = chart_data['notes']
 
@@ -49,17 +49,22 @@ class Game:
                             # Check for note collision here (basic placeholder)
                             pass
 
+            # Check if it's time to add a new note
+            for note_data in self.note_data:
+                if 'spawned' not in note_data:
+                    line_index = note_data['line']
+                    hit_time = note_data['hit_time']
+                    judgment_pos = self.lines[line_index].judgment_pos
+                    note_speed = self.config['note_speed']*note_data['speed']
+                    note = Note(judgment_pos, note_speed, hit_time)
+                    if current_time >= note.spawn_time:
+                        self.lines[line_index].add_note(note)
+                        note_data['spawned'] = True  # Mark the note as spawned
+            
             # Update line positions based on movement data
             for line in self.lines:
                 line.update_position(current_time)
-
-            # Check if it's time to add a new note
-            for note_data in self.note_data:
-                if current_time >= note_data['time'] and 'spawned' not in note_data:
-                    line_index = note_data['line']
-                    note_pos = list(self.lines[line_index].start_pos)
-                    self.lines[line_index].add_note(Note(note_pos, self.config['note_speed']))
-                    note_data['spawned'] = True  # Mark the note as spawned
+                line.update_notes(current_time)
 
             # Check if all notes have been processed
             if all('spawned' in note_data for note_data in self.note_data) and all(len(line.notes) == 0 for line in self.lines):
@@ -72,7 +77,6 @@ class Game:
             
             for line in self.lines:
                 line.draw(self.screen)
-                line.update_notes()
                 for note in line.notes:
                     note.draw(self.screen)
             
