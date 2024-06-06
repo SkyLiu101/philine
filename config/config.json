@@ -12,5 +12,5 @@
   "extra_pure_threshold": 25,
   "pure_threshold": 50,
   "far_threshold": 100,
-  "bad_threshold": 125
+  "bad_threshold": 200
 }
