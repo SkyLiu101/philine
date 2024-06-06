@@ -98,11 +98,17 @@ class Game:
                     running = False
                 elif event.type == pygame.KEYDOWN:
                     for line in self.lines:
-                        status = self.check_collision(current_time, event.key, line)
-                        if status:
-                            line.notes.remove(line.notes[0])
-                            self.score = self.score + int(status)
-                            print(status)
+                        if event.key == line.key_binding:
+                            line.on_key_press()
+                            status = self.check_collision(current_time, event.key, line)
+                            if status:
+                                line.notes.remove(line.notes[0])
+                                self.score = self.score + int(status)
+                                print(status)
+                elif event.type == pygame.KEYUP:
+                    for line in self.lines:
+                        if event.key == line.key_binding:
+                            line.on_key_release()
 
             # Check if it's time to add a new note
             for note_data in self.note_data:

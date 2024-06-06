@@ -10,12 +10,17 @@ class Line:
         self.movement = SmoothMovement(movement) if movement else None
         self.start_pos, self.end_pos = calculate_line_positions(judgment_pos, angle)
 
+        self.judgment_circle_radius = 10  # Initial radius
+        self.judgment_circle_color = (255, 0, 0)  # Initial color (red)
+        self.original_radius = 10
+        self.original_color = (255, 0, 0)
+
     def draw(self, screen):
         pygame.draw.line(screen, (255, 255, 255), self.start_pos, self.end_pos, 2)
         self.draw_judgment_circle(screen)
 
     def draw_judgment_circle(self, screen):
-        pygame.draw.circle(screen, (255, 0, 0), (int(self.judgment_pos[0]), int(self.judgment_pos[1])), 10, 2)
+        pygame.draw.circle(screen, self.judgment_circle_color, (int(self.judgment_pos[0]), int(self.judgment_pos[1])), self.judgment_circle_radius, 2)
 
     def add_note(self, note):
         self.notes.append(note)
@@ -31,7 +36,7 @@ class Line:
         traveled_distance = ((note.pos[0] - self.start_pos[0]) ** 2 + (note.pos[1] - self.start_pos[1]) ** 2) ** 0.5
         # Calculate the total distance the note should travel
         total_distance = ((self.start_pos[0] - self.judgment_pos[0]) ** 2 + (self.start_pos[1] - self.judgment_pos[1]) ** 2) ** 0.5
-        return traveled_distance >= total_distance
+        return traveled_distance >= total_distance + 20
 
     def update_position(self, current_time):
         if self.movement:
@@ -41,3 +46,11 @@ class Line:
             self.start_pos, self.end_pos = calculate_line_positions(new_pos, new_angle)
         else:
             self.start_pos, self.end_pos = calculate_line_positions(self.judgment_pos, self.angle)
+            
+    def on_key_press(self):
+        self.judgment_circle_radius += 1
+        self.judgment_circle_color = (0, 255, 0)  # Change color to green
+
+    def on_key_release(self):
+        self.judgment_circle_radius = self.original_radius
+        self.judgment_circle_color = self.original_color
