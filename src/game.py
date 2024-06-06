@@ -58,7 +58,12 @@ class Game:
                 # Far hit
                 return '1'
             elif abs(current_time - line.notes[0].hit_time) < self.config['bad_threshold']:
-                # Bad hit
+                # Bad hit   
+                # Add a fade function here
+                # summon a red note on the deleted note, and fade out just like phigros. fade time should be stored in config.
+                # ...
+
+                # the real note will be deleted out side of the collision func, do not repeatingly delete.
                 return '-2'
             pass
 
@@ -112,9 +117,9 @@ class Game:
 
             # Check if it's time to add a new note
             for note_data in self.note_data:
+                line_index = note_data['line']
+                hit_time = note_data['hit_time']
                 if 'spawned' not in note_data:
-                    line_index = note_data['line']
-                    hit_time = note_data['hit_time']
                     judgment_pos = self.lines[line_index].judgment_pos
                     note_speed = self.config['note_speed']*note_data['speed']
                     note_type = note_data.get('type', 'blue')
@@ -122,6 +127,7 @@ class Game:
                     if current_time >= note.spawn_time:
                         self.lines[line_index].add_note(note)
                         note_data['spawned'] = True  # Mark the note as spawned
+
             
             # Update line positions based on movement data
             for line in self.lines:
