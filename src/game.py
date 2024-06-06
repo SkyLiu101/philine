@@ -133,6 +133,8 @@ class Game:
             for line in self.lines:
                 line.update_position(current_time)
                 line.update_notes(current_time)
+                if line.notes and current_time > line.notes[0].hit_time + self.config['far_threshold']:
+                    line.notes.remove(line.notes[0])
 
             # Check if audio had stop playing
             if not pygame.mixer.music.get_busy():
