@@ -9,8 +9,15 @@
     "d": "K_d",
     "f": "K_f"
   },
+  "note_images": {
+    "blue": "assets/images/Blue_Head.png",
+    "orange": "assets/images/Orange_Head.png",
+    "purple": "assets/images/Purple_Head.png"
+  },
+  "note_size": [50, 50],
   "extra_pure_threshold": 25,
   "pure_threshold": 50,
   "far_threshold": 100,
   "bad_threshold": 150
+  
 }

@@ -15,6 +15,13 @@ class Game:
         self.clock = GameClock(config['fps'])
         self.chart_finished = False
 
+        note_size = tuple(config['note_size'])
+        self.note_images = {
+            'blue': pygame.transform.scale(pygame.image.load(config['note_images']['blue']).convert_alpha(), note_size),
+            'orange': pygame.transform.scale(pygame.image.load(config['note_images']['orange']).convert_alpha(), note_size),
+            'purple': pygame.transform.scale(pygame.image.load(config['note_images']['purple']).convert_alpha(), note_size)
+        }
+
     def load_chart(self, chart_path):
         with open(chart_path, 'r') as file:
             chart_data = json.load(file)
@@ -104,7 +111,8 @@ class Game:
                     hit_time = note_data['hit_time']
                     judgment_pos = self.lines[line_index].judgment_pos
                     note_speed = self.config['note_speed']*note_data['speed']
-                    note = Note(judgment_pos, note_speed, hit_time)
+                    note_type = note_data.get('type', 'blue')
+                    note = Note(judgment_pos, note_speed, hit_time, self.note_images[note_type])
                     if current_time >= note.spawn_time:
                         self.lines[line_index].add_note(note)
                         note_data['spawned'] = True  # Mark the note as spawned

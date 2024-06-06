@@ -3,7 +3,7 @@ import math
 
 class Note:
     
-    def __init__(self, judgment_pos, speed, hit_time):
+    def __init__(self, judgment_pos, speed, hit_time, image):
         self.judgment_pos = judgment_pos
         self.speed = speed
         self.hit_time = hit_time
@@ -12,6 +12,8 @@ class Note:
         self.start_pos = None
         self.end_pos = None
         self.start_time = None
+
+        self.image = image
 
     def calculate_spawn_time(self, judgment_pos, speed, hit_time):
         distance = 600  # The distance from the spawn point to the judgment point; adjust as needed
@@ -38,4 +40,5 @@ class Note:
 
     def draw(self, screen):
         if self.pos:
-            pygame.draw.circle(screen, (255, 255, 255), (int(self.pos[0]), int(self.pos[1])), 5)
+            rect = self.image.get_rect(center=(int(self.pos[0]), int(self.pos[1])))
+            screen.blit(self.image, rect)
