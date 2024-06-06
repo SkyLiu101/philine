@@ -13,7 +13,7 @@ config = load_config('config/config.json')
 
 # Initialize Pygame
 pygame.init()
-screen = pygame.display.set_mode((config['screen_width'], config['screen_height']))
+screen = pygame.display.set_mode((config['screen_width'], config['screen_height']), pygame.NOFRAME)
 
 # Initialize and run the game
 game = Game(screen, 'charts/tutorial.json', config)

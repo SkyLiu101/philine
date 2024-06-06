@@ -1,6 +1,6 @@
 {
-  "screen_width": 1960,
-  "screen_height": 1080,
+  "screen_width": 1512,
+  "screen_height": 960,
   "fps": 120,
   "note_speed": 5,
   "key_bindings": {

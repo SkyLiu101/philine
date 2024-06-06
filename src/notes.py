@@ -2,6 +2,7 @@ import pygame
 import math
 
 class Note:
+    
     def __init__(self, judgment_pos, speed, hit_time):
         self.judgment_pos = judgment_pos
         self.speed = speed
@@ -27,12 +28,12 @@ class Note:
         self.start_pos = line_start_pos
         self.end_pos = line_end_pos
 
-        elapsed_time = (current_time - self.start_time) / 1000.0  # Time in seconds
+        elapsed_time = (self.hit_time-current_time) / 1000.0  # Time in seconds
 
         rad_angle = math.radians(line_angle)
         distance = self.speed * elapsed_time
-        self.pos[0] = self.start_pos[0] + distance * math.cos(rad_angle)
-        self.pos[1] = self.start_pos[1] + distance * math.sin(rad_angle)
+        self.pos[0] = self.end_pos[0] - distance * math.cos(rad_angle)
+        self.pos[1] = self.end_pos[1] - distance * math.sin(rad_angle)
 
 
     def draw(self, screen):

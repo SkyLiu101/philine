@@ -62,7 +62,17 @@ class Game:
 
     def display_time_elapsed(self, current_time):
         font = pygame.font.SysFont(None, 36)
-        time_text = font.render(f"Time: {current_time}", True, (255, 255, 255))
+        # Calculate displayed time
+        currentTimeConverted = current_time / 1000
+        currMin = int(currentTimeConverted / 60)
+        currSec = int(currentTimeConverted - (currMin * 60))
+        # Concat into string
+        displayedTime = ""
+        if currMin == 0:
+            displayedTime = f"Time: {currSec} sec"
+        else:
+            displayedTime = f"Time: {currMin} min {currSec} sec"
+        time_text = font.render(displayedTime, True, (255, 255, 255))
         self.screen.blit(time_text, (10, 10))
 
 
