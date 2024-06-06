@@ -1,12 +1,16 @@
 {
-  "screen_width": 800,
-  "screen_height": 600,
-  "fps": 60,
+  "screen_width": 1960,
+  "screen_height": 1080,
+  "fps": 120,
   "note_speed": 5,
   "key_bindings": {
     "a": "K_a",
     "s": "K_s",
     "d": "K_d",
     "f": "K_f"
-  }
+  },
+  "extra_pure_threshold": 25,
+  "pure_threshold": 50,
+  "far_threshold": 100,
+  "bad_threshold": 125
 }

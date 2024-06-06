@@ -1,15 +1,35 @@
 {
   "lines": [
-    {"start_pos": [100, 0], "end_pos": [100, 600], "key_binding": "a"},
-    {"start_pos": [300, 0], "end_pos": [300, 600], "key_binding": "s"},
-    {"start_pos": [500, 0], "end_pos": [500, 600], "key_binding": "d"},
-    {"start_pos": [700, 0], "end_pos": [700, 600], "key_binding": "f"}
+    {"judgment_pos": [100, 600], "angle": 90, "key_binding": "a", "movement": []},
+    {"judgment_pos": [300, 600], "angle": 90, "key_binding": "s", "movement": []},
+    {"judgment_pos": [500, 600], "angle": 90, "key_binding": "d", "movement": []},
+    {"judgment_pos": [700, 600], "angle": 90, "key_binding": "f", "movement": []}
   ],
   "notes": [
-    {"line": 0, "time": 1000},
-    {"line": 1, "time": 1500},
-    {"line": 2, "time": 2000},
-    {"line": 3, "time": 2500},
-    {"line": 0, "time": 3000}
-  ]
+    {"line": 0, "hit_time": 4000, "speed": 10},
+    {"line": 1, "hit_time": 4500, "speed": 10},
+    {"line": 2, "hit_time": 5000, "speed": 10},
+    {"line": 3, "hit_time": 5500, "speed": 10},
+    {"line": 0, "hit_time": 6000, "speed": 10},
+    {"line": 1, "hit_time": 6500, "speed": 10},
+    {"line": 2, "hit_time": 7000, "speed": 10},
+    {"line": 3, "hit_time": 7500, "speed": 10},
+    {"line": 0, "hit_time": 8000, "speed": 10},
+    {"line": 1, "hit_time": 8500, "speed": 10},
+    {"line": 2, "hit_time": 9000, "speed": 10},
+    {"line": 3, "hit_time": 9500, "speed": 10},
+    {"line": 0, "hit_time": 10000, "speed": 10},
+    {"line": 1, "hit_time": 10500, "speed": 10},
+    {"line": 2, "hit_time": 11000, "speed": 10},
+    {"line": 3, "hit_time": 11500, "speed": 10},
+    {"line": 0, "hit_time": 12000, "speed": 10},
+    {"line": 1, "hit_time": 12500, "speed": 10},
+    {"line": 2, "hit_time": 13000, "speed": 10},
+    {"line": 3, "hit_time": 13500, "speed": 10},
+    {"line": 0, "hit_time": 14000, "speed": 10},
+    {"line": 1, "hit_time": 14500, "speed": 10},
+    {"line": 2, "hit_time": 15000, "speed": 10},
+    {"line": 3, "hit_time": 15500, "speed": 10}
+  ],
+  "audio_path": "assets/music/tutorial.mp3"
 }

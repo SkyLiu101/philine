@@ -10,6 +10,7 @@ class Game:
         self.config = config
         self.lines = []
         self.notes = []
+        self.score = 0
         self.load_chart(chart_path)
         self.clock = GameClock(config['fps'])
         self.chart_finished = False
@@ -33,8 +34,43 @@ class Game:
             ))
         self.note_data = chart_data['notes']
 
+        pygame.mixer.init()
+        self.audio_path = chart_data['audio_path']
+        pygame.mixer.music.load(self.audio_path)
+
+    def check_collision(self, current_time, key, line):
+        if key == line.key_binding and line.notes:
+            # Check for note collision here 
+            if abs(current_time - line.notes[0].hit_time) < self.config['extra_pure_threshold']:
+                # Extra perfect hit
+                return '3'
+            if abs(current_time - line.notes[0].hit_time) < self.config['pure_threshold']:
+                # Perfect hit
+                return '2'
+            elif abs(current_time - line.notes[0].hit_time) < self.config['far_threshold']:
+                # Far hit
+                return '1'
+            elif abs(current_time - line.notes[0].hit_time) < self.config['bad_threshold']:
+                # Bad hit
+                return '-2'
+            pass
+
+    def display_score(self):
+        font = pygame.font.SysFont(None, 36)
+        score_text = font.render(f"Score: {self.score}", True, (255, 255, 255))
+        self.screen.blit(score_text, (1200, 10))
+
+    def display_time_elapsed(self, current_time):
+        font = pygame.font.SysFont(None, 36)
+        time_text = font.render(f"Time: {current_time}", True, (255, 255, 255))
+        self.screen.blit(time_text, (10, 10))
+
+
     def run(self):
         running = True
+
+        pygame.mixer.music.play()
+
         start_time = pygame.time.get_ticks()
 
         while running:
@@ -45,9 +81,11 @@ class Game:
                     running = False
                 elif event.type == pygame.KEYDOWN:
                     for line in self.lines:
-                        if event.key == line.key_binding:
-                            # Check for note collision here (basic placeholder)
-                            pass
+                        status = self.check_collision(current_time, event.key, line)
+                        if status:
+                            line.notes.remove(line.notes[0])
+                            self.score = self.score + int(status)
+                            print(status)
 
             # Check if it's time to add a new note
             for note_data in self.note_data:
@@ -66,8 +104,8 @@ class Game:
                 line.update_position(current_time)
                 line.update_notes(current_time)
 
-            # Check if all notes have been processed
-            if all('spawned' in note_data for note_data in self.note_data) and all(len(line.notes) == 0 for line in self.lines):
+            # Check if audio had stop playing
+            if not pygame.mixer.music.get_busy():
                 self.chart_finished = True
 
             if self.chart_finished:
@@ -79,7 +117,8 @@ class Game:
                 line.draw(self.screen)
                 for note in line.notes:
                     note.draw(self.screen)
-            
+            self.display_time_elapsed(current_time)
+            self.display_score()
             pygame.display.flip()
             self.clock.tick()
 
