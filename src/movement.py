@@ -32,7 +32,7 @@ class SmoothMovement:
         else:
             return self.end_pos, self.end_angle
 
-def calculate_line_positions(judgment_pos, angle, length=300):
+def calculate_line_positions(judgment_pos, angle, length=5000):
     rad_angle = math.radians(angle)
     x_offset = length * math.cos(rad_angle)
     y_offset = length * math.sin(rad_angle)
