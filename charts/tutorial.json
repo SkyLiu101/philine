@@ -53,7 +53,8 @@
     {"line": 0, "hit_time": 14000, "speed": 10},
     {"line": 1, "hit_time": 14500, "speed": 10},
     {"line": 2, "hit_time": 15000, "speed": 10},
-    {"line": 3, "hit_time": 15500, "speed": 10}
+    {"line": 3, "hit_time": 15500, "speed": 10},
+    {"line": 0, "hit_time": 5000, "end_time": 7000, "type": "Blue_Hold"}
   ],
   "audio_path": "assets/music/tutorial.mp3"
 }

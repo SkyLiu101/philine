@@ -19,7 +19,16 @@ class Game:
         self.note_images = {
             'blue': pygame.transform.scale(pygame.image.load(config['note_images']['blue']).convert_alpha(), note_size),
             'orange': pygame.transform.scale(pygame.image.load(config['note_images']['orange']).convert_alpha(), note_size),
-            'purple': pygame.transform.scale(pygame.image.load(config['note_images']['purple']).convert_alpha(), note_size)
+            'purple': pygame.transform.scale(pygame.image.load(config['note_images']['purple']).convert_alpha(), note_size),
+            'blue_hold_head': pygame.transform.scale(pygame.image.load(config['note_images']['blue_hold_head']).convert_alpha(), note_size),
+            'blue_hold_mid': pygame.transform.scale(pygame.image.load(config['note_images']['blue_hold_mid']).convert_alpha(), note_size),
+            'blue_hold_end': pygame.transform.scale(pygame.image.load(config['note_images']['blue_hold_end']).convert_alpha(), note_size),
+            'orange_hold_head': pygame.transform.scale(pygame.image.load(config['note_images']['orange_hold_head']).convert_alpha(), note_size),
+            'orange_hold_mid': pygame.transform.scale(pygame.image.load(config['note_images']['orange_hold_mid']).convert_alpha(), note_size),
+            'orange_hold_end': pygame.transform.scale(pygame.image.load(config['note_images']['orange_hold_end']).convert_alpha(), note_size),
+            'purple_hold_head': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_head']).convert_alpha(), note_size),
+            'purple_hold_mid': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_mid']).convert_alpha(), note_size),
+            'purple_hold_end': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_end']).convert_alpha(), note_size)
         }
 
     def load_chart(self, chart_path):
@@ -122,9 +131,13 @@ class Game:
 
                                 status = self.check_collision(current_time, note)
                                 if status:
-                                    line.notes.remove(note)
-                                    self.score = self.score + int(status)
-                                    print(status)
+                                    if note.note_type == 'hold':
+
+                                        pass
+                                    else:
+                                        line.notes.remove(note)
+                                        self.score = self.score + int(status)
+                                        print(status)
                 elif event.type == pygame.KEYUP:
                     for line in self.lines:
                         if event.key == line.key_binding:

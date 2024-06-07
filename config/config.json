@@ -12,7 +12,16 @@
   "note_images": {
     "blue": "assets/images/Blue_Head.png",
     "orange": "assets/images/Orange_Head.png",
-    "purple": "assets/images/Purple_Head.png"
+    "purple": "assets/images/Purple_Head.png",
+    "blue_hold_head": "assets/images/Blue_Head.png",
+    "blue_hold_mid": "assets/images/Blue_Mid_Tail.png",
+    "blue_hold_end": "assets/images/Blue_End_Tail.png",
+    "orange_hold_head": "assets/images/Orange_Head.png",
+    "orange_hold_mid": "assets/images/Orange_Mid_Tail.png",
+    "orange_hold_end": "assets/images/Orange_End_Tail.png",
+    "purple_hold_head": "assets/images/Purple_Head.png",
+    "purple_hold_mid": "assets/images/Purple_Mid_Tail.png",
+    "purple_hold_end": "assets/images/Purple_End_Tail.png"
   },
   "note_size": [50, 50],
   "extra_pure_threshold": 25,
