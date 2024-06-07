@@ -38,7 +38,8 @@ class Game:
                 angle=line_data['angle'],
                 key_binding=key_bindings[key_binding],
                 movement=line_data.get('movement', []),
-                opacity_changes=line_data.get('opacity_changes', [])
+                opacity_changes=line_data.get('opacity_changes', []),
+                config = self.config
             ))
         self.note_data = chart_data['notes']
 

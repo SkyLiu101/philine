@@ -2,13 +2,14 @@ import pygame
 from movement import SmoothMovement, calculate_line_positions
 
 class Line:
-    def __init__(self, judgment_pos, angle, key_binding, movement, opacity_changes):
+    def __init__(self, judgment_pos, angle, key_binding, movement, opacity_changes, config):
         self.judgment_pos = judgment_pos
         self.angle = angle
         self.key_binding = key_binding
         self.notes = []
         self.movement = SmoothMovement(movement) if movement else None
         self.start_pos, self.end_pos = calculate_line_positions(judgment_pos, angle)
+        self.config = config
 
         self.judgment_circle_radius = 10  # Initial radius
         self.judgment_circle_color = (255, 0, 0)  # Initial color (red)
@@ -24,7 +25,7 @@ class Line:
             # Create a surface with alpha transparency
             line_surface = pygame.Surface((self.end_pos[0] - self.start_pos[0]+1, self.end_pos[1] - self.start_pos[1]+1), pygame.SRCALPHA)
             # Draw the line on the surface
-            pygame.draw.line(line_surface, (255, 255, 255, self.alpha), (0, 0), (self.end_pos[0] - self.start_pos[0], self.end_pos[1] - self.start_pos[1]), 2)
+            pygame.draw.line(line_surface, (255, 255, 255, min(self.alpha,255)), (0, 0), (self.end_pos[0] - self.start_pos[0], self.end_pos[1] - self.start_pos[1]), 2)
             # Blit the surface onto the screen at the start_pos location
             screen.blit(line_surface, self.start_pos)
         self.draw_judgment_circle(screen)
@@ -32,7 +33,7 @@ class Line:
     def draw_judgment_circle(self, screen):
         if self.alpha > 0:  # Only draw if the alpha value is greater than 0
             circle_surface = pygame.Surface((self.judgment_circle_radius * 2, self.judgment_circle_radius * 2), pygame.SRCALPHA)
-            pygame.draw.circle(circle_surface, (*self.judgment_circle_color, self.alpha), (self.judgment_circle_radius, self.judgment_circle_radius), self.judgment_circle_radius, 2)
+            pygame.draw.circle(circle_surface, (*self.judgment_circle_color, min(255,self.alpha)), (self.judgment_circle_radius, self.judgment_circle_radius), self.judgment_circle_radius, 2)
             screen.blit(circle_surface, (int(self.judgment_pos[0] - self.judgment_circle_radius), int(self.judgment_pos[1] - self.judgment_circle_radius)))
 
     def add_note(self, note):
@@ -63,14 +64,22 @@ class Line:
         self.update_opacity(current_time)
     
     def update_opacity(self, current_time):
-        for change in self.opacity_changes:
-            if current_time >= change['time']:
+        if self.opacity_changes:
+            for change in self.opacity_changes:
                 self.target_alpha = change['opacity']
-                speed = change['speed']
-                if self.alpha < self.target_alpha:
-                    self.alpha = min(self.alpha + speed, self.target_alpha)
-                elif self.alpha > self.target_alpha:
-                    self.alpha = max(self.alpha - speed, self.target_alpha)
+                self.target_time = change['time']
+                if current_time < change['time']:
+                    break
+                
+
+            if current_time < self.target_time:
+                time_diff = self.target_time - current_time
+                opacity_diff = self.target_alpha - self.alpha
+                speed = opacity_diff / time_diff /self.config['fps']*1000
+                self.alpha += speed
+            else:
+                self.alpha = self.target_alpha
+
             
     def on_key_press(self):
         self.judgment_circle_radius += 1

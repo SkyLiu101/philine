@@ -31,7 +31,7 @@ class Note:
         self.end_pos = line_end_pos
 
         elapsed_time = (self.hit_time-current_time) / 1000.0  # Time in seconds
-
+    
         rad_angle = math.radians(line_angle)
         distance = self.speed * elapsed_time
         self.pos[0] = self.end_pos[0] - distance * math.cos(rad_angle)
