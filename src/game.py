@@ -37,7 +37,8 @@ class Game:
                 judgment_pos=line_data['judgment_pos'],
                 angle=line_data['angle'],
                 key_binding=key_bindings[key_binding],
-                movement=line_data.get('movement', [])
+                movement=line_data.get('movement', []),
+                opacity_changes=line_data.get('opacity_changes', [])
             ))
         self.note_data = chart_data['notes']
 
@@ -158,7 +159,7 @@ class Game:
             if self.chart_finished:
                 running = False
 
-            self.screen.fill((0, 0, 0))
+            self.screen.fill((0, 0, 0, 255))
             
             for line in self.lines:
                 line.draw(self.screen)
