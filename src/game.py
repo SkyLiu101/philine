@@ -115,13 +115,14 @@ class Game:
                     for line in self.lines:
                         if event.key == line.key_binding:
                             line.on_key_press()
-                            note = self.closest_note(line)
+                            if line.notes:
+                                note = self.closest_note(line)
 
-                            status = self.check_collision(current_time, note)
-                            if status:
-                                line.notes.remove(note)
-                                self.score = self.score + int(status)
-                                print(status)
+                                status = self.check_collision(current_time, note)
+                                if status:
+                                    line.notes.remove(note)
+                                    self.score = self.score + int(status)
+                                    print(status)
                 elif event.type == pygame.KEYUP:
                     for line in self.lines:
                         if event.key == line.key_binding:
@@ -148,7 +149,7 @@ class Game:
                 if line.notes:
                     note = self.closest_note(line)
                     if current_time > note.hit_time + self.config['far_threshold']:
-                        line.notes.remove(line.notes[0])
+                        line.notes.remove(note)
 
             # Check if audio had stop playing
             if not pygame.mixer.music.get_busy():
