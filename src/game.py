@@ -1,7 +1,7 @@
 import pygame
 import json
 from lines import Line
-from notes import Note
+from notes import Note, HoldNote
 from clock import GameClock
 
 class Game:
@@ -15,20 +15,20 @@ class Game:
         self.clock = GameClock(config['fps'])
         self.chart_finished = False
 
-        note_size = tuple(config['note_size'])
+        self.note_size = tuple(config['note_size'])
         self.note_images = {
-            'blue': pygame.transform.scale(pygame.image.load(config['note_images']['blue']).convert_alpha(), note_size),
-            'orange': pygame.transform.scale(pygame.image.load(config['note_images']['orange']).convert_alpha(), note_size),
-            'purple': pygame.transform.scale(pygame.image.load(config['note_images']['purple']).convert_alpha(), note_size),
-            'blue_hold_head': pygame.transform.scale(pygame.image.load(config['note_images']['blue_hold_head']).convert_alpha(), note_size),
-            'blue_hold_mid': pygame.transform.scale(pygame.image.load(config['note_images']['blue_hold_mid']).convert_alpha(), note_size),
-            'blue_hold_end': pygame.transform.scale(pygame.image.load(config['note_images']['blue_hold_end']).convert_alpha(), note_size),
-            'orange_hold_head': pygame.transform.scale(pygame.image.load(config['note_images']['orange_hold_head']).convert_alpha(), note_size),
-            'orange_hold_mid': pygame.transform.scale(pygame.image.load(config['note_images']['orange_hold_mid']).convert_alpha(), note_size),
-            'orange_hold_end': pygame.transform.scale(pygame.image.load(config['note_images']['orange_hold_end']).convert_alpha(), note_size),
-            'purple_hold_head': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_head']).convert_alpha(), note_size),
-            'purple_hold_mid': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_mid']).convert_alpha(), note_size),
-            'purple_hold_end': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_end']).convert_alpha(), note_size)
+            'blue': pygame.transform.scale(pygame.image.load(config['note_images']['blue']).convert_alpha(), self.note_size),
+            'orange': pygame.transform.scale(pygame.image.load(config['note_images']['orange']).convert_alpha(), self.note_size),
+            'purple': pygame.transform.scale(pygame.image.load(config['note_images']['purple']).convert_alpha(), self.note_size),
+            'blue_hold_head': pygame.transform.scale(pygame.image.load(config['note_images']['blue_hold_head']).convert_alpha(),self. note_size),
+            'blue_hold_mid': pygame.transform.scale(pygame.image.load(config['note_images']['blue_hold_mid']).convert_alpha(), self.note_size),
+            'blue_hold_end': pygame.transform.scale(pygame.image.load(config['note_images']['blue_hold_end']).convert_alpha(), self.note_size),
+            'orange_hold_head': pygame.transform.scale(pygame.image.load(config['note_images']['orange_hold_head']).convert_alpha(), self.note_size),
+            'orange_hold_mid': pygame.transform.scale(pygame.image.load(config['note_images']['orange_hold_mid']).convert_alpha(), self.note_size),
+            'orange_hold_end': pygame.transform.scale(pygame.image.load(config['note_images']['orange_hold_end']).convert_alpha(), self.note_size),
+            'purple_hold_head': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_head']).convert_alpha(), self.note_size),
+            'purple_hold_mid': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_mid']).convert_alpha(), self.note_size),
+            'purple_hold_end': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_end']).convert_alpha(), self.note_size)
         }
 
     def load_chart(self, chart_path):
@@ -49,9 +49,11 @@ class Game:
                 movement=line_data.get('movement', []),
                 opacity_changes=line_data.get('opacity_changes', []),
                 fps=self.config['fps'],
-                note_size=self.config['note_size']
+                note_size=self.config['note_size'],
+                fail_range = self.config['far_threshold']
             ))
         self.note_data = chart_data['notes']
+        self.hold_note_data = chart_data['hold_notes']
 
         pygame.mixer.init()
         self.audio_path = chart_data['audio_path']
@@ -140,6 +142,24 @@ class Game:
                         if event.key == line.key_binding:
                             line.on_key_release()
 
+            
+            # Check hold notes before normal notes
+            for hold_note_data in self.hold_note_data:
+                line_index = hold_note_data['line']
+                hit_time = hold_note_data['hit_time']
+                if 'spawned' not in hold_note_data:
+                    judgment_pos = self.lines[line_index].judgment_pos
+                    hold_note_speed = self.config['note_speed']*hold_note_data['speed']
+                    hold_note_type = hold_note_data.get('type', 'blue')
+                    head_image = self.note_images[f"{hold_note_type}_hold_head"]
+                    mid_image = self.note_images[f"{hold_note_type}_hold_mid"]
+                    end_image = self.note_images[f"{hold_note_type}_hold_end"]
+                    end_time = hold_note_data['end_time']
+                    hold_note = HoldNote(judgment_pos, hold_note_speed, hit_time, head_image, mid_image, end_image, end_time, self.note_size)
+                    if current_time >= hold_note.hold_note_segment[0].spawn_time:
+                        self.lines[line_index].add_hold_note(hold_note)
+                        hold_note_data['spawned'] = True  # Mark the note as spawned
+
             # Check if it's time to add a new note
             for note_data in self.note_data:
                 line_index = note_data['line']
@@ -157,7 +177,7 @@ class Game:
             # Update line positions based on movement data
             for line in self.lines:
                 line.update_position(current_time)
-                line.update_notes(current_time)
+                line.update_notes(current_time, line.ispressed)
                 if line.notes:
                     note = self.closest_note(line)
                     if current_time > note.hit_time + self.config['far_threshold']:
@@ -174,8 +194,10 @@ class Game:
             
             for line in self.lines:
                 line.draw(self.screen)
+                for hold_note in line.hold_notes:
+                    hold_note.draw(self.screen, line.angle)
                 for note in line.notes:
-                    note.draw(self.screen)
+                    note.draw(self.screen, line.angle)
             self.display_time_elapsed(current_time)
             self.display_score()
             pygame.display.flip()

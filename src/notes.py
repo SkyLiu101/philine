@@ -41,14 +41,15 @@ class Note:
         self.pos[1] = self.end_pos[1] - distance * math.sin(rad_angle)
 
 
-    def draw(self, screen):
+    def draw(self, screen, line_angle):
         if self.pos:
-            rect = self.image.get_rect(center=(int(self.pos[0]), int(self.pos[1])))
-            screen.blit(self.image, rect)
+            rotated_image = pygame.transform.rotate(self.image, 90-line_angle)
+            rect = rotated_image.get_rect(center=(int(self.pos[0]), int(self.pos[1])))
+            screen.blit(rotated_image, rect)
 
 
 class HoldNote():
-    def __init__(self, judgment_pos, speed, start_time, head_image, mid_image, end_image, end_time):
+    def __init__(self, judgment_pos, speed, start_time, head_image, mid_image, end_image, end_time, note_size):
         self.speed = speed
         self.judgment_pos = judgment_pos
         self.start_time = start_time
@@ -58,12 +59,13 @@ class HoldNote():
         self.end_image = end_image
         self.hold_note_segment = []
         self.failed = False
+        self.note_size = note_size
         self.fragment_notes()
     
     def fragment_notes(self):
         self.hold_note_segment.append(Note(self.judgment_pos, self.speed, self.start_time, self.head_image))
 
-        density = (self.end_time - self.start_time) / (self.self.mid_image.height / self.speed)
+        density = (self.end_time - self.start_time) / self.speed
         segment_time = self.start_time + density
         while segment_time < self.end_time:
             self.hold_note_segment.append(Note(self.judgment_pos, self.speed, segment_time, self.mid_image))
@@ -71,6 +73,10 @@ class HoldNote():
 
         self.hold_note_segment.append(Note(self.judgment_pos, self.speed, self.end_time, self.end_image))
 
+    def fail(self):
+        self.failed = True
+        for note in self.hold_note_segment:
+            note.opacity = note.opacity / 2
 
     def update(self, current_time, line_start_pos, line_end_pos, line_angle):
         for note in self.hold_note_segment:
@@ -78,10 +84,7 @@ class HoldNote():
                 self.hold_note_segment.remove(note)
                 continue
             note.update(current_time, line_start_pos, line_end_pos, line_angle)
-        if not len(self.hold_note_segment):
-            #score.append 1
-            pass
 
-    def draw(self, screen):
+    def draw(self, screen, line_angle):
         for note in self.hold_note_segment:
-            note.draw(screen)
+            note.draw(screen, line_angle)

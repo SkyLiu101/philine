@@ -30,33 +30,10 @@
     }
   ],
   "notes": [
-    {"line": 0, "hit_time": 4000, "speed": 10},
-    {"line": 1, "hit_time": 4500, "speed": 10},
-    {"line": 2, "hit_time": 5000, "speed": 10},
-    {"line": 3, "hit_time": 5500, "speed": 10},
-    {"line": 0, "hit_time": 6000, "speed": 10},
-    {"line": 1, "hit_time": 6500, "speed": 10},
-    {"line": 2, "hit_time": 7000, "speed": 10},
-    {"line": 3, "hit_time": 7500, "speed": 10},
-    {"line": 0, "hit_time": 8000, "speed": 10},
-    {"line": 1, "hit_time": 8500, "speed": 10},
-    {"line": 2, "hit_time": 9000, "speed": 10},
-    {"line": 3, "hit_time": 9500, "speed": 10},
-    {"line": 0, "hit_time": 10000, "speed": 10},
-    {"line": 1, "hit_time": 10500, "speed": 10},
-    {"line": 2, "hit_time": 11000, "speed": 10},
-    {"line": 3, "hit_time": 11500, "speed": 10},
-    {"line": 0, "hit_time": 12000, "speed": 10},
-    {"line": 1, "hit_time": 12500, "speed": 10},
-    {"line": 2, "hit_time": 13000, "speed": 10},
-    {"line": 3, "hit_time": 13500, "speed": 10},
-    {"line": 0, "hit_time": 14000, "speed": 10},
-    {"line": 1, "hit_time": 14500, "speed": 10},
-    {"line": 2, "hit_time": 15000, "speed": 10},
-    {"line": 3, "hit_time": 15500, "speed": 10}
+    {"line": 0, "hit_time": 4000, "speed": 10}
   ],
   "hold_notes":[
-    {"line": 0, "hit_time": 2000, "end_time": 7000, "type": "Blue_Hold", "speed": 10}
+    {"line": 0, "hit_time": 2000, "end_time": 7000, "type": "blue", "speed": 10}
   ],
-  "audio_path": "assets/music/tutorial.mp3"
+  "audio_path": "assets/music/tutorial.ogg"
 }
