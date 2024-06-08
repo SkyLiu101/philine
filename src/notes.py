@@ -12,13 +12,14 @@ class Note:
         self.start_pos = None
         self.end_pos = None
         self.start_time = None
+        self.opacity = 255
 
         self.image = image
         self.is_held = False  # To track if the note is being held
 
 
     def calculate_spawn_time(self, judgment_pos, speed, hit_time):
-        distance = 600  # The distance from the spawn point to the judgment point; adjust as needed
+        distance = 3000  # The distance from the spawn point to the judgment point; adjust as needed
         travel_time = distance / speed
         spawn_time = hit_time - travel_time * 1000  # Convert to milliseconds
         return spawn_time
@@ -45,30 +46,42 @@ class Note:
             rect = self.image.get_rect(center=(int(self.pos[0]), int(self.pos[1])))
             screen.blit(self.image, rect)
 
-class HoldNote(Note):
-    def __init__(self, judgment_pos, speed, hit_time, head_image, mid_image, end_image, end_time):
-        super().__init__(judgment_pos, speed, hit_time, head_image, note_type='hold', end_time=end_time)
+
+class HoldNote():
+    def __init__(self, judgment_pos, speed, start_time, head_image, mid_image, end_image, end_time):
+        self.speed = speed
+        self.judgment_pos = judgment_pos
+        self.start_time = start_time
+        self.end_time = end_time
         self.head_image = head_image
         self.mid_image = mid_image
         self.end_image = end_image
+        self.hold_note_segment = []
+        self.failed = False
+        self.fragment_notes()
+    
+    def fragment_notes(self):
+        self.hold_note_segment.append(Note(self.judgment_pos, self.speed, self.start_time, self.head_image))
 
-    def draw(self, screen, current_time, line_angle):
-        if self.pos:
-            # Draw the head
-            head_rect = self.head_image.get_rect(center=(int(self.pos[0]), int(self.pos[1])))
-            screen.blit(self.head_image, head_rect)
+        density = (self.end_time - self.start_time) / (self.self.mid_image.height / self.speed)
+        segment_time = self.start_time + density
+        while segment_time < self.end_time:
+            self.hold_note_segment.append(Note(self.judgment_pos, self.speed, segment_time, self.mid_image))
+            segment_time = segment_time + density
 
-            # Calculate and draw the mid sections
-            if current_time >= self.spawn_time and current_time <= self.end_time:
-                elapsed_time = (current_time - self.spawn_time) / 1000.0  # Time in seconds
-                rad_angle = math.radians(line_angle)
-                mid_distance = self.speed * elapsed_time
-                mid_pos = [self.start_pos[0] + mid_distance * math.cos(rad_angle),
-                           self.start_pos[1] + mid_distance * math.sin(rad_angle)]
-                mid_rect = self.mid_image.get_rect(center=(int(mid_pos[0]), int(mid_pos[1])))
-                screen.blit(self.mid_image, mid_rect)
+        self.hold_note_segment.append(Note(self.judgment_pos, self.speed, self.end_time, self.end_image))
 
-            # Draw the end
-            if current_time >= self.end_time:
-                end_rect = self.end_image.get_rect(center=(int(self.judgment_pos[0]), int(self.judgment_pos[1])))
-                screen.blit(self.end_image, end_rect)
+
+    def update(self, current_time, line_start_pos, line_end_pos, line_angle):
+        for note in self.hold_note_segment:
+            if current_time>note.hit_time:
+                self.hold_note_segment.remove(note)
+                continue
+            note.update(current_time, line_start_pos, line_end_pos, line_angle)
+        if not len(self.hold_note_segment):
+            #score.append 1
+            pass
+
+    def draw(self, screen):
+        for note in self.hold_note_segment:
+            note.draw(screen)

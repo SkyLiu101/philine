@@ -48,7 +48,8 @@ class Game:
                 key_binding=key_bindings[key_binding],
                 movement=line_data.get('movement', []),
                 opacity_changes=line_data.get('opacity_changes', []),
-                config = self.config
+                fps=self.config['fps'],
+                note_size=self.config['note_size']
             ))
         self.note_data = chart_data['notes']
 
@@ -131,13 +132,9 @@ class Game:
 
                                 status = self.check_collision(current_time, note)
                                 if status:
-                                    if note.note_type == 'hold':
-
-                                        pass
-                                    else:
-                                        line.notes.remove(note)
-                                        self.score = self.score + int(status)
-                                        print(status)
+                                    line.notes.remove(note)
+                                    self.score = self.score + int(status)
+                                    print(status)
                 elif event.type == pygame.KEYUP:
                     for line in self.lines:
                         if event.key == line.key_binding:

@@ -2,14 +2,15 @@ import pygame
 from movement import SmoothMovement, calculate_line_positions
 
 class Line:
-    def __init__(self, judgment_pos, angle, key_binding, movement, opacity_changes, config):
+    def __init__(self, judgment_pos, angle, key_binding, movement, opacity_changes, fps, note_size):
         self.judgment_pos = judgment_pos
         self.angle = angle
         self.key_binding = key_binding
         self.notes = []
         self.movement = SmoothMovement(movement) if movement else None
         self.start_pos, self.end_pos = calculate_line_positions(judgment_pos, angle)
-        self.config = config
+        self.fps = fps
+        self.note_size = note_size
 
         self.judgment_circle_radius = 10  # Initial radius
         self.judgment_circle_color = (255, 0, 0)  # Initial color (red)
@@ -29,6 +30,14 @@ class Line:
             # Blit the surface onto the screen at the start_pos location
             screen.blit(line_surface, self.start_pos)
         self.draw_judgment_circle(screen)
+
+    def draw_key_binding(self, screen):
+        if self.alpha > 0:  # Only draw if the alpha value is greater than 0
+            font = pygame.font.SysFont(None, 36)
+            key_text = font.render(pygame.key.name(self.key_binding), True, (255, 255, 255, self.alpha))
+            key_text_rect = key_text.get_rect(center=(self.judgment_pos[0] + 20 * math.cos(math.radians(self.angle + 90)),
+                                                      self.judgment_pos[1] + 20 * math.sin(math.radians(self.angle + 90))))
+            screen.blit(key_text, key_text_rect)
 
     def draw_judgment_circle(self, screen):
         if self.alpha > 0:  # Only draw if the alpha value is greater than 0
@@ -75,7 +84,7 @@ class Line:
             if current_time < self.target_time:
                 time_diff = self.target_time - current_time
                 opacity_diff = self.target_alpha - self.alpha
-                speed = opacity_diff / time_diff /self.config['fps']*1000
+                speed = opacity_diff / time_diff /self.fps*1000
                 self.alpha += speed
             else:
                 self.alpha = self.target_alpha
