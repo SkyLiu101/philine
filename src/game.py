@@ -2,6 +2,7 @@ import pygame
 import json
 from lines import Line
 from notes import Note, HoldNote
+from score import Score
 from clock import GameClock
 
 class Game:
@@ -10,7 +11,7 @@ class Game:
         self.config = config
         self.lines = []
         self.notes = []
-        self.score = 0
+        self.score = None
         self.load_chart(chart_path)
         self.clock = GameClock(config['fps'])
         self.chart_finished = False
@@ -34,6 +35,7 @@ class Game:
     def load_chart(self, chart_path):
         with open(chart_path, 'r') as file:
             chart_data = json.load(file)
+            self.score = Score(chart_data)
         
         # Convert key_bindings values to actual Pygame key constants
         key_bindings = {k: getattr(pygame, v) for k, v in self.config['key_bindings'].items()}
@@ -74,12 +76,15 @@ class Game:
         # Check for note collision here 
         if abs(current_time - note.hit_time) < self.config['extra_pure_threshold']:
             # Extra perfect hit
+            self.score.update_score('extra_pure')
             return '3'
         if abs(current_time - note.hit_time) < self.config['pure_threshold']:
             # Perfect hit
+            self.score.update_score('pure')
             return '2'
         elif abs(current_time - note.hit_time) < self.config['far_threshold']:
             # Far hit
+            self.score.update_score('far')
             return '1'
         elif abs(current_time - note.hit_time) < self.config['bad_threshold']:
             # Bad hit   
@@ -90,11 +95,16 @@ class Game:
             # the real note will be deleted out side of the collision func, do not repeatingly delete.
             return '-2'
         pass
-
     def display_score(self):
-        font = pygame.font.SysFont(None, 36)
-        score_text = font.render(f"Score: {self.score}", True, (255, 255, 255))
-        self.screen.blit(score_text, (1200, 10))
+
+        font = pygame.font.Font('assets/fonts/Exo-Regular.ttf',50)
+        score = self.score.get_score()
+        formatted_score = f"{score:08d}"  # Ensure score is at least 8 digits with leading zeros
+        # Add apostrophes as thousands separators
+        parts = [formatted_score[max(i - 3, 0):i] for i in range(len(formatted_score), 0, -3)]
+        formatted_score_with_apostrophes = "'".join(reversed(parts))
+        score_text = font.render(f"{formatted_score_with_apostrophes}", True, (255, 255, 255))
+        self.screen.blit(score_text, (1150, 20))
 
     def display_time_elapsed(self, current_time):
         font = pygame.font.SysFont(None, 36)
@@ -105,7 +115,7 @@ class Game:
         # Concat into string
         displayedTime = ""
         if currMin == 0:
-            displayedTime = f"Time: {currSec} sec"
+            displayedTime = f"Time: {current_time} sec"
         else:
             displayedTime = f"Time: {currMin} min {currSec} sec"
         time_text = font.render(displayedTime, True, (255, 255, 255))
@@ -120,7 +130,7 @@ class Game:
         start_time = pygame.time.get_ticks()
 
         while running:
-            current_time = pygame.time.get_ticks() - start_time
+            current_time = (pygame.time.get_ticks() - start_time)
 
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -132,14 +142,24 @@ class Game:
                                 status = self.check_collision(current_time, note)
                                 if status:
                                     line.notes.remove(note)
-                                    self.score = self.score + int(status)
-                                    print(status)
-                            #for hold_note in line.hold_notes:
+                            for hold_note in line.hold_notes:
+                                if hold_note.start_time < current_time < hold_note.end_time:
+                                    hold_note.hold()
                 elif event.type == pygame.KEYUP:
                     for line in self.lines:
                         if event.key == line.key_binding:
                             line.on_key_release()
+                            for hold_note in line.hold_notes:
+                                if hold_note.held and current_time < hold_note.end_time:
+                                    hold_note.unhold()
 
+            for line in self.lines:
+                for hold_note in line.hold_notes:
+                    for checkpoint in hold_note.checkpoint_data:
+                        if current_time >= checkpoint:
+                            if hold_note.held:
+                                self.score.update_score('extra_pure')
+                            hold_note.checkpoint_data.remove(checkpoint)
             
             for note_data in self.note_data:
                 if 'spawned' not in note_data:
@@ -162,16 +182,19 @@ class Game:
                     note_type = hold_note_data.get('type', 'blue')  # Default to type_1 if not specified
                     end_time = hold_note_data['end_time']
                     note_size = self.config['note_size']
-                    hold_note = HoldNote(judgment_pos, hold_note_speed, hit_time, self.note_images[f'{note_type}_hold_head'], self.note_images[f'{note_type}_hold_mid'], self.note_images[f'{note_type}_hold_end'], end_time, note_size)
+                    checkpoint_data = []
+                    for checkpoint in hold_note_data['checkpoints']:
+                        checkpoint_data.append(checkpoint)
+                    hold_note = HoldNote(judgment_pos, hold_note_speed, hit_time, self.note_images[f'{note_type}_hold_head'], self.note_images[f'{note_type}_hold_mid'], self.note_images[f'{note_type}_hold_end'], end_time, note_size, checkpoint_data)
                     if current_time >= note.spawn_time:
                         self.lines[line_index].add_hold_note(hold_note)
-                        hold_note_data['spawned'] = True  # Mark the note as spawned    
+                        hold_note_data['spawned'] = True  # Mark the note as spawned
 
             
             # Update line positions based on movement data
             for line in self.lines:
                 line.update_position(current_time)
-                line.update_notes(current_time, line.ispressed)
+                line.update_notes(current_time, line.ispressed, self.config['far_threshold'], self.score)
                 if line.notes:
                     note = self.closest_note(line)
                     if current_time > note.hit_time + self.config['far_threshold']:

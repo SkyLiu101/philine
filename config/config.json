@@ -24,9 +24,9 @@
     "purple_hold_end": "assets/images/Purple_End_Tail.png"
   },
   "note_size": [50, 50],
-  "extra_pure_threshold": 25,
-  "pure_threshold": 50,
-  "far_threshold": 100,
-  "bad_threshold": 150
+  "extra_pure_threshold": 40,
+  "pure_threshold": 80,
+  "far_threshold": 160,
+  "bad_threshold": 240
   
 }

@@ -56,14 +56,12 @@ class Line:
     def add_hold_note(self, note):
         self.hold_notes.append(note)
 
-    def update_notes(self, current_time, ispressed):
+    def update_notes(self, current_time, ispressed, judge_time,score):
         for hold_note in self.hold_notes:
-            if not ispressed and not hold_note.failed:
-                if current_time > hold_note.start_time + self.fail_range and current_time < hold_note.end_time:
-                    hold_note.fail()
-            #if not len(hold_note.hold_note_segment):
-                # add point
-                #pass
+
+            hold_note.update_surface(current_time, self.angle, self.end_pos)
+            if hold_note.end_time <= current_time:
+                self.hold_notes.remove(hold_note)
         for note in self.notes:
             note.update(current_time, self.start_pos, self.end_pos, self.angle)
             if self.has_exceeded_judgment_point(note):
