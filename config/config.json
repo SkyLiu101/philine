@@ -7,7 +7,8 @@
     "a": "K_a",
     "s": "K_s",
     "d": "K_d",
-    "f": "K_f"
+    "f": "K_f",
+    "l": "K_l"
   },
   "note_images": {
     "blue": "assets/images/Blue_Head.png",

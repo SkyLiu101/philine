@@ -31,11 +31,13 @@ class Game:
             'purple_hold_mid': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_mid']).convert_alpha(), self.note_size),
             'purple_hold_end': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_end']).convert_alpha(), self.note_size)
         }
-
+        self.hit_sound = pygame.mixer.Sound('assets/sounds/tap.wav')
+    def play_hit_sound(self):
+        self.hit_sound.play()
     def load_chart(self, chart_path):
         with open(chart_path, 'r') as file:
             chart_data = json.load(file)
-            self.score = Score(chart_data)
+            self.score = Score(chart_data, self.play_hit_sound)
         
         # Convert key_bindings values to actual Pygame key constants
         key_bindings = {k: getattr(pygame, v) for k, v in self.config['key_bindings'].items()}
@@ -55,7 +57,8 @@ class Game:
                 fail_range = self.config['far_threshold']
             ))
         self.note_data = chart_data['notes']
-        self.hold_note_data = chart_data['hold_notes']
+        if 'hold_notes' in chart_data:
+            self.hold_note_data = chart_data['hold_notes']
 
         pygame.mixer.init()
         self.audio_path = chart_data['audio_path']
@@ -115,7 +118,7 @@ class Game:
         # Concat into string
         displayedTime = ""
         if currMin == 0:
-            displayedTime = f"Time: {current_time} sec"
+            displayedTime = f"Time: {currSec} sec"
         else:
             displayedTime = f"Time: {currMin} min {currSec} sec"
         time_text = font.render(displayedTime, True, (255, 255, 255))
@@ -156,10 +159,12 @@ class Game:
             for line in self.lines:
                 for hold_note in line.hold_notes:
                     for checkpoint in hold_note.checkpoint_data:
-                        if current_time >= checkpoint:
+                        if 'used' not in checkpoint and current_time >= hold_note.checkpoint_data[checkpoint]:
                             if hold_note.held:
                                 self.score.update_score('extra_pure')
-                            hold_note.checkpoint_data.remove(checkpoint)
+                            if self.score.get_score() > self.score.max_score:
+                                self.score.score = self.score.max_score
+                            hold_note.checkpoint_data[checkpoint]['used'] = True
             
             for note_data in self.note_data:
                 if 'spawned' not in note_data:
@@ -174,7 +179,7 @@ class Game:
                         note_data['spawned'] = True  # Mark the note as spawned
 
             for hold_note_data in self.hold_note_data:
-                if 'spawned' not in hold_note_data:
+                if 'spawned' not in note_data:
                     line_index = hold_note_data['line']
                     hit_time = hold_note_data['hit_time']
                     judgment_pos = self.lines[line_index].judgment_pos
@@ -186,7 +191,7 @@ class Game:
                     for checkpoint in hold_note_data['checkpoints']:
                         checkpoint_data.append(checkpoint)
                     hold_note = HoldNote(judgment_pos, hold_note_speed, hit_time, self.note_images[f'{note_type}_hold_head'], self.note_images[f'{note_type}_hold_mid'], self.note_images[f'{note_type}_hold_end'], end_time, note_size, checkpoint_data)
-                    if current_time >= note.spawn_time:
+                    if current_time >= hold_note.spawn_time:
                         self.lines[line_index].add_hold_note(hold_note)
                         hold_note_data['spawned'] = True  # Mark the note as spawned
 
