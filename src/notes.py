@@ -58,6 +58,8 @@ class HoldNote:
         self.surface_endpos = judgment_pos
         self.spawn_time = self.calculate_spawn_time(judgment_pos, speed)
         self.failed = False
+        self.judged = False
+        self.held = False
 
     def fail(self):
         self.failed = True
@@ -92,6 +94,9 @@ class HoldNote:
         tail_rect = self.end_image.get_rect(midtop=(width // 2, self.note_size[1] + int(mid_length)))
         
         self.surface.blit(self.end_image, tail_rect)
+
+        if self.failed:
+            self.surface.set_alpha(100)
 
     def update_surface(self, current_time, line_angle):
         if self.surface is None:
@@ -132,3 +137,18 @@ class HoldNote:
                 pygame.draw.rect(rotated_surface, (255, 0, 0), rotated_surface.get_rect(), 1)
 
                 screen.blit(rotated_surface, rotated_rect.topleft)
+    
+    def judge(self, current_time):
+        if not self.judged and self.start_time <= current_time <= self.end_time:
+            self.judged = True
+            return True
+        elif not self.held and self.end_time < current_time:
+            self.fail()
+            return False
+        return False
+
+    def hold(self, current_time):
+        if self.start_time <= current_time <= self.end_time:
+            self.held = True
+        else:
+            self.fail()

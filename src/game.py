@@ -128,15 +128,13 @@ class Game:
                 elif event.type == pygame.KEYDOWN:
                     for line in self.lines:
                         if event.key == line.key_binding:
-                            line.on_key_press()
-                            if line.notes:
-                                note = self.closest_note(line)
-
+                            for note in line.notes:
                                 status = self.check_collision(current_time, note)
                                 if status:
                                     line.notes.remove(note)
                                     self.score = self.score + int(status)
                                     print(status)
+                            #for hold_note in line.hold_notes:
                 elif event.type == pygame.KEYUP:
                     for line in self.lines:
                         if event.key == line.key_binding:
