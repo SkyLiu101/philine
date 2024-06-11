@@ -13,7 +13,7 @@ class Line:
         self.start_pos, self.end_pos = calculate_line_positions(judgment_pos, angle)
         self.fps = fps
         self.note_size = note_size
-        self.ispressed = False
+        self.iskeypressed = []
         self.fail_range = fail_range
 
         self.judgment_circle_radius = 10  # Initial radius
@@ -35,14 +35,32 @@ class Line:
             screen.blit(line_surface, self.start_pos)
         self.draw_judgment_circle(screen)
         self.draw_key_binding(screen)
-
+    def is_held(self):
+        return self.iskeypressed
     def draw_key_binding(self, screen):
         if self.alpha > 0:  # Only draw if the alpha value is greater than 0
             font = pygame.font.SysFont(None, 36)
-            key_text = font.render(pygame.key.name(self.key_binding), True, (255, 255, 255, min(self.alpha,255)))
-            key_text_rect = key_text.get_rect(center=(self.judgment_pos[0] + self.note_size[0] * math.cos(math.radians(self.angle)),
-                                                      self.judgment_pos[1] + self.note_size[0] * math.sin(math.radians(self.angle))))
-            screen.blit(key_text, key_text_rect)
+            total_width = 0
+            key_texts = []
+            
+            # Render key texts and calculate total width
+            for key in self.key_binding:
+                key_text = font.render(pygame.key.name(key), True, (255, 255, 255, min(self.alpha, 255)))
+                key_texts.append(key_text)
+                total_width += key_text.get_width()
+            
+            # Add space between keys
+            space_between_keys = 10
+            total_width += space_between_keys * (len(self.key_binding) - 1)
+            
+            # Calculate starting x position for centering the text
+            start_x = self.judgment_pos[0] - total_width // 2
+            
+            # Draw each key text
+            for key_text in key_texts:
+                key_text_rect = key_text.get_rect(midtop=(start_x, self.judgment_pos[1] + self.note_size[1]))
+                screen.blit(key_text, key_text_rect)
+                start_x += key_text.get_width() + space_between_keys
 
     def draw_judgment_circle(self, screen):
         if self.alpha > 0:  # Only draw if the alpha value is greater than 0
@@ -56,9 +74,8 @@ class Line:
     def add_hold_note(self, note):
         self.hold_notes.append(note)
 
-    def update_notes(self, current_time, ispressed, judge_time,score):
+    def update_notes(self, current_time):
         for hold_note in self.hold_notes:
-
             hold_note.update_surface(current_time, self.angle, self.end_pos)
             if hold_note.end_time <= current_time:
                 self.hold_notes.remove(hold_note)
@@ -103,12 +120,12 @@ class Line:
                 self.alpha = self.target_alpha
 
             
-    def on_key_press(self):
-        self.ispressed = True
+    def on_key_press(self,key):
+        self.iskeypressed.append(key)
         self.judgment_circle_radius += 1
         self.judgment_circle_color = (0, 255, 0)  # Change color to green
 
-    def on_key_release(self):
-        self.ispressed = False
+    def on_key_release(self,key):
+        self.iskeypressed.remove(key)
         self.judgment_circle_radius = self.original_radius
         self.judgment_circle_color = self.original_color

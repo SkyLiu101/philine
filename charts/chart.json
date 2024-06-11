@@ -1,107 +1,32 @@
 {
     "lines": [
         {
-            "judgment_pos": [
-                300,
-                600
-            ],
+            "judgment_pos": [100, 600],
             "angle": 90,
-            "key_binding": "a",
-            "movement": [
-                {"time": 0, "new_pos": [300, 600], "new_angle": 90},
-                {"time": 10000, "new_pos": [900, 600], "new_angle": 90}],
-            "opacity_changes": [
-                {
-                    "time": 0,
-                    "opacity": 50
-                },
-                {
-                    "time": 2000,
-                    "opacity": 255
-                }
-            ]
-        },
-        {
-            "judgment_pos": [
-                500,
-                600
-            ],
-            "angle": 90,
-            "key_binding": "s",
-            "movement": [
-                {"time": 0, "new_pos": [500, 600], "new_angle": 90},
-                {"time": 10000, "new_pos": [300, 600], "new_angle": 60}],
-            "opacity_changes": [
-                {
-                    "time": 1000,
-                    "opacity": 50
-                },
-                {
-                    "time": 3000,
-                    "opacity": 255
-                }
-            ]
-        },
-        {
-            "judgment_pos": [
-                700,
-                600
-            ],
-            "angle": 90,
-            "key_binding": "d",
-            "movement": [
-                {"time": 0, "new_pos": [700, 600], "new_angle": 90},
-                {"time": 10000, "new_pos": [500, 600], "new_angle": 80}],
-            "opacity_changes": [
-                {
-                    "time": 2000,
-                    "opacity": 50
-                },
-                {
-                    "time": 4000,
-                    "opacity": 255
-                }
-            ]
-        },
-        {
-            "judgment_pos": [
-                900,
-                600
-            ],
-            "angle": 90,
-            "key_binding": "f",
-            "movement": [
-                {"time": 0, "new_pos": [900, 600], "new_angle": 90},
-                {"time": 10000, "new_pos": [700, 600], "new_angle": 90}],
-            "opacity_changes": [
-                {
-                    "time": 3000,
-                    "opacity": 50
-                },
-                {
-                    "time": 5000,
-                    "opacity": 255
-                }
-            ]
-        },
-        {
-            "judgment_pos": [
-                1100,
-                600
-            ],
-            "angle": 90,
-            "key_binding": "l",
+            "key_binding": ["a"],
             "movement": [],
-            "opacity_changes": [
-                {
-                    "time": 4000,
-                    "opacity": 50
-                },
-                {
-                    "time": 6000,
-                    "opacity": 255
-                }
-            ]
+            "opacity_changes": [{"time": 0, "opacity": 50}, {"time": 2000, "opacity": 255}]
+        },
+        {
+        "judgment_pos": [300, 600],
+        "angle": 90,
+        "key_binding": ["s"],
+        "movement": [],
+        "opacity_changes": [{"time": 1000, "opacity": 50}, {"time": 3000, "opacity": 255}]
+        },
+        {
+        "judgment_pos": [500, 600],
+        "angle": 90,
+        "key_binding": ["d"],
+        "movement": [],
+        "opacity_changes": [{"time": 2000, "opacity": 50}, {"time": 4000, "opacity": 255}]
+        },
+        {
+        "judgment_pos": [700, 600],
+        "angle": 90,
+        "key_binding": ["f","l"],
+        "movement": [],
+        "opacity_changes": [{"time": 3000, "opacity": 50}, {"time": 5000, "opacity": 255}]
         }
     ],
     "notes": [
@@ -166,7 +91,7 @@
             "speed": 10
         },
         {
-            "line": 4,
+            "line": 0,
             "hit_time": 7337,
             "speed": 10
         },
@@ -186,7 +111,7 @@
             "speed": 10
         },
         {
-            "line": 4,
+            "line": 0,
             "hit_time": 9404,
             "speed": 10
         },
@@ -206,7 +131,7 @@
             "speed": 10
         },
         {
-            "line": 4,
+            "line": 0,
             "hit_time": 11493,
             "speed": 10
         },
@@ -226,7 +151,7 @@
             "speed": 10
         },
         {
-            "line": 4,
+            "line": 0,
             "hit_time": 13560,
             "speed": 10
         },
@@ -246,7 +171,7 @@
             "speed": 10
         },
         {
-            "line": 4,
+            "line": 0,
             "hit_time": 15627,
             "speed": 10
         },
@@ -1427,6 +1352,24 @@
         }
     ],
     "hold_notes": [
+        {
+            "line": 3,
+            "hit_time": 6269,
+            "end_time": 11493,
+            "type": "blue",
+            "speed": 10,
+            "checkpoints": [
+                {"time":6803},
+                {"time":7337},
+                {"time":7848},
+                {"time":8359},
+                {"time":8870},
+                {"time":9404},
+                {"time":9914},
+                {"time":10425},
+                {"time":10959}
+            ]
+        }
     ],
     "audio_path": "assets/music/tutorial.ogg"
 }

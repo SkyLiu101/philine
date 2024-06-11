@@ -44,12 +44,12 @@ class Game:
         
         for line_data in chart_data['lines']:
             key_binding = line_data['key_binding']
-            if key_binding not in key_bindings:
-                raise KeyError(f"Key binding '{key_binding}' not found in config key_bindings.")
+            for index in range(len(key_binding)):
+                key_binding[index] = key_bindings[key_binding[index]]
             self.lines.append(Line(
                 judgment_pos=line_data['judgment_pos'],
                 angle=line_data['angle'],
-                key_binding=key_bindings[key_binding],
+                key_binding = key_binding,
                 movement=line_data.get('movement', []),
                 opacity_changes=line_data.get('opacity_changes', []),
                 fps=self.config['fps'],
@@ -140,31 +140,24 @@ class Game:
                     running = False
                 elif event.type == pygame.KEYDOWN:
                     for line in self.lines:
-                        if event.key == line.key_binding:
+                        if event.key in line.key_binding:
                             for note in line.notes:
                                 status = self.check_collision(current_time, note)
                                 if status:
                                     line.notes.remove(note)
-                            for hold_note in line.hold_notes:
-                                if hold_note.start_time < current_time < hold_note.end_time:
-                                    hold_note.hold()
+                            line.on_key_press(event.key)
                 elif event.type == pygame.KEYUP:
                     for line in self.lines:
-                        if event.key == line.key_binding:
-                            line.on_key_release()
-                            for hold_note in line.hold_notes:
-                                if hold_note.held and current_time < hold_note.end_time:
-                                    hold_note.unhold()
+                        if event.key in line.key_binding:
+                            line.on_key_release(event.key)
 
             for line in self.lines:
                 for hold_note in line.hold_notes:
-                    for checkpoint in hold_note.checkpoint_data:
-                        if 'used' not in checkpoint and current_time >= hold_note.checkpoint_data[checkpoint]:
-                            if hold_note.held:
-                                self.score.update_score('extra_pure')
-                            if self.score.get_score() > self.score.max_score:
-                                self.score.score = self.score.max_score
-                            hold_note.checkpoint_data[checkpoint]['used'] = True
+                        if hold_note.checkpoint_data:
+                            if current_time >= hold_note.checkpoint_data[0]['time']:
+                                if hold_note.line.is_held():
+                                    self.score.update_score('extra_pure')
+                                hold_note.checkpoint_data.remove(hold_note.checkpoint_data[0])
             
             for note_data in self.note_data:
                 if 'spawned' not in note_data:
@@ -179,7 +172,7 @@ class Game:
                         note_data['spawned'] = True  # Mark the note as spawned
 
             for hold_note_data in self.hold_note_data:
-                if 'spawned' not in note_data:
+                if 'spawned' not in self.hold_note_data:
                     line_index = hold_note_data['line']
                     hit_time = hold_note_data['hit_time']
                     judgment_pos = self.lines[line_index].judgment_pos
@@ -190,16 +183,16 @@ class Game:
                     checkpoint_data = []
                     for checkpoint in hold_note_data['checkpoints']:
                         checkpoint_data.append(checkpoint)
-                    hold_note = HoldNote(judgment_pos, hold_note_speed, hit_time, self.note_images[f'{note_type}_hold_head'], self.note_images[f'{note_type}_hold_mid'], self.note_images[f'{note_type}_hold_end'], end_time, note_size, checkpoint_data)
+                    hold_note = HoldNote(judgment_pos, hold_note_speed, hit_time, self.note_images[f'{note_type}_hold_head'], self.note_images[f'{note_type}_hold_mid'], self.note_images[f'{note_type}_hold_end'], end_time, note_size, checkpoint_data, line)
                     if current_time >= hold_note.spawn_time:
                         self.lines[line_index].add_hold_note(hold_note)
-                        hold_note_data['spawned'] = True  # Mark the note as spawned
+                        self.hold_note_data.remove(hold_note_data)  # Mark the note as spawned
 
             
             # Update line positions based on movement data
             for line in self.lines:
                 line.update_position(current_time)
-                line.update_notes(current_time, line.ispressed, self.config['far_threshold'], self.score)
+                line.update_notes(current_time)
                 if line.notes:
                     note = self.closest_note(line)
                     if current_time > note.hit_time + self.config['far_threshold']:

@@ -45,7 +45,7 @@ class Note:
 
 
 class HoldNote:
-    def __init__(self, judgment_pos, speed, start_time, head_image, mid_image, end_image, end_time, note_size, checkpoint_data):
+    def __init__(self, judgment_pos, speed, start_time, head_image, mid_image, end_image, end_time, note_size, checkpoint_data, line):
         self.speed = speed
         self.judgment_pos = judgment_pos
         self.start_time = start_time
@@ -62,8 +62,10 @@ class HoldNote:
         self.held = True
         self.head_note = Note(judgment_pos, speed, start_time, head_image)
         self.total_length = self.speed * (self.end_time - self.start_time) / 1000
-        self.dimmed_alpha = 255
-        self.checkpoint_data = checkpoint_data
+        self.dimmed_alpha = 128
+        self.checkpoint_data = sorted(checkpoint_data, key=lambda x: x['time']) if checkpoint_data else []
+        self.line = line
+        self.istouch = False
 
     def calculate_spawn_time(self, judgment_pos, speed):
         distance = 3200  # The distance from the spawn point to the judgment point; adjust as needed
@@ -95,6 +97,9 @@ class HoldNote:
         if self.surface is None:
             self.create_surface()
 
+        if current_time > self.start_time:
+            self.istouch = True
+
         remaining_time = (self.end_time - current_time) / 1000.0  # Time in seconds
         total_distance = self.speed * remaining_time 
 
@@ -115,7 +120,7 @@ class HoldNote:
             # Rotate the surface according to the line angle
             self.dimmed_surface = self.surface.copy()
             self.dimmed_surface.set_alpha(self.dimmed_alpha)
-            if self.held:
+            if self.line.is_held() or not self.istouch:
                 rotated_surface = pygame.transform.rotate(self.surface, 90-line_angle)
             else:
                 rotated_surface = pygame.transform.rotate(self.dimmed_surface, 90-line_angle)
@@ -143,10 +148,3 @@ class HoldNote:
                 self.head_note.draw(screen, line_angle)
 
                 screen.blit(rotated_surface, rotated_rect.topleft)
-
-    def hold(self):
-        self.held = True
-    
-    def unhold(self):
-        self.held = False
-        self.dimmed_alpha = 128
