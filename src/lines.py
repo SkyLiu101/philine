@@ -80,7 +80,7 @@ class Line:
     
     def draw_animation(self, screen):
         if self.animation_frames:
-            frame = pygame.transform.scale(self.animation_frames[int(self.animation_index)],self.note_size)
+            frame = pygame.transform.scale(self.animation_frames[int(self.animation_index)],[self.note_size[0]*1.3, self.note_size[1]*1.3])
             rect = frame.get_rect(center=self.judgment_pos)
             screen.blit(frame, rect)
 

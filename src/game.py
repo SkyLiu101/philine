@@ -201,7 +201,6 @@ class Game:
                 line.update_animation(current_time)
                 line.update_position(current_time)
                 line.update_notes(current_time)
-                line.draw_animation(self.screen)
                 if line.notes:
                     note = self.closest_note(line)
                     if current_time > note.hit_time + self.config['far_threshold']:
@@ -219,6 +218,7 @@ class Game:
             # Draw lines and notes with proper blending
             for line in self.lines:
                 line.draw(self.screen)
+                line.draw_animation(self.screen)
                 for hold_note in line.hold_notes:
                     hold_note.draw(self.screen, line.angle, current_time, line.end_pos)
                 for note in line.notes:
