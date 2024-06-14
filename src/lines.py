@@ -3,7 +3,7 @@ import math
 from movement import SmoothMovement, calculate_line_positions
 
 class Line:
-    def __init__(self, judgment_pos, angle, key_binding, movement, opacity_changes, fps, note_size, fail_range):
+    def __init__(self, judgment_pos, angle, key_binding, movement, opacity_changes, fps, note_size, fail_range, far_animation_frames, pure_animation_frames):
         self.judgment_pos = judgment_pos
         self.angle = angle
         self.key_binding = key_binding
@@ -16,14 +16,30 @@ class Line:
         self.iskeypressed = []
         self.fail_range = fail_range
 
-        self.judgment_circle_radius = 10  # Initial radius
-        self.judgment_circle_color = (255, 0, 0)  # Initial color (red)
-        self.original_radius = 10
-        self.original_color = (255, 0, 0)
 
         self.alpha = 0  # Initial opacity
         self.target_alpha = 255
         self.opacity_changes = sorted(opacity_changes, key=lambda x: x['time']) if opacity_changes else []
+
+        self.far_animation_frames = far_animation_frames
+        self.pure_animation_frames = pure_animation_frames
+        self.animation_frames = self.far_animation_frames
+        self.animation_index = 0
+        self.animation_start_time = None
+    
+    def start_animation(self, frames):
+        self.animation_frames = frames
+        self.animation_index = 0
+        self.animation_start_time = pygame.time.get_ticks()
+
+    def update_animation(self, current_time):
+        if self.animation_frames and self.animation_start_time:
+            elapsed_time = current_time - self.animation_start_time
+            frame_duration = 50  # Duration of each frame in milliseconds
+            self.animation_index = (elapsed_time // frame_duration) % len(self.animation_frames)
+            if elapsed_time > frame_duration * len(self.animation_frames):
+                self.animation_index = 0
+
 
     def draw(self, screen):
         if self.alpha > 0:  # Only draw if the alpha value is greater than 0
@@ -33,8 +49,8 @@ class Line:
             pygame.draw.line(line_surface, (255, 255, 255, min(self.alpha,255)), (0, 0), (self.end_pos[0] - self.start_pos[0], self.end_pos[1] - self.start_pos[1]), 2)
             # Blit the surface onto the screen at the start_pos location
             screen.blit(line_surface, self.start_pos)
-        self.draw_judgment_circle(screen)
         self.draw_key_binding(screen)
+
     def is_held(self):
         return self.iskeypressed
     def draw_key_binding(self, screen):
@@ -61,12 +77,12 @@ class Line:
                 key_text_rect = key_text.get_rect(midtop=(start_x, self.judgment_pos[1] + self.note_size[1]))
                 screen.blit(key_text, key_text_rect)
                 start_x += key_text.get_width() + space_between_keys
-
-    def draw_judgment_circle(self, screen):
-        if self.alpha > 0:  # Only draw if the alpha value is greater than 0
-            circle_surface = pygame.Surface((self.judgment_circle_radius * 2, self.judgment_circle_radius * 2), pygame.SRCALPHA)
-            pygame.draw.circle(circle_surface, (*self.judgment_circle_color, min(255,self.alpha)), (self.judgment_circle_radius, self.judgment_circle_radius), self.judgment_circle_radius, 2)
-            screen.blit(circle_surface, (int(self.judgment_pos[0] - self.judgment_circle_radius), int(self.judgment_pos[1] - self.judgment_circle_radius)))
+    
+    def draw_animation(self, screen):
+        if self.animation_frames:
+            frame = pygame.transform.scale(self.animation_frames[int(self.animation_index)],self.note_size)
+            rect = frame.get_rect(center=self.judgment_pos)
+            screen.blit(frame, rect)
 
     def add_note(self, note):
         self.notes.append(note)
@@ -122,10 +138,6 @@ class Line:
             
     def on_key_press(self,key):
         self.iskeypressed.append(key)
-        self.judgment_circle_radius += 1
-        self.judgment_circle_color = (0, 255, 0)  # Change color to green
 
     def on_key_release(self,key):
         self.iskeypressed.remove(key)
-        self.judgment_circle_radius = self.original_radius
-        self.judgment_circle_color = self.original_color

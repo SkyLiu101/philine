@@ -2,11 +2,14 @@ import sys
 import os
 import pygame
 
+
 # Add the src directory to the system path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 from config import load_config
 from game import Game
+
+
 
 # Load configuration
 config = load_config('config/config.json')

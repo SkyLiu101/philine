@@ -4,6 +4,7 @@ from lines import Line
 from notes import Note, HoldNote
 from score import Score
 from clock import GameClock
+from animation import load_animation_frames
 
 class Game:
     def __init__(self, screen, chart_path, config):
@@ -12,6 +13,7 @@ class Game:
         self.lines = []
         self.notes = []
         self.score = None
+        self.far_animation_frames, self.pure_animation_frames = load_animation_frames()
         self.load_chart(chart_path)
         self.clock = GameClock(config['fps'])
         self.chart_finished = False
@@ -54,7 +56,9 @@ class Game:
                 opacity_changes=line_data.get('opacity_changes', []),
                 fps=self.config['fps'],
                 note_size=self.config['note_size'],
-                fail_range = self.config['far_threshold']
+                fail_range = self.config['far_threshold'],
+                far_animation_frames=self.far_animation_frames,
+                pure_animation_frames=self.pure_animation_frames
             ))
         self.note_data = chart_data['notes']
         if 'hold_notes' in chart_data:
@@ -75,19 +79,22 @@ class Game:
 
         return ret_note
 
-    def check_collision(self, current_time, note):
+    def check_collision(self, current_time, note, line):
         # Check for note collision here 
         if abs(current_time - note.hit_time) < self.config['extra_pure_threshold']:
             # Extra perfect hit
             self.score.update_score('extra_pure')
+            line.start_animation(line.pure_animation_frames)
             return '3'
         if abs(current_time - note.hit_time) < self.config['pure_threshold']:
             # Perfect hit
             self.score.update_score('pure')
+            line.start_animation(line.pure_animation_frames)
             return '2'
         elif abs(current_time - note.hit_time) < self.config['far_threshold']:
             # Far hit
             self.score.update_score('far')
+            line.start_animation(line.far_animation_frames)
             return '1'
         elif abs(current_time - note.hit_time) < self.config['bad_threshold']:
             # Bad hit   
@@ -100,7 +107,7 @@ class Game:
         pass
     def display_score(self):
 
-        font = pygame.font.Font('assets/fonts/Exo-Regular.ttf',50)
+        font = pygame.font.Font('assets/fonts/Pixel.ttf',50)
         score = self.score.get_score()
         formatted_score = f"{score:08d}"  # Ensure score is at least 8 digits with leading zeros
         # Add apostrophes as thousands separators
@@ -110,7 +117,7 @@ class Game:
         self.screen.blit(score_text, (1150, 20))
 
     def display_time_elapsed(self, current_time):
-        font = pygame.font.SysFont(None, 36)
+        font = pygame.font.Font('assets/fonts/Pixel.ttf',50)
         # Calculate displayed time
         currentTimeConverted = current_time / 1000
         currMin = int(currentTimeConverted / 60)
@@ -142,7 +149,7 @@ class Game:
                     for line in self.lines:
                         if event.key in line.key_binding:
                             for note in line.notes:
-                                status = self.check_collision(current_time, note)
+                                status = self.check_collision(current_time, note, line)
                                 if status:
                                     line.notes.remove(note)
                             line.on_key_press(event.key)
@@ -191,8 +198,10 @@ class Game:
             
             # Update line positions based on movement data
             for line in self.lines:
+                line.update_animation(current_time)
                 line.update_position(current_time)
                 line.update_notes(current_time)
+                line.draw_animation(self.screen)
                 if line.notes:
                     note = self.closest_note(line)
                     if current_time > note.hit_time + self.config['far_threshold']:

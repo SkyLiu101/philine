@@ -1,5 +1,6 @@
 import pygame
 import math
+from animation import load_animation_frames
 
 class Note:
     def __init__(self, judgment_pos, speed, hit_time, image):
