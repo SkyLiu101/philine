@@ -145,7 +145,7 @@ class HoldNote:
                     self.head_note.pos = line_end_pos
 
                 # Draw the outline for debugging
-                pygame.draw.rect(rotated_surface, (255, 0, 0), rotated_surface.get_rect(), 1)
+                # pygame.draw.rect(rotated_surface, (255, 0, 0), rotated_surface.get_rect(), 1)
                 self.head_note.draw(screen, line_angle)
 
                 screen.blit(rotated_surface, rotated_rect.topleft)

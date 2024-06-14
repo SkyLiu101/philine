@@ -43,12 +43,20 @@ class Line:
 
     def draw(self, screen):
         if self.alpha > 0:  # Only draw if the alpha value is greater than 0
-            # Create a surface with alpha transparency
-            line_surface = pygame.Surface((self.end_pos[0] - self.start_pos[0]+1, self.end_pos[1] - self.start_pos[1]+1), pygame.SRCALPHA)
-            # Draw the line on the surface
-            pygame.draw.line(line_surface, (255, 255, 255, min(self.alpha,255)), (0, 0), (self.end_pos[0] - self.start_pos[0], self.end_pos[1] - self.start_pos[1]), 2)
-            # Blit the surface onto the screen at the start_pos location
-            screen.blit(line_surface, self.start_pos)
+            line_surface = pygame.Surface((abs(self.end_pos[0] - self.start_pos[0])+1, abs(self.end_pos[1] - self.start_pos[1])+1), pygame.SRCALPHA)
+            if self.angle <= 90:
+                pygame.draw.line(line_surface, (255, 255, 255, min(self.alpha,255)), (0, 0), (self.end_pos[0] - self.start_pos[0], self.end_pos[1] - self.start_pos[1]), 2)
+                screen.blit(line_surface, [self.start_pos[0],self.start_pos[1]])
+            elif self.angle <= 180:
+                pygame.draw.line(line_surface, (255, 255, 255, min(self.alpha,255)), (self.start_pos[0] - self.end_pos[0], 0), (0, self.end_pos[1] - self.start_pos[1]), 2)
+                screen.blit(line_surface, [self.end_pos[0]  ,self.start_pos[1]])
+            elif self.angle <= 270:
+                pygame.draw.line(line_surface, (255, 255, 255, min(self.alpha,255)), (self.start_pos[0] - self.end_pos[0], self.start_pos[1] - self.end_pos[1]), (0, 0), 2)
+                screen.blit(line_surface, [self.end_pos[0]  ,self.end_pos[1]])
+            else:
+                pygame.draw.line(line_surface, (255, 255, 255, min(self.alpha,255)), (0, self.start_pos[1] - self.end_pos[1]), (self.end_pos[0] - self.start_pos[0], 0), 2)
+                screen.blit(line_surface, [self.start_pos[0] ,self.end_pos[1]])
+            
         self.draw_key_binding(screen)
 
     def is_held(self):

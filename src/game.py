@@ -59,6 +59,7 @@ class Game:
                 fail_range = self.config['far_threshold'],
                 far_animation_frames=self.far_animation_frames,
                 pure_animation_frames=self.pure_animation_frames
+
             ))
         self.note_data = chart_data['notes']
         if 'hold_notes' in chart_data:
