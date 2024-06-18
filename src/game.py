@@ -5,9 +5,11 @@ from notes import Note, HoldNote
 from score import Score
 from clock import GameClock
 from animation import load_animation_frames
+import pygame.transform
+
 
 class Game:
-    def __init__(self, screen, chart_path, config):
+    def __init__(self, screen, chart_path, config, start_time):
         self.screen = screen
         self.config = config
         self.lines = []
@@ -17,6 +19,8 @@ class Game:
         self.load_chart(chart_path)
         self.clock = GameClock(config['fps'])
         self.chart_finished = False
+        self.paused = False
+        self.start_time = start_time
 
         self.note_size = tuple(config['note_size'])
         self.note_images = {
@@ -34,8 +38,12 @@ class Game:
             'purple_hold_end': pygame.transform.scale(pygame.image.load(config['note_images']['purple_hold_end']).convert_alpha(), self.note_size)
         }
         self.hit_sound = pygame.mixer.Sound('assets/sounds/tap.wav')
+        self.pause_sound = pygame.mixer.Sound('assets/sounds/pause.wav')
     def play_hit_sound(self):
         self.hit_sound.play()
+    def play_pause_sound(self):
+        self.pause_sound.play()
+
     def load_chart(self, chart_path):
         with open(chart_path, 'r') as file:
             chart_data = json.load(file)
@@ -80,6 +88,37 @@ class Game:
 
         return ret_note
 
+    def pause(self):
+        self.paused = True
+        pygame.mixer.music.pause()
+        self.play_pause_sound()
+
+    def resume(self):
+        self.paused = False
+        pygame.mixer.music.unpause()
+
+    def toggle_pause(self):
+        if self.paused:
+            self.resume()
+        else:
+            self.pause()
+    
+
+    def create_blurred_surface(self):
+        surface = pygame.Surface(self.screen.get_size(), pygame.SRCALPHA)
+        surface.blit(self.screen, (0, 0))
+
+        scale_factor = 0.1
+        small_surface = pygame.transform.smoothscale(surface, (int(self.screen.get_width() * scale_factor), int(self.screen.get_height() * scale_factor)))
+        blurred_surface = pygame.transform.smoothscale(small_surface, self.screen.get_size())
+
+        dim_surface = pygame.Surface(self.screen.get_size(), pygame.SRCALPHA)
+        dim_surface.fill((0, 0, 0, 128))
+
+        blurred_surface.blit(dim_surface, (0, 0), special_flags=pygame.BLEND_RGBA_MULT)
+
+        return blurred_surface
+
     def check_collision(self, current_time, note, line):
         # Check for note collision here 
         if abs(current_time - note.hit_time) < self.config['extra_pure_threshold']:
@@ -107,7 +146,7 @@ class Game:
             return '-2'
         pass
     def display_score(self):
-
+        running = True
         font = pygame.font.Font('assets/fonts/Pixel.ttf',50)
         score = self.score.get_score()
         formatted_score = f"{score:08d}"  # Ensure score is at least 8 digits with leading zeros
@@ -135,21 +174,30 @@ class Game:
 
     def run(self):
         running = True
+        pygame.mixer.music.play(start=self.start_time)
 
-        pygame.mixer.music.play()
-
-        start_time = pygame.time.get_ticks()
+        current_time = self.start_time*1000
+        start_time = pygame.time.get_ticks() - current_time
 
         while running:
-            current_time = (pygame.time.get_ticks() - start_time)
+            if self.paused:
+                start_time = pygame.time.get_ticks() - current_time
+            current_time = pygame.time.get_ticks() - start_time
+            if current_time < 4:
+                current_time = 4
 
             for event in pygame.event.get():
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_SPACE:
+                        self.toggle_pause()
                 if event.type == pygame.QUIT:
                     running = False
                 elif event.type == pygame.KEYDOWN:
                     for line in self.lines:
                         if event.key in line.key_binding:
                             for note in line.notes:
+                                if self.paused:
+                                    continue
                                 status = self.check_collision(current_time, note, line)
                                 if status:
                                     line.notes.remove(note)
@@ -199,6 +247,8 @@ class Game:
             
             # Update line positions based on movement data
             for line in self.lines:
+                if self.paused:
+                    continue
                 line.update_animation(current_time)
                 line.update_position(current_time)
                 line.update_notes(current_time)
@@ -208,7 +258,7 @@ class Game:
                         line.notes.remove(note)
 
             # Check if audio had stop playing
-            if not pygame.mixer.music.get_busy():
+            if not pygame.mixer.music.get_busy() and not self.paused:
                 self.chart_finished = True
 
             if self.chart_finished:
@@ -227,8 +277,18 @@ class Game:
 
             self.display_time_elapsed(current_time)
             self.display_score()
+
+            if self.paused:
+                blurred_surface = self.create_blurred_surface()
+                self.screen.blit(blurred_surface, (0, 0))
+                font = pygame.font.Font(None, 74)
+                paused_text = font.render("▶️▶️", True, (255, 255, 255))
+                paused_rect = paused_text.get_rect(center=(self.screen.get_width() // 2, self.screen.get_height() // 2))
+                self.screen.blit(paused_text, paused_rect)
+
             pygame.display.flip()
-            self.clock.tick()
+            if not self.paused:
+                self.clock.tick()
 
         pygame.quit()
         sys.exit()

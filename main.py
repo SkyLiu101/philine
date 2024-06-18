@@ -14,12 +14,13 @@ from game import Game
 # Load configuration
 config = load_config('config/config.json')
 
-# Initialize Pygame
-pygame.init()
+# Initialize Pygame 
 screen = pygame.display.set_mode((config['screen_width'], config['screen_height']), pygame.NOFRAME)
 
+pygame.init()
+
 # Initialize and run the game
-game = Game(screen, 'charts/chart.json', config)
+game = Game(screen, 'charts/tutorial.json', config, 0) 
 game.run()
 
 pygame.quit()
