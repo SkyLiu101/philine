@@ -21,6 +21,7 @@ class Game:
         self.chart_finished = False
         self.paused = False
         self.start_time = start_time
+        self.current_time = start_time
 
         self.note_size = tuple(config['note_size'])
         self.note_images = {
@@ -87,6 +88,9 @@ class Game:
                 pass
 
         return ret_note
+    
+    def get_current_time(self):
+        return self.current_time / 1000.0  # return time in seconds
 
     def pause(self):
         self.paused = True
@@ -183,8 +187,7 @@ class Game:
             if self.paused:
                 start_time = pygame.time.get_ticks() - current_time
             current_time = pygame.time.get_ticks() - start_time
-            if current_time < 4:
-                current_time = 4
+            self.current_time = current_time
 
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:

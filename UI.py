@@ -5,13 +5,24 @@ import os
 import pygame
 import threading
 import sys
+import json
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 from config import load_config
 from game import Game
 
 config = load_config('config/config.json')
-chart = load_config('charts/chart.json')
+chart_path = 'charts/tutorial.json'
+
+def save_chart(file_path, chart_data):
+    with open(file_path, 'w') as file:
+        json.dump(chart_data, file, indent=4)
+
+def load_chart(file_path):
+    with open(file_path, 'r') as file:
+        return json.load(file)
+    
+chart = load_chart(chart_path)
 
 class SharedState:
     def __init__(self):
@@ -26,13 +37,14 @@ class VisualizationWindow(QMainWindow):
         self.lines = []
         self.current_time = 0
         self.bpm = 120  # Default BPM, will be updated
-        self.fraction = 4
+        self.fraction = 1
+        self.hold_start = None
 
     def update_visualization(self, lines, current_time, bpm, fraction):
         self.lines = lines
         self.current_time = current_time
         self.bpm = bpm
-        self.fraction = fraction
+        self.fraction = fraction/4
         self.update()
 
     def paintEvent(self, event):
@@ -102,6 +114,88 @@ class VisualizationWindow(QMainWindow):
                     painter.drawEllipse(x_pos - 5, y_pos - 5, 10, 10)
                     painter.drawText(x_pos - 10, y_pos - 10, str(note_time))
 
+    def mousePressEvent(self, event):
+        x = event.position().x()
+        y = event.position().y()
+
+        # Calculate the time based on the y position
+        beat_spacing = 200  # pixels per beat
+        ms_per_beat = 60000 / self.bpm  # milliseconds per beat
+        y_relative = self.height() - y
+        
+        # Adjust y_relative to consider the offset within the current beat
+        y_relative_adjusted = self.current_time + y_relative*ms_per_beat/beat_spacing - 75
+
+        # Find the closest grid line y position
+        grid_spacing = ms_per_beat / self.fraction
+        closest_grid_line = round(y_relative_adjusted / grid_spacing) * grid_spacing
+
+        for idx, line in enumerate(self.lines):
+            note_time = int(y_relative_adjusted)
+            if event.button() == Qt.MouseButton.RightButton:
+                # Check if there is a note at the objective time and remove it
+                chart['notes'] = [note for note in chart['notes'] if not (note['line'] == idx and abs(note['hit_time'] - note_time) < 5*ms_per_beat/200)]
+                chart['hold_notes'] = [hold_note for hold_note in chart['hold_notes'] if not (hold_note['line'] == idx and (hold_note['hit_time'] <= note_time <= hold_note['end_time']))]
+
+                self.update()
+                break
+
+        if abs(y_relative_adjusted - closest_grid_line) > 20:
+            return
+
+        # Determine which line was clicked
+        for idx, line in enumerate(self.lines):
+            x_pos = 100 + idx * 100
+            
+            if x_pos - 10 <= x <= x_pos + 10:
+
+                # Calculate the note time
+                note_time = int(closest_grid_line)
+
+                # Add the note to the chart
+                note_exists = any(note['line'] == idx and note['hit_time'] == note_time for note in chart['notes'])
+
+                if event.button() == Qt.MouseButton.LeftButton and event.modifiers() & Qt.KeyboardModifier.ShiftModifier:
+                    if self.hold_start is None:
+                        self.hold_start = (idx, note_time)
+                    else:
+                        hold_end = (idx, note_time)
+                        self.hold_start, hold_end = min(self.hold_start, hold_end), max(self.hold_start, hold_end)
+
+                        # Check for intersection with existing hold notes
+                        for hold_note in chart['hold_notes']:
+                            if hold_note['line'] == idx:
+                                existing_start = hold_note['hit_time']
+                                existing_end = hold_note['end_time']
+                                if not (hold_end[1] <= existing_start or self.hold_start[1] >= existing_end):
+                                    self.hold_start = None
+                                    break
+                        if not self.hold_start:
+                            continue
+                        if self.hold_start[0] == hold_end[0] and self.hold_start[1] != hold_end[1]:
+                            chart['hold_notes'].append({
+                                'line': idx,
+                                'hit_time': min(self.hold_start[1], hold_end[1]),
+                                'end_time': max(self.hold_start[1], hold_end[1]),
+                                'checkpoints': []  # Add empty checkpoints or you can define your logic
+                            })
+                        self.hold_start = None
+
+                elif event.button() == Qt.MouseButton.LeftButton:
+                    # Check if a note already exists at the objective time
+                    note_exists = any(note['line'] == idx and note['hit_time'] == note_time for note in chart['notes'])
+
+                    if not note_exists:
+                        # Add the note to the chart
+                        chart['notes'].append({
+                            'line': idx,
+                            'hit_time': note_time
+                        })
+
+                self.update()
+                break
+
+
 
 
 
@@ -112,7 +206,7 @@ class GameWindow(QMainWindow):
         super().__init__()
         self.initUI()
         self.game_screen = pygame.display.set_mode((config['screen_width'], config['screen_height']))
-        self.game = Game(self.game_screen, 'charts/tutorial.json', config, 0)
+        self.game = Game(self.game_screen, chart_path, config, 0)
 
     def initUI(self):
         self.setWindowTitle('Game Window')
@@ -139,12 +233,14 @@ class ChartDesigner(QMainWindow):
         self.bpm = 120
         self.offset = 0
         self.timer = QTimer(self)
+        self.update_timer = QTimer(self)
         self.is_paused = True
         self.fraction = 4
         self.multiplier = 1
         self.current_time = 0
         self.game_window = GameWindow()
         self.visualization_window = VisualizationWindow(self)
+        self.update_timer.timeout.connect(self.update_current_time)
         
         self.setMouseTracking(True)
         self.installEventFilter(self)
@@ -213,6 +309,12 @@ class ChartDesigner(QMainWindow):
         pygame.mixer.music.load(file_path)
         self.song_loaded = True
         self.current_time_input.setText('0')
+    
+    def update_current_time(self):
+        if not self.is_paused:
+            self.current_time = self.game_window.game.get_current_time() * 1000  # Update current time in milliseconds
+            self.current_time_input.setText(f'{self.current_time:.2f}')
+            self.update_visualization()
 
     def update_information(self):
         try:
@@ -233,6 +335,8 @@ class ChartDesigner(QMainWindow):
         if event.type() == QEvent.Type.Wheel:
             delta = event.angleDelta().y()
             self.current_time -= delta
+            if self.current_time < 0:
+                self.current_time = 0
             self.current_time_input.setText(f'{self.current_time:.2f}')
             self.update_visualization()
             self.update()
@@ -242,13 +346,15 @@ class ChartDesigner(QMainWindow):
     def toggle_play_pause(self):
         self.update_information()
         if self.song_loaded:
-            start_pos = (self.current_time - self.offset) / 1000.0
+            start_pos = (self.current_time - self.offset)
             if self.is_paused:
-                self.is_paused = False
-                self.timer.start(self.current_time)
+                self.update_timer.start()
+                self.timer.start(int(start_pos))
                 self.play_pause_button.setText('Pause')
-                self.game_window.game = Game(self.game_window.game_screen, 'charts/tutorial.json', config, self.current_time/1000.0)
+                self.game_window.game = Game(self.game_window.game_screen, 'charts/tutorial.json', config, start_pos/1000.0)
+                self.is_paused = False
                 self.game_window.game.run()
+                threading.Thread(target=self.game_window.game.run).start()
             else:
                 self.is_paused = True
                 self.timer.stop()
