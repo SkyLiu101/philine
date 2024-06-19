@@ -1,19 +1,5 @@
 {
   "lines": [
-<<<<<<< HEAD
-    {"start_pos": [100, 0], "end_pos": [100, 600], "key_binding": "a"},
-    {"start_pos": [300, 0], "end_pos": [300, 600], "key_binding": "s"},
-    {"start_pos": [500, 0], "end_pos": [500, 600], "key_binding": "d"},
-    {"start_pos": [700, 0], "end_pos": [700, 600], "key_binding": "f"}
-  ],
-  "notes": [
-    {"line": 0, "time": 1000},
-    {"line": 1, "time": 1500},
-    {"line": 2, "time": 2000},
-    {"line": 3, "time": 2500},
-    {"line": 0, "time": 3000}
-  ]
-=======
     {
       "judgment_pos": [750, 450],
       "angle": 0,
@@ -43,5 +29,4 @@
     }]
   ,
   "audio_path": "assets/music/tutorial.ogg"
->>>>>>> 85fa802 (philine)
 }
