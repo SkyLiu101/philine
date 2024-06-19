@@ -12,7 +12,6 @@ from config import load_config
 from game import Game
 
 config = load_config('config/config.json')
-chart_path = 'charts/tutorial.json'
 
 def save_chart(file_path, chart_data):
     with open(file_path, 'w') as file:
@@ -21,8 +20,6 @@ def save_chart(file_path, chart_data):
 def load_chart(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
-    
-chart = load_chart(chart_path)
 
 class SharedState:
     def __init__(self):
@@ -33,19 +30,21 @@ class VisualizationWindow(QMainWindow):
     def __init__(self, parent=None):
         super().__init__(parent)
         self.setWindowTitle('Line Visualization')
-        self.setGeometry(300, 100, 800, 600)
+        self.setGeometry(300, 100, 600, 600)
         self.lines = []
         self.current_time = 0
         self.bpm = 120  # Default BPM, will be updated
         self.fraction = 1
         self.hold_start = None
+        self.chart = None
 
-    def update_visualization(self, lines, current_time, bpm, fraction):
+    def update_visualization(self, lines, current_time, bpm, fraction, chart):
         self.lines = lines
         self.current_time = current_time
         self.bpm = bpm
         self.fraction = fraction/4
         self.update()
+        self.chart = chart
 
     def paintEvent(self, event):
         painter = QPainter(self)
@@ -70,7 +69,7 @@ class VisualizationWindow(QMainWindow):
                 continue
             ms_time = int((self.current_time // ms_per_beat) * ms_per_beat + i * ms_per_beat)
             painter.drawLine(50, self.height() - y_pos, self.width() - 20, self.height() - y_pos)
-            painter.drawText(10, self.height() - y_pos, f'{ms_time:.0f} ms')
+            painter.drawText(10, self.height() - y_pos, f'{i}')
 
         # Draw grid lines
         painter.setPen(QPen(Qt.GlobalColor.green, 1, Qt.PenStyle.SolidLine))
@@ -82,7 +81,7 @@ class VisualizationWindow(QMainWindow):
 
         # Draw lines vertically
         for idx, line in enumerate(self.lines):
-            x_pos = 100 + idx * 100
+            x_pos = 100 + idx * 50
             y_start = 0
             y_end = self.height() - 50
             painter.drawLine(x_pos, y_start, x_pos, y_end)
@@ -94,7 +93,7 @@ class VisualizationWindow(QMainWindow):
 
 
             # Draw hold notes
-            for hold_note in chart['hold_notes']:
+            for hold_note in self.chart['hold_notes']:
                 if hold_note['line'] == idx:
                     start_time = hold_note['hit_time']
                     end_time = hold_note['end_time']
@@ -106,7 +105,7 @@ class VisualizationWindow(QMainWindow):
                     painter.drawText(x_pos - 10, y_end - 10, str(end_time))
 
             # Draw notes
-            for note in chart['notes']:
+            for note in self.chart['notes']:
                 if note['line'] == idx:
                     note_time = note['hit_time']
                     y_pos = int(self.height() - 50 - ((note_time - self.current_time) / ms_per_beat) * beat_spacing)
@@ -134,8 +133,8 @@ class VisualizationWindow(QMainWindow):
             note_time = int(y_relative_adjusted)
             if event.button() == Qt.MouseButton.RightButton:
                 # Check if there is a note at the objective time and remove it
-                chart['notes'] = [note for note in chart['notes'] if not (note['line'] == idx and abs(note['hit_time'] - note_time) < 5*ms_per_beat/200)]
-                chart['hold_notes'] = [hold_note for hold_note in chart['hold_notes'] if not (hold_note['line'] == idx and (hold_note['hit_time'] <= note_time <= hold_note['end_time']))]
+                self.chart['notes'] = [note for note in self.chart['notes'] if not (note['line'] == idx and abs(note['hit_time'] - note_time) < 5*ms_per_beat/200)]
+                self.chart['hold_notes'] = [hold_note for hold_note in self.chart['hold_notes'] if not (hold_note['line'] == idx and (hold_note['hit_time'] <= note_time <= hold_note['end_time']))]
 
                 self.update()
                 break
@@ -145,7 +144,7 @@ class VisualizationWindow(QMainWindow):
 
         # Determine which line was clicked
         for idx, line in enumerate(self.lines):
-            x_pos = 100 + idx * 100
+            x_pos = 100 + idx * 50
             
             if x_pos - 10 <= x <= x_pos + 10:
 
@@ -153,7 +152,7 @@ class VisualizationWindow(QMainWindow):
                 note_time = int(closest_grid_line)
 
                 # Add the note to the chart
-                note_exists = any(note['line'] == idx and note['hit_time'] == note_time for note in chart['notes'])
+                note_exists = any(note['line'] == idx and note['hit_time'] == note_time for note in self.chart['notes'])
 
                 if event.button() == Qt.MouseButton.LeftButton and event.modifiers() & Qt.KeyboardModifier.ShiftModifier:
                     if self.hold_start is None:
@@ -162,8 +161,14 @@ class VisualizationWindow(QMainWindow):
                         hold_end = (idx, note_time)
                         self.hold_start, hold_end = min(self.hold_start, hold_end), max(self.hold_start, hold_end)
 
+                        checkpoints = []
+                        current_checkpoint = self.hold_start[1] + ms_per_beat
+                        while current_checkpoint < hold_end[1]:
+                            checkpoints.append({'time': current_checkpoint})
+                            current_checkpoint += ms_per_beat
+
                         # Check for intersection with existing hold notes
-                        for hold_note in chart['hold_notes']:
+                        for hold_note in self.chart['hold_notes']:
                             if hold_note['line'] == idx:
                                 existing_start = hold_note['hit_time']
                                 existing_end = hold_note['end_time']
@@ -173,25 +178,27 @@ class VisualizationWindow(QMainWindow):
                         if not self.hold_start:
                             continue
                         if self.hold_start[0] == hold_end[0] and self.hold_start[1] != hold_end[1]:
-                            chart['hold_notes'].append({
+                            self.chart['hold_notes'].append({
                                 'line': idx,
                                 'hit_time': min(self.hold_start[1], hold_end[1]),
                                 'end_time': max(self.hold_start[1], hold_end[1]),
-                                'checkpoints': []  # Add empty checkpoints or you can define your logic
+                                'type': "blue",
+                                'speed': 10,
+                                'checkpoints': checkpoints  # Add empty checkpoints or you can define your logic
                             })
                         self.hold_start = None
 
                 elif event.button() == Qt.MouseButton.LeftButton:
                     # Check if a note already exists at the objective time
-                    note_exists = any(note['line'] == idx and note['hit_time'] == note_time for note in chart['notes'])
+                    note_exists = any(note['line'] == idx and note['hit_time'] == note_time for note in self.chart['notes'])
 
                     if not note_exists:
                         # Add the note to the chart
-                        chart['notes'].append({
+                        self.chart['notes'].append({
                             'line': idx,
-                            'hit_time': note_time
+                            'hit_time': note_time,
+                            'speed': 10
                         })
-
                 self.update()
                 break
 
@@ -206,7 +213,7 @@ class GameWindow(QMainWindow):
         super().__init__()
         self.initUI()
         self.game_screen = pygame.display.set_mode((config['screen_width'], config['screen_height']))
-        self.game = Game(self.game_screen, chart_path, config, 0)
+        self.game = None
 
     def initUI(self):
         self.setWindowTitle('Game Window')
@@ -230,6 +237,7 @@ class ChartDesigner(QMainWindow):
         pygame.mixer.init()
         self.song_loaded = False
         self.song_path = None
+        self.illustration_path = None
         self.bpm = 120
         self.offset = 0
         self.timer = QTimer(self)
@@ -241,6 +249,8 @@ class ChartDesigner(QMainWindow):
         self.game_window = GameWindow()
         self.visualization_window = VisualizationWindow(self)
         self.update_timer.timeout.connect(self.update_current_time)
+        self.chart_path = None
+        self.chart = None
         
         self.setMouseTracking(True)
         self.installEventFilter(self)
@@ -248,32 +258,48 @@ class ChartDesigner(QMainWindow):
 
     def initUI(self):
         self.setWindowTitle('Chart Designer')
-        self.setGeometry(100, 100, 800, 600)
+        self.setGeometry(100, 100, 800, 150)
 
         main_layout = QVBoxLayout()
 
-        self.import_button = QPushButton('Import Song')
+        file_layout = QHBoxLayout()
+
+        self.load_button = QPushButton('Load Chart')
+        self.load_button.clicked.connect(self.load_chart_file)
+        file_layout.addWidget(self.load_button)
+
+        self.import_button = QPushButton('Load Song')
         self.import_button.clicked.connect(self.import_song)
-        main_layout.addWidget(self.import_button)
+        file_layout.addWidget(self.import_button)
+
+        self.load_button = QPushButton('Load Illustration')
+        self.load_button.clicked.connect(self.import_illustration)
+        file_layout.addWidget(self.load_button)
+
+        self.save_button = QPushButton('Save Chart')
+        self.save_button.clicked.connect(self.save_chart)
+        file_layout.addWidget(self.save_button)
+
+        parameter_layout = QHBoxLayout()
 
         self.bpm_input = QLineEdit('')
         self.bpm_input.setValidator(QDoubleValidator(0.00, 999.99, 2))
         self.bpm_input.setPlaceholderText('Enter BPM')
-        main_layout.addWidget(self.bpm_input)
+        parameter_layout.addWidget(self.bpm_input)
 
         self.offset_input = QLineEdit('')
         self.offset_input.setValidator(QDoubleValidator(0.00, 999999.99, 2))
         self.offset_input.setPlaceholderText('Enter Offset (ms)')
-        main_layout.addWidget(self.offset_input)
+        parameter_layout.addWidget(self.offset_input)
 
         self.note_fraction_input = QLineEdit('')
         self.note_fraction_input.setValidator(QDoubleValidator(1, 32, 0))
         self.note_fraction_input.setPlaceholderText('Enter Increment Fraction from 1 to 32(e.g., 4 for 1/4)')
-        main_layout.addWidget(self.note_fraction_input)
+        parameter_layout.addWidget(self.note_fraction_input)
 
         self.current_time_input = QLineEdit('')
         self.current_time_input.setValidator(QDoubleValidator(0.00, 999999.99, 2))
-        main_layout.addWidget(self.current_time_input)
+        parameter_layout.addWidget(self.current_time_input)
 
         control_layout = QHBoxLayout()
 
@@ -285,19 +311,38 @@ class ChartDesigner(QMainWindow):
         self.play_pause_button.clicked.connect(self.toggle_play_pause)
         control_layout.addWidget(self.play_pause_button)
 
+        self.visualize_button = QPushButton('Visualize Lines')
+        self.visualize_button.clicked.connect(self.visualize_lines)
+        control_layout.addWidget(self.visualize_button)
+
         self.forward_button = QPushButton('>>')
         self.forward_button.clicked.connect(self.move_forward)
         control_layout.addWidget(self.forward_button)
 
-        self.visualize_button = QPushButton('Visualize Lines')
-        self.visualize_button.clicked.connect(self.visualize_lines)
-        main_layout.addWidget(self.visualize_button)
-
+        main_layout.addLayout(file_layout)
+        main_layout.addLayout(parameter_layout)
         main_layout.addLayout(control_layout)
 
         container = QWidget()
         container.setLayout(main_layout)
         self.setCentralWidget(container)
+    
+    def save_chart(self):
+        with open(self.chart_path, 'w') as file:
+            json.dump(self.chart, file, indent=4)
+        self.load_chart()
+
+    def load_chart(self):
+        with open(self.chart_path, 'r') as file:
+            self.chart = json.load(file)
+        self.update_visualization()
+    
+    def load_chart_file(self):
+        self.chart_path, _ = QFileDialog.getOpenFileName(self, 'Load/Create Chart File', '', 'JSON Files (*.json)')
+        if self.chart_path:
+            with open(self.chart_path, 'r') as file:
+                self.chart = json.load(file)
+        self.load_chart()
 
     def import_song(self):
         file_path, _ = QFileDialog.getOpenFileName(self, 'Open Song File', '', 'Audio Files (*.ogg *.mp3 *.wav)')
@@ -305,11 +350,18 @@ class ChartDesigner(QMainWindow):
             self.song_path = file_path
             self.load_song(file_path)
 
+    def import_illustration(self):
+        file_path, _ = QFileDialog.getOpenFileName(self, 'Open illustraion File', '', 'Picture Files (*. *.mp3 *.wav)')
+        if file_path:
+            self.illustration_path = file_path
+            self.chart['illustration_path'] = file_path
+    
     def load_song(self, file_path):
         pygame.mixer.music.load(file_path)
         self.song_loaded = True
         self.current_time_input.setText('0')
-    
+        self.chart['audio_path'] = file_path
+
     def update_current_time(self):
         if not self.is_paused:
             self.current_time = self.game_window.game.get_current_time() * 1000  # Update current time in milliseconds
@@ -320,7 +372,7 @@ class ChartDesigner(QMainWindow):
         try:
             self.bpm = float(self.bpm_input.text())
         except ValueError:
-            self.bpm = 0
+            self.bpm = 120
         try:
             self.offset = float(self.offset_input.text())
         except ValueError:
@@ -351,7 +403,7 @@ class ChartDesigner(QMainWindow):
                 self.update_timer.start()
                 self.timer.start(int(start_pos))
                 self.play_pause_button.setText('Pause')
-                self.game_window.game = Game(self.game_window.game_screen, 'charts/tutorial.json', config, start_pos/1000.0)
+                self.game_window.game = Game(self.game_window.game_screen, self.chart_path, config, start_pos/1000.0)
                 self.is_paused = False
                 self.game_window.game.run()
                 threading.Thread(target=self.game_window.game.run).start()
@@ -401,7 +453,7 @@ class ChartDesigner(QMainWindow):
     def update_visualization(self):
         self.update_information()
         self.visualization_window.update_visualization(
-            chart['lines'], self.current_time, self.bpm, self.fraction
+            self.chart['lines'], self.current_time, self.bpm, self.fraction, self.chart
         )
 
 pygame.init()

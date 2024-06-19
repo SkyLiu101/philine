@@ -1,32 +1,141 @@
 {
-  "lines": [
-    {
-      "judgment_pos": [750, 450],
-      "angle": 0,
-      "key_binding": ["a"],
-      "movement": [
-        {"time": 1000, "new_pos": [750, 450], "new_angle": 180, "direction": "clockwise"},
-        {"time": 2000, "new_pos": [750, 450], "new_angle": 0, "direction": "clockwise"},
-        {"time": 3000, "new_pos": [750, 450], "new_angle": 180, "direction": "clockwise"},
-        {"time": 4000, "new_pos": [750, 450], "new_angle": 0, "direction": "clockwise"},
-        {"time": 5000, "new_pos": [750, 450], "new_angle": 180, "direction": "clockwise"},
-        {"time": 6000, "new_pos": [750, 450], "new_angle": 0, "direction": "clockwise"},
-        {"time": 7000, "new_pos": [750, 450], "new_angle": 180, "direction": "clockwise"}
-      ],
-      "opacity_changes": [{"time": 0, "opacity": 50}, {"time": 2000, "opacity": 255}]
-    }
-  ],
-  "notes": [
-    {"line": 0, "hit_time": 4000, "speed": 10}
-  ],
-  "hold_notes":[
-    {"line": 0, "hit_time": 2000, "end_time": 7000, "type": "blue", "speed": 10, "checkpoints": [
-      {"time": 3000},
-      {"time": 4000},
-      {"time": 5000},
-      {"time": 6000}
-    ]
-    }]
-  ,
-  "audio_path": "assets/music/tutorial.ogg"
+    "lines": [
+        {
+            "judgment_pos": [
+                750,
+                450
+            ],
+            "angle": 0,
+            "key_binding": [
+                "a"
+            ],
+            "movement": [
+                {
+                    "time": 1000,
+                    "new_pos": [
+                        750,
+                        450
+                    ],
+                    "new_angle": 180,
+                    "direction": "clockwise"
+                },
+                {
+                    "time": 2000,
+                    "new_pos": [
+                        750,
+                        450
+                    ],
+                    "new_angle": 0,
+                    "direction": "clockwise"
+                },
+                {
+                    "time": 3000,
+                    "new_pos": [
+                        750,
+                        450
+                    ],
+                    "new_angle": 180,
+                    "direction": "clockwise"
+                },
+                {
+                    "time": 4000,
+                    "new_pos": [
+                        750,
+                        450
+                    ],
+                    "new_angle": 0,
+                    "direction": "clockwise"
+                },
+                {
+                    "time": 5000,
+                    "new_pos": [
+                        750,
+                        450
+                    ],
+                    "new_angle": 180,
+                    "direction": "clockwise"
+                },
+                {
+                    "time": 6000,
+                    "new_pos": [
+                        750,
+                        450
+                    ],
+                    "new_angle": 0,
+                    "direction": "clockwise"
+                },
+                {
+                    "time": 7000,
+                    "new_pos": [
+                        750,
+                        450
+                    ],
+                    "new_angle": 180,
+                    "direction": "clockwise"
+                }
+            ],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        }
+    ],
+    "notes": [
+        {
+            "line": 0,
+            "hit_time": 3977,
+            "speed": 10
+        },
+        {
+            "line": 0,
+            "hit_time": 4243,
+            "speed": 10
+        },
+        {
+            "line": 0,
+            "hit_time": 530,
+            "speed": 10
+        },
+        {
+            "line": 0,
+            "hit_time": 2386,
+            "speed": 10
+        },
+        {
+            "line": 0,
+            "hit_time": 2651,
+            "speed": 10
+        },
+        {
+            "line": 0,
+            "hit_time": 2917,
+            "speed": 10
+        },
+        {
+            "line": 0,
+            "hit_time": 3182,
+            "speed": 10
+        }
+    ],
+    "hold_notes": [
+        {
+            "line": 0,
+            "hit_time": 2917,
+            "end_time": 3447,
+            "type": "blue",
+            "speed": 10,
+            "checkpoints": [
+                {
+                    "time": 3248.491712707182
+                }
+            ]
+        }
+    ],
+    "audio_path": "assets/music/tutorial.ogg"
 }

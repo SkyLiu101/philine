@@ -1,5 +1,6 @@
 import pygame
 import json
+import sys
 from lines import Line
 from notes import Note, HoldNote
 from score import Score
