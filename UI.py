@@ -1,7 +1,6 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton, QFileDialog, QLabel, QComboBox, QVBoxLayout, QWidget, QLineEdit, QHBoxLayout
-from PyQt6.QtCore import Qt, QTimer
-from PyQt6.QtGui import QDoubleValidator, QPainter, QColor, QPen
-
+from PyQt6.QtWidgets import QApplication, QMainWindow, QPushButton, QFileDialog, QLabel, QVBoxLayout, QWidget, QLineEdit, QHBoxLayout
+from PyQt6.QtCore import Qt, QTimer, QEvent
+from PyQt6.QtGui import QDoubleValidator, QPainter, QPen, QBrush
 import os
 import pygame
 import threading
@@ -20,17 +19,21 @@ class SharedState:
         self.is_paused = True
 
 class VisualizationWindow(QMainWindow):
-    def __init__(self, lines, fraction_rate, bpm, current_time):
-        super().__init__()
-        self.lines = lines
-        self.fraction_rate = fraction_rate
-        self.bpm = bpm
-        self.current_time = current_time
-        self.initUI()
-
-    def initUI(self):
+    def __init__(self, parent=None):
+        super().__init__(parent)
         self.setWindowTitle('Line Visualization')
-        self.setGeometry(200, 100, 1000, 800)
+        self.setGeometry(300, 100, 800, 600)
+        self.lines = []
+        self.current_time = 0
+        self.bpm = 120  # Default BPM, will be updated
+        self.fraction = 4
+
+    def update_visualization(self, lines, current_time, bpm, fraction):
+        self.lines = lines
+        self.current_time = current_time
+        self.bpm = bpm
+        self.fraction = fraction
+        self.update()
 
     def paintEvent(self, event):
         painter = QPainter(self)
@@ -38,39 +41,68 @@ class VisualizationWindow(QMainWindow):
         # Fixed grid spacing
         beat_spacing = 200  # pixels per beat
         ms_per_beat = 60000 / self.bpm  # milliseconds per beat
+
+        # Calculate the total number of beats to display
         total_height = self.height() - 100
         total_beats = int(total_height / beat_spacing) + 1
 
-        total_grid_lines = total_beats * self.fraction_rate
-        grid_spacing = 200 / self.fraction_rate
+        # Calculate the total number of grid lines to display
+        total_grid_lines = total_beats * self.fraction
+        grid_spacing = beat_spacing / self.fraction
 
         # Draw beat lines
         painter.setPen(QPen(Qt.GlobalColor.black, 1, Qt.PenStyle.SolidLine))
         for i in range(total_beats + 1):
-            y_pos = int(50 + i * beat_spacing + 200 * (self.current_time % ms_per_beat)/ms_per_beat )
+            y_pos = int(50 + i * beat_spacing - (self.current_time % ms_per_beat) / ms_per_beat * beat_spacing)
+            if y_pos < 50:
+                continue
+            ms_time = int((self.current_time // ms_per_beat) * ms_per_beat + i * ms_per_beat)
             painter.drawLine(50, self.height() - y_pos, self.width() - 20, self.height() - y_pos)
-            ms_time = i * ms_per_beat + (self.current_time//ms_per_beat) * ms_per_beat
-            if self.current_time % self.bpm != 0:
-                ms_time += self.bpm
             painter.drawText(10, self.height() - y_pos, f'{ms_time:.0f} ms')
 
         # Draw grid lines
         painter.setPen(QPen(Qt.GlobalColor.green, 1, Qt.PenStyle.SolidLine))
         for i in range(int(total_grid_lines) + 1):
-            y_pos = int(50 + i * grid_spacing)
+            y_pos = int(50 + i * grid_spacing - (self.current_time % (ms_per_beat / self.fraction)) / (ms_per_beat / self.fraction) * grid_spacing)
+            if y_pos < 50:
+                continue
             painter.drawLine(80, self.height() - y_pos, self.width() - 50, self.height() - y_pos)
 
         # Draw lines vertically
         for idx, line in enumerate(self.lines):
             x_pos = 100 + idx * 100
-            y_start = 50
+            y_start = 0
             y_end = self.height() - 50
             painter.drawLine(x_pos, y_start, x_pos, y_end)
 
             # Draw key bindings
             key_bindings = line['key_binding']
             key_text = ", ".join(key_bindings)
-            painter.drawText(x_pos - 10, self.height() - y_start + 20, key_text)
+            painter.drawText(x_pos - 10, self.height() - 30, key_text)
+
+
+            # Draw hold notes
+            for hold_note in chart['hold_notes']:
+                if hold_note['line'] == idx:
+                    start_time = hold_note['hit_time']
+                    end_time = hold_note['end_time']
+                    y_start = int(self.height() - 50 - ((start_time - self.current_time) / ms_per_beat) * beat_spacing)
+                    y_end = int(self.height() - 50 - ((end_time - self.current_time) / ms_per_beat) * beat_spacing)
+                    painter.setBrush(Qt.GlobalColor.blue)
+                    painter.drawRect(x_pos-5, y_end, 10, y_start-y_end)
+                    painter.drawText(x_pos - 10, y_start - 10, str(start_time))
+                    painter.drawText(x_pos - 10, y_end - 10, str(end_time))
+
+            # Draw notes
+            for note in chart['notes']:
+                if note['line'] == idx:
+                    note_time = note['hit_time']
+                    y_pos = int(self.height() - 50 - ((note_time - self.current_time) / ms_per_beat) * beat_spacing)
+                    painter.setBrush(Qt.GlobalColor.white)
+                    painter.drawEllipse(x_pos - 5, y_pos - 5, 10, 10)
+                    painter.drawText(x_pos - 10, y_pos - 10, str(note_time))
+
+
 
 
 
@@ -104,7 +136,7 @@ class ChartDesigner(QMainWindow):
         pygame.mixer.init()
         self.song_loaded = False
         self.song_path = None
-        self.bpm = 0
+        self.bpm = 120
         self.offset = 0
         self.timer = QTimer(self)
         self.is_paused = True
@@ -112,6 +144,10 @@ class ChartDesigner(QMainWindow):
         self.multiplier = 1
         self.current_time = 0
         self.game_window = GameWindow()
+        self.visualization_window = VisualizationWindow(self)
+        
+        self.setMouseTracking(True)
+        self.installEventFilter(self)
 
 
     def initUI(self):
@@ -193,21 +229,32 @@ class ChartDesigner(QMainWindow):
         except ValueError:
             self.multiplier = 1  # Default to 1/4
 
+    def eventFilter(self, source, event):
+        if event.type() == QEvent.Type.Wheel:
+            delta = event.angleDelta().y()
+            self.current_time -= delta
+            self.current_time_input.setText(f'{self.current_time:.2f}')
+            self.update_visualization()
+            self.update()
+            return True
+        return super().eventFilter(source, event)
+
     def toggle_play_pause(self):
         self.update_information()
         if self.song_loaded:
             start_pos = (self.current_time - self.offset) / 1000.0
-            if self.is_paused == True:
+            if self.is_paused:
                 self.is_paused = False
                 self.timer.start(self.current_time)
                 self.play_pause_button.setText('Pause')
-                self.game_window.game = Game(self.game_window.game_screen, 'charts/tutorial.json', config ,self.current_time/1000.0)
+                self.game_window.game = Game(self.game_window.game_screen, 'charts/tutorial.json', config, self.current_time/1000.0)
                 self.game_window.game.run()
             else:
                 self.is_paused = True
                 self.timer.stop()
                 self.play_pause_button.setText('Play')
                 self.game_window.game.pause()
+        self.update_visualization()
 
     def move_forward(self):
         self.update_information()
@@ -222,6 +269,7 @@ class ChartDesigner(QMainWindow):
         new_value = current_value + increment
         self.current_time = int(min(max_length, self.snap_to_grid(new_value, increment)))
         self.current_time_input.setText(f'{self.current_time:.2f}')
+        self.update_visualization()
 
     def move_backward(self):
         self.update_information()
@@ -235,16 +283,20 @@ class ChartDesigner(QMainWindow):
         new_value = current_value - decrement
         self.current_time = int(max(0, self.snap_to_grid(new_value, decrement)))
         self.current_time_input.setText(f'{self.current_time:.2f}')
+        self.update_visualization()
 
     def snap_to_grid(self, value, grid_size):
         return round(value / grid_size) * grid_size
 
     def visualize_lines(self):
-        self.update_information()
-        lines = chart['lines']
-        fraction_rate = self.fraction / 4 
-        self.visualization_window = VisualizationWindow(lines, fraction_rate, self.bpm, self.current_time)
         self.visualization_window.show()
+        self.update_visualization()
+    
+    def update_visualization(self):
+        self.update_information()
+        self.visualization_window.update_visualization(
+            chart['lines'], self.current_time, self.bpm, self.fraction
+        )
 
 pygame.init()
 app = QApplication(sys.argv)
