@@ -1,0 +1,176 @@
+{
+    "lines": [
+        {
+            "judgment_pos": [
+                216,
+                700
+            ],
+            "angle": 90,
+            "key_binding": [
+                "s"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        },
+        {
+            "judgment_pos": [
+                432,
+                700
+            ],
+            "angle": 90,
+            "key_binding": [
+                "d"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        },
+        {
+            "judgment_pos": [
+                648,
+                700
+            ],
+            "angle": 90,
+            "key_binding": [
+                "g"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        },
+        {
+            "judgment_pos": [
+                864,
+                700
+            ],
+            "angle": 90,
+            "key_binding": [
+                "h"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        },
+        {
+            "judgment_pos": [
+                1080,
+                700
+            ],
+            "angle": 90,
+            "key_binding": [
+                "k"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        },
+        {
+            "judgment_pos": [
+                1296,
+                700
+            ],
+            "angle": 90,
+            "key_binding": [
+                "l"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        },
+        {
+            "judgment_pos": [
+                540,
+                450
+            ],
+            "angle": 90,
+            "key_binding": [
+                "5"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        },
+        {
+            "judgment_pos": [
+                972,
+                450
+            ],
+            "angle": 90,
+            "key_binding": [
+                "8"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        }
+    ],
+    "notes": [],
+    "hold_notes": [],
+    "audio_path": "/Users/skyliu/Documents/philine/assets/music/1f1e33.ogg",
+    "illustration_path": "/Users/skyliu/Documents/philine/assets/illustrations/1f1e33.jpg"
+}

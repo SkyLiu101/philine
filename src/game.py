@@ -7,7 +7,6 @@ from notes import Note, HoldNote
 from score import Score
 from clock import GameClock
 from animation import load_animation_frames
-from PIL import Image, ImageEnhance
 import pygame.transform
 
 
@@ -308,5 +307,4 @@ class Game:
             if not self.paused:
                 self.clock.tick()
 
-        pygame.quit()
-        sys.exit()
+        return self.score

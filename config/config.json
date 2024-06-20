@@ -8,7 +8,13 @@
     "s": "K_s",
     "d": "K_d",
     "f": "K_f",
-    "l": "K_l"
+    "g": "K_g",
+    "h": "K_h",
+    "j": "K_j",
+    "k": "K_k",
+    "l": "K_l",
+    "5": "K_5",
+    "8": "K_8"
   },
   "note_images": {
     "blue": "assets/images/Blue_Head.png",
@@ -24,6 +30,7 @@
     "purple_hold_mid": "assets/images/Purple_Mid_Tail.png",
     "purple_hold_end": "assets/images/Purple_End_Tail.png"
   },
+  "score_image": "assets/images/score_image.jpg",
   "note_size": [50, 50],
   "extra_pure_threshold": 40,
   "pure_threshold": 80,

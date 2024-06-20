@@ -1,0 +1,92 @@
+{
+    "lines": [
+        {
+            "judgment_pos": [
+                300,
+                700
+            ],
+            "angle": 90,
+            "key_binding": [
+                "d"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        },
+        {
+            "judgment_pos": [
+                600,
+                700
+            ],
+            "angle": 90,
+            "key_binding": [
+                "g"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        },
+        {
+            "judgment_pos": [
+                900,
+                700
+            ],
+            "angle": 90,
+            "key_binding": [
+                "h"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        },
+        {
+            "judgment_pos": [
+                1200,
+                700
+            ],
+            "angle": 90,
+            "key_binding": [
+                "k"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        }
+    ],
+    "notes": [],
+    "hold_notes": [],
+    "audio_path": "/Users/skyliu/Documents/philine/assets/music/etherstrike.ogg",
+    "illustration_path": "/Users/skyliu/Documents/philine/assets/illustrations/etherstrike.jpg"
+}
