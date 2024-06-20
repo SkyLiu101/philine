@@ -67,9 +67,9 @@ class VisualizationWindow(QMainWindow):
             y_pos = int(50 + i * beat_spacing - (self.current_time % ms_per_beat) / ms_per_beat * beat_spacing)
             if y_pos < 50:
                 continue
-            ms_time = int((self.current_time // ms_per_beat) * ms_per_beat + i * ms_per_beat)
+            past_beat = self.current_time // ms_per_beat
             painter.drawLine(50, self.height() - y_pos, self.width() - 20, self.height() - y_pos)
-            painter.drawText(10, self.height() - y_pos, f'{i}')
+            painter.drawText(10, self.height() - y_pos, f'{i+past_beat}')
 
         # Draw grid lines
         painter.setPen(QPen(Qt.GlobalColor.green, 1, Qt.PenStyle.SolidLine))
@@ -351,7 +351,7 @@ class ChartDesigner(QMainWindow):
             self.load_song(file_path)
 
     def import_illustration(self):
-        file_path, _ = QFileDialog.getOpenFileName(self, 'Open illustraion File', '', 'Picture Files (*. *.mp3 *.wav)')
+        file_path, _ = QFileDialog.getOpenFileName(self, 'Open illustraion File', '', 'Picture Files (*.jpg *.png)')
         if file_path:
             self.illustration_path = file_path
             self.chart['illustration_path'] = file_path

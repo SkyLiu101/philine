@@ -1,11 +1,13 @@
 import pygame
 import json
 import sys
+import os
 from lines import Line
 from notes import Note, HoldNote
 from score import Score
 from clock import GameClock
 from animation import load_animation_frames
+from PIL import Image, ImageEnhance
 import pygame.transform
 
 
@@ -41,6 +43,16 @@ class Game:
         }
         self.hit_sound = pygame.mixer.Sound('assets/sounds/tap.wav')
         self.pause_sound = pygame.mixer.Sound('assets/sounds/pause.wav')
+        self.illustration = pygame.transform.scale(self.illustration, (config['screen_width'], config['screen_width'])).convert_alpha()
+
+    def load_illustration(self, illustration_path):
+        """Load the dimmed illustration image"""
+        illustration_filename = os.path.basename(illustration_path)
+        dimmed_path = os.path.join('assets/dim', illustration_filename)
+        self.illustration = pygame.image.load(dimmed_path).convert()
+        self.illustration = pygame.transform.scale(self.illustration, (self.config['screen_width'], self.config['screen_height']))
+        return self.illustration
+
     def play_hit_sound(self):
         self.hit_sound.play()
     def play_pause_sound(self):
@@ -74,6 +86,8 @@ class Game:
         self.note_data = chart_data['notes']
         if 'hold_notes' in chart_data:
             self.hold_note_data = chart_data['hold_notes']
+        
+        self.illustration = self.load_illustration(chart_data['illustration_path'])
 
         pygame.mixer.init()
         self.audio_path = chart_data['audio_path']
@@ -205,6 +219,7 @@ class Game:
                                 status = self.check_collision(current_time, note, line)
                                 if status:
                                     line.notes.remove(note)
+                                    break
                             line.on_key_press(event.key)
                 elif event.type == pygame.KEYUP:
                     for line in self.lines:
@@ -268,8 +283,7 @@ class Game:
             if self.chart_finished:
                 running = False
 
-            self.screen.fill((0, 0, 0, 255))
-            
+            self.screen.blit(self.illustration, (0, 0))  # Draw the background illustration
             # Draw lines and notes with proper blending
             for line in self.lines:
                 line.draw(self.screen)
