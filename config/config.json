@@ -30,7 +30,15 @@
     "purple_hold_mid": "assets/images/Purple_Mid_Tail.png",
     "purple_hold_end": "assets/images/Purple_End_Tail.png"
   },
-  "score_image": "assets/images/score_image.jpg",
+  "score_image": "assets/images/score_image.png",
+  "rank_paths":{
+    "Pure_Memory": "assets/images/Score_SSS.png",
+    "S": "assets/images/Score_S.png",
+    "A": "assets/images/Score_A.png",
+    "B": "assets/images/Score_B.png",
+    "F": "assets/images/Score_?.png"
+  },
+  "result_bg": "assets/images/res_scoresection_high.png",
   "note_size": [50, 50],
   "extra_pure_threshold": 40,
   "pure_threshold": 80,
