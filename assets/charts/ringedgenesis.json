@@ -87,7 +87,7 @@
         {
             "judgment_pos": [
                 450,
-                450
+                550
             ],
             "angle": 90,
             "key_binding": [
@@ -108,7 +108,7 @@
         {
             "judgment_pos": [
                 1050,
-                450
+                550
             ],
             "angle": 90,
             "key_binding": [
@@ -3735,7 +3735,7 @@
     ],
     "audio_path": "/Users/skyliu/Documents/philine/assets/music/ringedgenesis.ogg",
     "illustration_path": "/Users/skyliu/Documents/philine/assets/illustrations/ringedgenesis.jpg",
-    "previous_highscore": 0,
+    "previous_highscore": 97228,
     "offset": 0,
     "name": "ringedgenesis"
 }
