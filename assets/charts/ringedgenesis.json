@@ -2165,7 +2165,7 @@
             "hit_time": 1500,
             "end_time": 2625,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 1500
@@ -2183,7 +2183,7 @@
             "hit_time": 3000,
             "end_time": 7125,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 3000
@@ -2225,7 +2225,7 @@
             "hit_time": 4500,
             "end_time": 8250,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 4500
@@ -2264,7 +2264,7 @@
             "hit_time": 7500,
             "end_time": 9750,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 7500
@@ -2291,7 +2291,7 @@
             "hit_time": 10500,
             "end_time": 13125,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 10500
@@ -2321,7 +2321,7 @@
             "hit_time": 9000,
             "end_time": 13125,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 9000
@@ -2363,7 +2363,7 @@
             "hit_time": 13500,
             "end_time": 14625,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 13500
@@ -2381,7 +2381,7 @@
             "hit_time": 14625,
             "end_time": 16125,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 14625
@@ -2402,7 +2402,7 @@
             "hit_time": 16500,
             "end_time": 17625,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 16500
@@ -2420,7 +2420,7 @@
             "hit_time": 18000,
             "end_time": 18750,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 18000
@@ -2435,7 +2435,7 @@
             "hit_time": 19500,
             "end_time": 20250,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 19500
@@ -2450,7 +2450,7 @@
             "hit_time": 21000,
             "end_time": 21468,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 21000
@@ -2465,7 +2465,7 @@
             "hit_time": 22500,
             "end_time": 23500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 22500
@@ -2483,7 +2483,7 @@
             "hit_time": 24000,
             "end_time": 25125,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 24000
@@ -2501,7 +2501,7 @@
             "hit_time": 25500,
             "end_time": 28125,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 25500
@@ -2531,7 +2531,7 @@
             "hit_time": 28500,
             "end_time": 31125,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 28500
@@ -2561,7 +2561,7 @@
             "hit_time": 31500,
             "end_time": 32625,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 31500
@@ -2579,7 +2579,7 @@
             "hit_time": 31500,
             "end_time": 33375,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 31500
@@ -2603,7 +2603,7 @@
             "hit_time": 33000,
             "end_time": 37500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 33000
@@ -2648,7 +2648,7 @@
             "hit_time": 34125,
             "end_time": 37500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 34125
@@ -2684,7 +2684,7 @@
             "hit_time": 40312,
             "end_time": 41625,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 40312
@@ -2705,7 +2705,7 @@
             "hit_time": 43312,
             "end_time": 44625,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 43312
@@ -2726,7 +2726,7 @@
             "hit_time": 44062,
             "end_time": 44531,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 44062
@@ -2741,7 +2741,7 @@
             "hit_time": 46312,
             "end_time": 47625,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 46312
@@ -2762,7 +2762,7 @@
             "hit_time": 49312,
             "end_time": 50625,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 49312
@@ -2783,7 +2783,7 @@
             "hit_time": 50062,
             "end_time": 50531,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 50062
@@ -2798,7 +2798,7 @@
             "hit_time": 52312,
             "end_time": 53625,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 52312
@@ -2819,7 +2819,7 @@
             "hit_time": 54937,
             "end_time": 56625,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 54937
@@ -2843,7 +2843,7 @@
             "hit_time": 58312,
             "end_time": 59062,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 58312
@@ -2858,7 +2858,7 @@
             "hit_time": 62250,
             "end_time": 63000,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 62250
@@ -2873,7 +2873,7 @@
             "hit_time": 62250,
             "end_time": 63000,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 62250
@@ -2888,7 +2888,7 @@
             "hit_time": 66000,
             "end_time": 67500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 66000
@@ -2909,7 +2909,7 @@
             "hit_time": 70500,
             "end_time": 72000,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 70500
@@ -2930,7 +2930,7 @@
             "hit_time": 73500,
             "end_time": 75000,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 73500
@@ -2951,7 +2951,7 @@
             "hit_time": 73687,
             "end_time": 73875,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 73687
@@ -2963,7 +2963,7 @@
             "hit_time": 75187,
             "end_time": 75375,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 75187
@@ -2975,7 +2975,7 @@
             "hit_time": 76687,
             "end_time": 76875,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 76687
@@ -2987,7 +2987,7 @@
             "hit_time": 76500,
             "end_time": 78000,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 76500
@@ -3008,7 +3008,7 @@
             "hit_time": 75000,
             "end_time": 76500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 75000
@@ -3029,7 +3029,7 @@
             "hit_time": 78187,
             "end_time": 78375,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 78187
@@ -3041,7 +3041,7 @@
             "hit_time": 78000,
             "end_time": 79500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 78000
@@ -3062,7 +3062,7 @@
             "hit_time": 79687,
             "end_time": 79875,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 79687
@@ -3074,7 +3074,7 @@
             "hit_time": 79500,
             "end_time": 81000,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 79500
@@ -3095,7 +3095,7 @@
             "hit_time": 81187,
             "end_time": 81375,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 81187
@@ -3107,7 +3107,7 @@
             "hit_time": 81000,
             "end_time": 82500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 81000
@@ -3128,7 +3128,7 @@
             "hit_time": 82687,
             "end_time": 82875,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 82687
@@ -3140,7 +3140,7 @@
             "hit_time": 82500,
             "end_time": 84000,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 82500
@@ -3161,7 +3161,7 @@
             "hit_time": 84187,
             "end_time": 84375,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 84187
@@ -3173,7 +3173,7 @@
             "hit_time": 85500,
             "end_time": 87750,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 85500
@@ -3200,7 +3200,7 @@
             "hit_time": 84000,
             "end_time": 87750,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 84000
@@ -3239,7 +3239,7 @@
             "hit_time": 88500,
             "end_time": 88687,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 88500
@@ -3251,7 +3251,7 @@
             "hit_time": 90000,
             "end_time": 90187,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 90000
@@ -3263,7 +3263,7 @@
             "hit_time": 91500,
             "end_time": 91687,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 91500
@@ -3275,7 +3275,7 @@
             "hit_time": 96750,
             "end_time": 96937,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 96750
@@ -3287,7 +3287,7 @@
             "hit_time": 96750,
             "end_time": 96937,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 96750
@@ -3299,7 +3299,7 @@
             "hit_time": 97125,
             "end_time": 97312,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 97125
@@ -3311,7 +3311,7 @@
             "hit_time": 97125,
             "end_time": 97312,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 97125
@@ -3323,7 +3323,7 @@
             "hit_time": 99000,
             "end_time": 99375,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 99000
@@ -3335,7 +3335,7 @@
             "hit_time": 99375,
             "end_time": 99750,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 99375
@@ -3347,7 +3347,7 @@
             "hit_time": 99750,
             "end_time": 100125,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 99750
@@ -3359,7 +3359,7 @@
             "hit_time": 100500,
             "end_time": 100687,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 100500
@@ -3371,7 +3371,7 @@
             "hit_time": 102000,
             "end_time": 102187,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 102000
@@ -3383,7 +3383,7 @@
             "hit_time": 103500,
             "end_time": 103687,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 103500
@@ -3395,7 +3395,7 @@
             "hit_time": 109500,
             "end_time": 110062,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 109500
@@ -3410,7 +3410,7 @@
             "hit_time": 110062,
             "end_time": 110625,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 110062
@@ -3425,7 +3425,7 @@
             "hit_time": 112687,
             "end_time": 112875,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 112687
@@ -3437,7 +3437,7 @@
             "hit_time": 114187,
             "end_time": 114375,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 114187
@@ -3449,7 +3449,7 @@
             "hit_time": 112500,
             "end_time": 115500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 112500
@@ -3482,7 +3482,7 @@
             "hit_time": 115687,
             "end_time": 115875,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 115687
@@ -3494,7 +3494,7 @@
             "hit_time": 117187,
             "end_time": 117375,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 117187
@@ -3506,7 +3506,7 @@
             "hit_time": 115500,
             "end_time": 118500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 115500
@@ -3539,7 +3539,7 @@
             "hit_time": 118687,
             "end_time": 118875,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 118687
@@ -3551,7 +3551,7 @@
             "hit_time": 118500,
             "end_time": 120000,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 118500
@@ -3572,7 +3572,7 @@
             "hit_time": 120187,
             "end_time": 120375,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 120187
@@ -3584,7 +3584,7 @@
             "hit_time": 120000,
             "end_time": 121500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 120000
@@ -3605,7 +3605,7 @@
             "hit_time": 121687,
             "end_time": 121875,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 121687
@@ -3617,7 +3617,7 @@
             "hit_time": 122062,
             "end_time": 122812,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 122062
@@ -3632,7 +3632,7 @@
             "hit_time": 121500,
             "end_time": 122062,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 121500
@@ -3647,7 +3647,7 @@
             "hit_time": 124500,
             "end_time": 127500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 124500
@@ -3680,7 +3680,7 @@
             "hit_time": 124500,
             "end_time": 127500,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 124500
@@ -3713,7 +3713,7 @@
             "hit_time": 127562,
             "end_time": 127875,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 127562
@@ -3725,7 +3725,7 @@
             "hit_time": 127562,
             "end_time": 127875,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
                     "time": 127562
@@ -3737,5 +3737,5 @@
     "illustration_path": "/Users/skyliu/Documents/philine/assets/illustrations/ringedgenesis.jpg",
     "previous_highscore": 0,
     "offset": 0,
-    "name": "ringedgenesis"
+    "name": "sky4k"
 }

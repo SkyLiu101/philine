@@ -16,4 +16,4 @@ def patch_chart(chart_path):
         json.dump(chart, file, indent=4)
 
 # Example usage
-patch_chart('charts/testify.json')
+patch_chart('charts/ringedgenesis.json')
