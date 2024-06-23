@@ -110,5 +110,7 @@
     "hold_notes": [],
     "audio_path": "/Users/skyliu/Documents/philine/assets/music/aegleseeker.ogg",
     "illustration_path": "/Users/skyliu/Documents/philine/assets/illustrations/aegleseeker.jpg",
-    "previous_highscore": 0
+    "previous_highscore": 0,
+    "offset": 337,
+    "name": "base4k"
 }

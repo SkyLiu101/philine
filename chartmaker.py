@@ -165,6 +165,7 @@ class VisualizationWindow(QMainWindow):
                         self.hold_start, hold_end = min(self.hold_start, hold_end), max(self.hold_start, hold_end)
 
                         checkpoints = []
+                        checkpoints.append({'time': self.hold_start})
                         current_checkpoint = self.hold_start[1] + ms_per_beat
                         while current_checkpoint < hold_end[1]:
                             checkpoints.append({'time': current_checkpoint})

@@ -7,7 +7,7 @@
             ],
             "angle": 90,
             "key_binding": [
-                "s"
+                "d"
             ],
             "movement": [],
             "opacity_changes": [
@@ -28,7 +28,7 @@
             ],
             "angle": 90,
             "key_binding": [
-                "d"
+                "f"
             ],
             "movement": [],
             "opacity_changes": [
@@ -91,7 +91,7 @@
             ],
             "angle": 90,
             "key_binding": [
-                "k"
+                "j"
             ],
             "movement": [],
             "opacity_changes": [
@@ -112,7 +112,7 @@
             ],
             "angle": 90,
             "key_binding": [
-                "l"
+                "k"
             ],
             "movement": [],
             "opacity_changes": [
@@ -4587,10 +4587,10 @@
             "hit_time": 7078,
             "end_time": 8426,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 7415.078651685393
+                    "time": 7078
                 },
                 {
                     "time": 7752.157303370786
@@ -4605,10 +4605,10 @@
             "hit_time": 7078,
             "end_time": 8426,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 7415.078651685393
+                    "time": 7078
                 },
                 {
                     "time": 7752.157303370786
@@ -4623,10 +4623,10 @@
             "hit_time": 3033,
             "end_time": 7078,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 3370.078651685393
+                    "time": 3033
                 },
                 {
                     "time": 3707.1573033707864
@@ -4668,10 +4668,10 @@
             "hit_time": 1348,
             "end_time": 3033,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 1685.0786516853932
+                    "time": 1348
                 },
                 {
                     "time": 2022.1573033707864
@@ -4689,10 +4689,10 @@
             "hit_time": 1348,
             "end_time": 3033,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 1685.0786516853932
+                    "time": 1348
                 },
                 {
                     "time": 2022.1573033707864
@@ -4710,10 +4710,10 @@
             "hit_time": 3033,
             "end_time": 7078,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 3370.078651685393
+                    "time": 3033
                 },
                 {
                     "time": 3707.1573033707864
@@ -4755,10 +4755,10 @@
             "hit_time": 5056,
             "end_time": 5730,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 5393.078651685393
+                    "time": 5056
                 }
             ]
         },
@@ -4767,10 +4767,10 @@
             "hit_time": 4382,
             "end_time": 5393,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 4719.078651685393
+                    "time": 4382
                 },
                 {
                     "time": 5056.157303370786
@@ -4782,10 +4782,10 @@
             "hit_time": 3707,
             "end_time": 4719,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 4044.078651685393
+                    "time": 3707
                 },
                 {
                     "time": 4381.157303370786
@@ -4800,18 +4800,22 @@
             "hit_time": 3707,
             "end_time": 4044,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 3707
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 9775,
             "end_time": 10280,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 10112.078651685393
+                    "time": 9775
                 }
             ]
         },
@@ -4820,18 +4824,22 @@
             "hit_time": 10449,
             "end_time": 10786,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 10449
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 11207,
             "end_time": 11797,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 11544.078651685393
+                    "time": 11207
                 }
             ]
         },
@@ -4840,10 +4848,10 @@
             "hit_time": 11292,
             "end_time": 11797,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 11629.078651685393
+                    "time": 11292
                 }
             ]
         },
@@ -4852,138 +4860,202 @@
             "hit_time": 12471,
             "end_time": 12724,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 12471
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 12471,
             "end_time": 12724,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 12471
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 13146,
             "end_time": 13398,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 13146
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 13146,
             "end_time": 13398,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 13146
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 13820,
             "end_time": 14073,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 13820
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 13820,
             "end_time": 14073,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 13820
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 14494,
             "end_time": 14747,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 14494
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 14494,
             "end_time": 14747,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 14494
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 15168,
             "end_time": 15421,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 15168
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 15168,
             "end_time": 15421,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 15168
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 15842,
             "end_time": 16095,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 15842
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 15842,
             "end_time": 16095,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 15842
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 16516,
             "end_time": 16769,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 16516
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 16516,
             "end_time": 16769,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 16516
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 17191,
             "end_time": 17443,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 17191
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 17191,
             "end_time": 17443,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 17191
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 17865,
             "end_time": 21910,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 18202.078651685395
+                    "time": 17865
                 },
                 {
                     "time": 18539.15730337079
@@ -5025,10 +5097,10 @@
             "hit_time": 17865,
             "end_time": 21910,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 18202.078651685395
+                    "time": 17865
                 },
                 {
                     "time": 18539.15730337079
@@ -5070,90 +5142,130 @@
             "hit_time": 23258,
             "end_time": 23595,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 23258
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 23932,
             "end_time": 24269,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 23932
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 24606,
             "end_time": 24943,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 24606
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 25280,
             "end_time": 25617,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 25280
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 25955,
             "end_time": 26292,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 25955
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 26629,
             "end_time": 26966,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 26629
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 27303,
             "end_time": 27640,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 27303
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 27977,
             "end_time": 28314,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 27977
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 34044,
             "end_time": 34213,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 34044
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 34044,
             "end_time": 34213,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 34044
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 34382,
             "end_time": 35983,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 34719.07865168539
+                    "time": 34382
                 },
                 {
                     "time": 35056.15730337078
@@ -5171,26 +5283,34 @@
             "hit_time": 36404,
             "end_time": 36741,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 36404
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 37078,
             "end_time": 37415,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 37078
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 39101,
             "end_time": 40028,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 39438.07865168539
+                    "time": 39101
                 },
                 {
                     "time": 39775.15730337078
@@ -5202,10 +5322,10 @@
             "hit_time": 40449,
             "end_time": 41376,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 40786.07865168539
+                    "time": 40449
                 },
                 {
                     "time": 41123.15730337078
@@ -5217,18 +5337,22 @@
             "hit_time": 41797,
             "end_time": 41966,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 41797
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 42134,
             "end_time": 42640,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 42471.07865168539
+                    "time": 42134
                 }
             ]
         },
@@ -5237,10 +5361,10 @@
             "hit_time": 41797,
             "end_time": 42808,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 42134.07865168539
+                    "time": 41797
                 },
                 {
                     "time": 42471.15730337078
@@ -5252,18 +5376,22 @@
             "hit_time": 43146,
             "end_time": 43314,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 43146
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 43146,
             "end_time": 44157,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 43483.07865168539
+                    "time": 43146
                 },
                 {
                     "time": 43820.15730337078
@@ -5275,10 +5403,10 @@
             "hit_time": 43483,
             "end_time": 43988,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 43820.07865168539
+                    "time": 43483
                 }
             ]
         },
@@ -5287,66 +5415,94 @@
             "hit_time": 46516,
             "end_time": 46685,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 46516
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 46853,
             "end_time": 47022,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 46853
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 48539,
             "end_time": 48707,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 48539
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 48876,
             "end_time": 49044,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 48876
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 52584,
             "end_time": 52921,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 52584
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 53005,
             "end_time": 53258,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 53005
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 55280,
             "end_time": 55533,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 55280
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 55280,
             "end_time": 56123,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 55617.07865168539
+                    "time": 55280
                 },
                 {
                     "time": 55954.15730337078
@@ -5358,18 +5514,22 @@
             "hit_time": 56292,
             "end_time": 56544,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 56292
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 55786,
             "end_time": 57134,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 56123.07865168539
+                    "time": 55786
                 },
                 {
                     "time": 56460.15730337078
@@ -5384,10 +5544,10 @@
             "hit_time": 57303,
             "end_time": 57808,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 57640.07865168539
+                    "time": 57303
                 }
             ]
         },
@@ -5396,10 +5556,10 @@
             "hit_time": 56797,
             "end_time": 57808,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 57134.07865168539
+                    "time": 56797
                 },
                 {
                     "time": 57471.15730337078
@@ -5411,18 +5571,22 @@
             "hit_time": 57977,
             "end_time": 58146,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 57977
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 57977,
             "end_time": 58820,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 58314.07865168539
+                    "time": 57977
                 },
                 {
                     "time": 58651.15730337078
@@ -5434,18 +5598,22 @@
             "hit_time": 58988,
             "end_time": 59157,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 58988
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 58483,
             "end_time": 59831,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 58820.07865168539
+                    "time": 58483
                 },
                 {
                     "time": 59157.15730337078
@@ -5460,10 +5628,10 @@
             "hit_time": 60000,
             "end_time": 60505,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 60337.07865168539
+                    "time": 60000
                 }
             ]
         },
@@ -5472,10 +5640,10 @@
             "hit_time": 59494,
             "end_time": 60505,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 59831.07865168539
+                    "time": 59494
                 },
                 {
                     "time": 60168.15730337078
@@ -5487,58 +5655,82 @@
             "hit_time": 60674,
             "end_time": 61011,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 60674
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 60674,
             "end_time": 61011,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 60674
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 62022,
             "end_time": 62191,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 62022
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 62359,
             "end_time": 62528,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 62359
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 62696,
             "end_time": 62865,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 62696
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 63033,
             "end_time": 63202,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 63033
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 65393,
             "end_time": 65898,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 65730.0786516854
+                    "time": 65393
                 }
             ]
         },
@@ -5547,10 +5739,10 @@
             "hit_time": 65393,
             "end_time": 65898,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 65730.0786516854
+                    "time": 65393
                 }
             ]
         },
@@ -5559,18 +5751,22 @@
             "hit_time": 66067,
             "end_time": 66404,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 66067
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 66067,
             "end_time": 66910,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 66404.0786516854
+                    "time": 66067
                 },
                 {
                     "time": 66741.1573033708
@@ -5582,10 +5778,10 @@
             "hit_time": 67078,
             "end_time": 68258,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 67415.0786516854
+                    "time": 67078
                 },
                 {
                     "time": 67752.1573033708
@@ -5600,10 +5796,10 @@
             "hit_time": 66573,
             "end_time": 68258,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 66910.0786516854
+                    "time": 66573
                 },
                 {
                     "time": 67247.1573033708
@@ -5621,58 +5817,82 @@
             "hit_time": 68764,
             "end_time": 68932,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 68764
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 68764,
             "end_time": 68932,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 68764
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 69269,
             "end_time": 69606,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 69269
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 69269,
             "end_time": 69606,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 69269
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 70112,
             "end_time": 70196,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 70112
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 70112,
             "end_time": 70196,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 70112
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 68764,
             "end_time": 70617,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 69101.0786516854
+                    "time": 68764
                 },
                 {
                     "time": 69438.1573033708
@@ -5693,10 +5913,10 @@
             "hit_time": 68764,
             "end_time": 70617,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 69101.0786516854
+                    "time": 68764
                 },
                 {
                     "time": 69438.1573033708
@@ -5717,18 +5937,22 @@
             "hit_time": 71460,
             "end_time": 71797,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 71460
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 71460,
             "end_time": 72303,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 71797.0786516854
+                    "time": 71460
                 },
                 {
                     "time": 72134.1573033708
@@ -5740,10 +5964,10 @@
             "hit_time": 71966,
             "end_time": 73735,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 72303.0786516854
+                    "time": 71966
                 },
                 {
                     "time": 72640.1573033708
@@ -5764,10 +5988,10 @@
             "hit_time": 72471,
             "end_time": 73735,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 72808.0786516854
+                    "time": 72471
                 },
                 {
                     "time": 73145.1573033708
@@ -5782,26 +6006,34 @@
             "hit_time": 74157,
             "end_time": 74325,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 74157
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 74157,
             "end_time": 74325,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 74157
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 74662,
             "end_time": 75000,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 74999.0786516854
+                    "time": 74662
                 }
             ]
         },
@@ -5810,10 +6042,10 @@
             "hit_time": 74662,
             "end_time": 75000,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 74999.0786516854
+                    "time": 74662
                 }
             ]
         },
@@ -5822,434 +6054,646 @@
             "hit_time": 75168,
             "end_time": 75252,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 75168
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 75168,
             "end_time": 75252,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 75168
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 77022,
             "end_time": 77275,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 77022
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 77191,
             "end_time": 77443,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 77191
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 77696,
             "end_time": 77949,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 77696
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 77865,
             "end_time": 78117,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 77865
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 77359,
             "end_time": 77528,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 77359
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 78033,
             "end_time": 78202,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 78033
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 78370,
             "end_time": 78623,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 78370
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 78539,
             "end_time": 78792,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 78539
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 78707,
             "end_time": 78876,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 78707
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 79044,
             "end_time": 79297,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 79044
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 79213,
             "end_time": 79466,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 79213
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 79382,
             "end_time": 79550,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 79382
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 79719,
             "end_time": 79971,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 79719
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 79887,
             "end_time": 80140,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 79887
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 80056,
             "end_time": 80224,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 80056
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 80393,
             "end_time": 80646,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 80393
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 80561,
             "end_time": 80814,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 80561
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 80730,
             "end_time": 80898,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 80730
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 81067,
             "end_time": 81235,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 81067
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 81235,
             "end_time": 81488,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 81235
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 81741,
             "end_time": 81910,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 81741
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 81910,
             "end_time": 82162,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 81910
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 81404,
             "end_time": 81573,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 81404
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 82078,
             "end_time": 82247,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 82078
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 82415,
             "end_time": 82668,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 82415
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 82584,
             "end_time": 82837,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 82584
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 82752,
             "end_time": 82921,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 82752
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 83089,
             "end_time": 83342,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 83089
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 83258,
             "end_time": 83511,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 83258
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 83426,
             "end_time": 83595,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 83426
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 83764,
             "end_time": 84016,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 83764
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 83932,
             "end_time": 84185,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 83932
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 84101,
             "end_time": 84269,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 84101
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 84438,
             "end_time": 84691,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 84438
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 84606,
             "end_time": 84859,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 84606
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 84775,
             "end_time": 84943,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 84775
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 85112,
             "end_time": 85280,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 85112
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 85280,
             "end_time": 85533,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 85280
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 85449,
             "end_time": 85617,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 85449
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 85786,
             "end_time": 85955,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 85786
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 85955,
             "end_time": 86207,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 85955
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 86123,
             "end_time": 86292,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 86123
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 86460,
             "end_time": 86629,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 86460
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 86629,
             "end_time": 86882,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 86629
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 86797,
             "end_time": 86966,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 86797
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 86966,
             "end_time": 87050,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 86966
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 87134,
             "end_time": 87219,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 87134
+                }
+            ]
         },
         {
             "line": 0,
             "hit_time": 87640,
             "end_time": 87977,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 87640
+                }
+            ]
         },
         {
             "line": 5,
             "hit_time": 88651,
             "end_time": 88988,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 88651
+                }
+            ]
         },
         {
             "line": 0,
             "hit_time": 89325,
             "end_time": 89662,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 89325
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 93370,
             "end_time": 93707,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 93370
+                }
+            ]
         },
         {
             "line": 0,
             "hit_time": 94044,
             "end_time": 94382,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 94381.0786516854
+                    "time": 94044
                 }
             ]
         },
@@ -6258,138 +6702,202 @@
             "hit_time": 94719,
             "end_time": 95056,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 94719
+                }
+            ]
         },
         {
             "line": 0,
             "hit_time": 95393,
             "end_time": 95505,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 95393
+                }
+            ]
         },
         {
             "line": 5,
             "hit_time": 95842,
             "end_time": 96011,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 95842
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 96067,
             "end_time": 96179,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 96067
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 96404,
             "end_time": 96516,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 96404
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 96741,
             "end_time": 96853,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 96741
+                }
+            ]
         },
         {
             "line": 0,
             "hit_time": 97247,
             "end_time": 97415,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 97247
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 97415,
             "end_time": 97528,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 97415
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 97752,
             "end_time": 97865,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 97752
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 98089,
             "end_time": 98202,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 98089
+                }
+            ]
         },
         {
             "line": 0,
             "hit_time": 98426,
             "end_time": 98539,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 98426
+                }
+            ]
         },
         {
             "line": 5,
             "hit_time": 98426,
             "end_time": 98539,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 98426
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 98426,
             "end_time": 98539,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 98426
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 98426,
             "end_time": 98539,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 98426
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 103146,
             "end_time": 103314,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 103146
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 103146,
             "end_time": 103314,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 103146
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 103483,
             "end_time": 104157,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 103820.0786516854
+                    "time": 103483
                 }
             ]
         },
@@ -6398,10 +6906,10 @@
             "hit_time": 103483,
             "end_time": 104157,
             "type": "blue",
-            "speed": 10,
+            "speed": 7.5,
             "checkpoints": [
                 {
-                    "time": 103820.0786516854
+                    "time": 103483
                 }
             ]
         },
@@ -6410,371 +6918,557 @@
             "hit_time": 107022,
             "end_time": 107359,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 107022
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 107359,
             "end_time": 107696,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 107359
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 109213,
             "end_time": 109438,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 109213
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 109213,
             "end_time": 109438,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 109213
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 112247,
             "end_time": 112415,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 112247
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 112584,
             "end_time": 112752,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 112584
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 112921,
             "end_time": 113089,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 112921
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 113258,
             "end_time": 113370,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 113258
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 113370,
             "end_time": 113483,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 113370
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 113483,
             "end_time": 113595,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 113483
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 115112,
             "end_time": 115280,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 115112
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 115365,
             "end_time": 115533,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 115365
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 116123,
             "end_time": 116292,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 116123
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 116460,
             "end_time": 116629,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 116460
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 116713,
             "end_time": 116882,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 116713
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 117471,
             "end_time": 117640,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 117471
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 117640,
             "end_time": 117724,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 117640
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 117724,
             "end_time": 117808,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 117724
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 117893,
             "end_time": 117977,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 117893
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 117808,
             "end_time": 117893,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 117808
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 117977,
             "end_time": 118089,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 117977
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 118089,
             "end_time": 118202,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 118089
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 118202,
             "end_time": 118314,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 118202
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 118314,
             "end_time": 118398,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 118314
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 118398,
             "end_time": 118483,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 118398
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 118483,
             "end_time": 118567,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 118483
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 118567,
             "end_time": 118651,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 118567
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 118651,
             "end_time": 118764,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 118651
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 118764,
             "end_time": 118876,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 118764
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 118876,
             "end_time": 118988,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 118876
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 121685,
             "end_time": 121910,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 121685
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 122022,
             "end_time": 122247,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 122022
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 122696,
             "end_time": 122808,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 122696
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 122808,
             "end_time": 122921,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 122808
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 122921,
             "end_time": 123033,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 122921
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 122359,
             "end_time": 122546,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 122359
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 125730,
             "end_time": 125983,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 125730
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 125730,
             "end_time": 125983,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 125730
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 126573,
             "end_time": 126741,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 126573
+                }
+            ]
         },
         {
             "line": 6,
             "hit_time": 126825,
             "end_time": 126994,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 126825
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 127247,
             "end_time": 127415,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 127247
+                }
+            ]
         },
         {
             "line": 7,
             "hit_time": 127500,
             "end_time": 127668,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 127500
+                }
+            ]
         },
         {
             "line": 4,
             "hit_time": 128089,
             "end_time": 128174,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 128089
+                }
+            ]
         },
         {
             "line": 2,
             "hit_time": 128174,
             "end_time": 128258,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 128174
+                }
+            ]
         },
         {
             "line": 3,
             "hit_time": 128258,
             "end_time": 128342,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 128258
+                }
+            ]
         },
         {
             "line": 1,
             "hit_time": 128342,
             "end_time": 128426,
             "type": "blue",
-            "speed": 10,
-            "checkpoints": []
+            "speed": 7.5,
+            "checkpoints": [
+                {
+                    "time": 128342
+                }
+            ]
         }
     ],
     "audio_path": "/Users/skyliu/Documents/philine/assets/music/testify.ogg",
     "illustration_path": "/Users/skyliu/Documents/philine/assets/illustrations/testify.jpg",
-    "previous_highscore": 0
+    "previous_highscore": 9992801,
+    "offset": 337,
+    "name": "Testify"
 }

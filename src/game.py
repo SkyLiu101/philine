@@ -24,6 +24,7 @@ class Game:
         self.paused = False
         self.start_time = start_time
         self.current_time = start_time
+        self.isautoplay = True
 
         self.note_size = tuple(config['note_size'])
         self.note_images = {
@@ -90,6 +91,7 @@ class Game:
 
         pygame.mixer.init()
         self.audio_path = chart_data['audio_path']
+        self.offset = chart_data['offset']
         pygame.mixer.music.load(self.audio_path)
 
     def closest_note(self, line):
@@ -144,17 +146,18 @@ class Game:
             self.score.update_score('extra_pure')
             line.start_animation(line.pure_animation_frames)
             return '3'
-        if abs(current_time - note.hit_time) < self.config['pure_threshold']:
+        if abs(current_time - note.hit_time) < self.config['pure_threshold'] and not self.isautoplay:
             # Perfect hit
             self.score.update_score('pure')
             line.start_animation(line.pure_animation_frames)
             return '2'
-        elif abs(current_time - note.hit_time) < self.config['far_threshold']:
+        elif abs(current_time - note.hit_time) < self.config['far_threshold'] and not self.isautoplay:
             # Far hit
             self.score.update_score('far')
             line.start_animation(line.far_animation_frames)
             return '1'
-        elif abs(current_time - note.hit_time) < self.config['bad_threshold']:
+        elif abs(current_time - note.hit_time) < self.config['bad_threshold'] and not self.isautoplay:
+            self.score.update_score('bad')
             # Bad hit   
             # Add a fade function here
             # summon a red note on the deleted note, and fade out just like phigros. fade time should be stored in config.
@@ -192,16 +195,33 @@ class Game:
 
     def run(self):
         running = True
-        pygame.mixer.music.play(start=self.start_time)
+        music_played = False
 
         current_time = self.start_time*1000
         start_time = pygame.time.get_ticks() - current_time
 
+        if self.isautoplay:
+            for line in self.lines:
+                line.on_key_press(0)
+
+
         while running:
+            if not music_played:
+                if current_time > self.offset:
+                    pygame.mixer.music.play(start=self.start_time)
+                    music_played = True
             if self.paused:
                 start_time = pygame.time.get_ticks() - current_time
             current_time = pygame.time.get_ticks() - start_time
             self.current_time = current_time
+
+
+            if self.isautoplay:
+                for line in self.lines:
+                    for note in line.notes:
+                        status = self.check_collision(current_time, note, line)
+                        if status:
+                            line.notes.remove(note)
 
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:
@@ -213,7 +233,7 @@ class Game:
                     for line in self.lines:
                         if event.key in line.key_binding:
                             for note in line.notes:
-                                if self.paused:
+                                if self.paused or self.isautoplay:
                                     continue
                                 status = self.check_collision(current_time, note, line)
                                 if status:
@@ -222,15 +242,15 @@ class Game:
                             line.on_key_press(event.key)
                 elif event.type == pygame.KEYUP:
                     for line in self.lines:
-                        if event.key in line.key_binding:
+                        if event.key in line.key_binding and not self.isautoplay:
                             line.on_key_release(event.key)
 
             for line in self.lines:
                 for hold_note in line.hold_notes:
-                        if hold_note.checkpoint_data:
+                        while hold_note.checkpoint_data:
                             if current_time < hold_note.checkpoint_data[0]['time']:
                                 break
-                            if hold_note.line.is_held():
+                            if hold_note.line.is_held() or self.isautoplay:
                                     self.score.update_score('extra_pure')
                             hold_note.checkpoint_data.remove(hold_note.checkpoint_data[0])
             
@@ -275,9 +295,13 @@ class Game:
                     note = self.closest_note(line)
                     if current_time > note.hit_time + self.config['far_threshold']:
                         line.notes.remove(note)
+                        if not self.isautoplay:
+                            self.score.update_score('miss')
+                        else:
+                            self.score.update_score('extra_pure')
 
             # Check if audio had stop playing
-            if not pygame.mixer.music.get_busy() and not self.paused:
+            if not pygame.mixer.music.get_busy() and not self.paused and music_played: 
                 self.chart_finished = True
 
             if self.chart_finished:

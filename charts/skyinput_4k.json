@@ -131,5 +131,7 @@
     "hold_notes": [],
     "audio_path": "/Users/skyliu/Documents/philine/assets/music/1f1e33.ogg",
     "illustration_path": "/Users/skyliu/Documents/philine/assets/illustrations/1f1e33.jpg",
-    "previous_highscore": 0
+    "previous_highscore": 0,
+    "offset": 337,
+    "name": "sky4k"
 }
