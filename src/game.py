@@ -228,10 +228,11 @@ class Game:
             for line in self.lines:
                 for hold_note in line.hold_notes:
                         if hold_note.checkpoint_data:
-                            if current_time >= hold_note.checkpoint_data[0]['time']:
-                                if hold_note.line.is_held():
+                            if current_time < hold_note.checkpoint_data[0]['time']:
+                                break
+                            if hold_note.line.is_held():
                                     self.score.update_score('extra_pure')
-                                hold_note.checkpoint_data.remove(hold_note.checkpoint_data[0])
+                            hold_note.checkpoint_data.remove(hold_note.checkpoint_data[0])
             
             for note_data in self.note_data:
                 if 'spawned' not in note_data:
@@ -257,7 +258,7 @@ class Game:
                     checkpoint_data = []
                     for checkpoint in hold_note_data['checkpoints']:
                         checkpoint_data.append(checkpoint)
-                    hold_note = HoldNote(judgment_pos, hold_note_speed, hit_time, self.note_images[f'{note_type}_hold_head'], self.note_images[f'{note_type}_hold_mid'], self.note_images[f'{note_type}_hold_end'], end_time, note_size, checkpoint_data, line)
+                    hold_note = HoldNote(judgment_pos, hold_note_speed, hit_time, self.note_images[f'{note_type}_hold_head'], self.note_images[f'{note_type}_hold_mid'], self.note_images[f'{note_type}_hold_end'], end_time, note_size, checkpoint_data, self.lines[line_index])
                     if current_time >= hold_note.spawn_time:
                         self.lines[line_index].add_hold_note(hold_note)
                         self.hold_note_data.remove(hold_note_data)  # Mark the note as spawned

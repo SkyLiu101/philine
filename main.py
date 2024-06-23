@@ -114,7 +114,7 @@ def load_chart(chart_path):
 
 # Load configuration
 config = load_config('config/config.json')
-chart_path = 'charts/base_4k.json'
+chart_path = 'charts/testify.json'
 chart = load_chart(chart_path)
 
 # Initialize Pygame 
