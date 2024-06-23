@@ -14,7 +14,9 @@
     "k": "K_k",
     "l": "K_l",
     "5": "K_5",
-    "8": "K_8"
+    "8": "K_8",
+    "t": "K_t",
+    "u": "K_u"
   },
   "note_images": {
     "blue": "assets/images/Blue_Head.png",

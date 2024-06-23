@@ -142,7 +142,7 @@ class ChartPicker(QMainWindow):
         # Initialize and run the game
         game = Game(screen, chart_path, config, self.autoplay)
         score = game.run()
-        self.show_score(score, chart_path, config)
+        self.show_score(screen, score, chart_path, config)
 
 
     def update_focus_display(self):
@@ -180,7 +180,7 @@ class ChartPicker(QMainWindow):
         running = True
         while running:
             for event in pygame.event.get():
-                if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                if event.type == pygame.MOUSEBUTTONDOWN:
                     running = False
 
             
@@ -261,7 +261,8 @@ class ChartPicker(QMainWindow):
             screen.blit(lost_count_value, (1000, 750))
 
             pygame.display.flip()
-
+        
+        pygame.quit()
 
 
 def main():

@@ -11,8 +11,9 @@ import pygame.transform
 
 
 class Game:
-    def __init__(self, screen, chart_path, config, start_time):
+    def __init__(self, screen, chart_path, config, start_time, autoplay = False):
         self.screen = screen
+        self.chart_path = chart_path
         self.config = config
         self.lines = []
         self.notes = []
@@ -24,7 +25,7 @@ class Game:
         self.paused = False
         self.start_time = start_time
         self.current_time = start_time
-        self.isautoplay = True
+        self.isautoplay = autoplay
 
         self.note_size = tuple(config['note_size'])
         self.note_images = {
@@ -44,6 +45,19 @@ class Game:
         self.hit_sound = pygame.mixer.Sound('assets/sounds/tap.wav')
         self.pause_sound = pygame.mixer.Sound('assets/sounds/pause.wav')
         self.illustration = pygame.transform.scale(self.illustration, (config['screen_width'], config['screen_width'])).convert_alpha()
+
+
+        self.quit_button = pygame.Rect(10, 10, 80, 40)
+        self.quit_button_color = (255, 0, 0)
+        self.quit_button_text = pygame.font.SysFont(None, 24).render('Quit', True, (255, 255, 255))
+
+        self.restart_button = pygame.Rect(10, 60, 80, 40)
+        self.restart_button_color = (0, 255, 0)
+        self.restart_button_text = pygame.font.SysFont(None, 24).render('Restart', True, (255, 255, 255))
+    
+    def restart(self):
+        self.__init__(self.screen, self.chart_path, self.config, self.start_time, self.isautoplay)
+        self.run()
 
     def load_illustration(self, illustration_path):
         """Load the dimmed illustration image"""
@@ -124,6 +138,14 @@ class Game:
             self.pause()
     
 
+    def draw_buttons(self):
+        # Draw quit button
+        pygame.draw.rect(self.screen, self.quit_button_color, self.quit_button)
+        self.screen.blit(self.quit_button_text, (self.quit_button.x + 10, self.quit_button.y + 10))
+        
+        # Draw restart button
+        pygame.draw.rect(self.screen, self.restart_button_color, self.restart_button)
+        self.screen.blit(self.restart_button_text, (self.restart_button.x + 10, self.restart_button.y + 10))
     def create_blurred_surface(self):
         surface = pygame.Surface(self.screen.get_size(), pygame.SRCALPHA)
         surface.blit(self.screen, (0, 0))
@@ -244,6 +266,12 @@ class Game:
                     for line in self.lines:
                         if event.key in line.key_binding and not self.isautoplay:
                             line.on_key_release(event.key)
+                elif event.type == pygame.MOUSEBUTTONDOWN:
+                    if self.paused:
+                        if self.quit_button.collidepoint(event.pos):
+                            running = False
+                        elif self.restart_button.collidepoint(event.pos):
+                            self.restart()
 
             for line in self.lines:
                 for hold_note in line.hold_notes:
@@ -327,6 +355,7 @@ class Game:
                 paused_text = font.render("▶️▶️", True, (255, 255, 255))
                 paused_rect = paused_text.get_rect(center=(self.screen.get_width() // 2, self.screen.get_height() // 2))
                 self.screen.blit(paused_text, paused_rect)
+                self.draw_buttons()
 
             pygame.display.flip()
             if not self.paused:

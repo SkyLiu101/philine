@@ -26,6 +26,8 @@ class Line:
         self.animation_frames = self.far_animation_frames
         self.animation_index = 0
         self.animation_start_time = None
+
+
     
     def start_animation(self, frames):
         self.animation_frames = frames
