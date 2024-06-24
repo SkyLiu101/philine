@@ -2,7 +2,7 @@
   "screen_width": 1512,
   "screen_height": 960,
   "fps": 120,
-  "note_speed": 80,
+  "note_speed": 70,
   "key_bindings": {
     "a": "K_a",
     "s": "K_s",
@@ -16,7 +16,11 @@
     "5": "K_5",
     "8": "K_8",
     "t": "K_t",
-    "u": "K_u"
+    "u": "K_u",
+    "r": "K_r",
+    "i": "K_i",
+    "e": "K_e",
+    "o": "K_o"
   },
   "note_images": {
     "blue": "assets/images/Blue_Head.png",

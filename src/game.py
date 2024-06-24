@@ -11,7 +11,7 @@ import pygame.transform
 
 
 class Game:
-    def __init__(self, screen, chart_path, config, start_time, autoplay = False):
+    def __init__(self, screen, chart_path, config, start_time, autoplay):
         self.screen = screen
         self.chart_path = chart_path
         self.config = config

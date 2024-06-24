@@ -3,11 +3,11 @@
         {
             "judgment_pos": [
                 300,
-                700
+                800
             ],
             "angle": 90,
             "key_binding": [
-                "f"
+                "a"
             ],
             "movement": [],
             "opacity_changes": [
@@ -24,11 +24,11 @@
         {
             "judgment_pos": [
                 600,
-                700
+                800
             ],
             "angle": 90,
             "key_binding": [
-                "g"
+                "d"
             ],
             "movement": [],
             "opacity_changes": [
@@ -45,28 +45,7 @@
         {
             "judgment_pos": [
                 900,
-                700
-            ],
-            "angle": 90,
-            "key_binding": [
-                "h"
-            ],
-            "movement": [],
-            "opacity_changes": [
-                {
-                    "time": 0,
-                    "opacity": 50
-                },
-                {
-                    "time": 2000,
-                    "opacity": 255
-                }
-            ]
-        },
-        {
-            "judgment_pos": [
-                1200,
-                700
+                800
             ],
             "angle": 90,
             "key_binding": [
@@ -86,12 +65,33 @@
         },
         {
             "judgment_pos": [
-                450,
-                550
+                1200,
+                800
             ],
             "angle": 90,
             "key_binding": [
-                "t"
+                "l"
+            ],
+            "movement": [],
+            "opacity_changes": [
+                {
+                    "time": 0,
+                    "opacity": 50
+                },
+                {
+                    "time": 2000,
+                    "opacity": 255
+                }
+            ]
+        },
+        {
+            "judgment_pos": [
+                450,
+                800
+            ],
+            "angle": 90,
+            "key_binding": [
+                "s"
             ],
             "movement": [],
             "opacity_changes": [
@@ -108,11 +108,11 @@
         {
             "judgment_pos": [
                 1050,
-                550
+                800
             ],
             "angle": 90,
             "key_binding": [
-                "u"
+                "k"
             ],
             "movement": [],
             "opacity_changes": [
@@ -131,2032 +131,2438 @@
         {
             "line": 0,
             "hit_time": 1500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 2250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 2625,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 3000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 3750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 4125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 4312,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 10125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 8625,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 13500,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 13875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 14250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 14625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 15000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 15375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 15750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 16125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 16500,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 16875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 17250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 17625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 18000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 18375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 18750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 19500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 19875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 20250,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 20625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 20750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 20875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 21375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 21750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 21750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 22125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 22125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 22500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 22875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 23250,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 23625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 23750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 23875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 24375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 24750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 25500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 25875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 26250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 26625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 27000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 27375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 27750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 28125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 28312,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 28500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 28875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 29250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 29625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 30375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 30000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 31125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 30750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 4,
             "hit_time": 38250,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 38625,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 38625,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
             "hit_time": 39000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 39000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 39375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 39375,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 39750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 39750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 40125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 40125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 40500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 40875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 41250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 41625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 42000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 42375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 42750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 4,
             "hit_time": 42000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 42750,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 42375,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
             "hit_time": 43125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 5,
             "hit_time": 43125,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 43500,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 44625,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
             "hit_time": 45000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 45000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 45375,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 45375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 45750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 45750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 46125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 46125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 46500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 46875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 47250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 47625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 5,
             "hit_time": 48000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 48375,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 48750,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 49125,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
             "hit_time": 48000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 48375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 48750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 49125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 4,
             "hit_time": 49500,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 50625,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
             "hit_time": 51000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 51000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 51375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 51375,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 51750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 51750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 52125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 52125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 52500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 52875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 53250,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 53625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 54000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 54000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 54375,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 54375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 54750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 54750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 55125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 55125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 55500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 55875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 56250,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 56625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 57000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 57000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 57375,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 57375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 57750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 57750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 58125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 58125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 58500,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 58875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 59250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 59250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 59437,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 59437,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 59625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 59625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 60000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 4,
             "hit_time": 60000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
             "hit_time": 60562,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 4,
             "hit_time": 60562,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
             "hit_time": 61125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 5,
             "hit_time": 61125,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
             "hit_time": 61687,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 5,
             "hit_time": 61687,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 63750,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 64500,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 65250,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 66000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
             "hit_time": 66375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 66750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 67125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 67500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 5,
             "hit_time": 68250,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 69000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 69750,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 70500,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
             "hit_time": 70875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 71250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 71625,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 72000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 72187,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 72375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 72562,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 72750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 72937,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 4,
             "hit_time": 73125,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
             "hit_time": 74062,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 74250,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 74437,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 74625,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 74812,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 75562,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 75750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 75937,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 76125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 76312,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 77062,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 77250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 77437,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 77625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 77812,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 78562,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 78750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 78937,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 79125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 79312,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 80062,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 80250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 80625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 80437,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 80812,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 81562,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 81750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 81937,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 82125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 82312,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 83062,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 5,
             "hit_time": 83250,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 83437,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 83625,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 83812,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
             "hit_time": 84562,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 4,
             "hit_time": 84750,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 84937,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 85125,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 85312,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
             "hit_time": 88500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 88687,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 88781,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 88875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 89062,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 4,
             "hit_time": 89250,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 89437,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 89625,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 89812,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
             "hit_time": 90000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 90187,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 90281,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 90375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 90562,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 90750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 90937,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 91125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 91312,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 91500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 91687,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 91781,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 91875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 92062,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 4,
             "hit_time": 92250,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 92437,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 92625,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 92812,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 93000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
             "hit_time": 93000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 5,
             "hit_time": 93375,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
             "hit_time": 93375,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 93750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 4,
             "hit_time": 93750,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 94125,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
             "hit_time": 94125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 94500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 94500,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 94687,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 94875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 94875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 95062,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 95250,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 95250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 95437,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 95531,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 95625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 95812,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 96000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 96000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 96187,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 96375,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 96375,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 96562,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 97500,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 97500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 97687,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 97875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 97875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 98062,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 98250,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 98250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 98437,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 98531,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 98625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 98812,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 99187,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 99562,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 99937,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 100125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 100312,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 100500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 100687,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 100781,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 100875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 101062,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 5,
             "hit_time": 101250,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 101437,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 101625,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 101812,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
             "hit_time": 102000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 102187,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 102281,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 102375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 102562,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 102750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 102937,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 103125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 103312,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 103500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 103687,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 103781,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 103875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 104062,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 5,
             "hit_time": 104250,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 104437,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 104625,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 104812,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 105000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
             "hit_time": 105000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 4,
             "hit_time": 105375,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
             "hit_time": 105375,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 5,
             "hit_time": 105750,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
             "hit_time": 105750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 5,
             "hit_time": 106125,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
             "hit_time": 106125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 106500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 106500,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 106687,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 106875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 106875,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 107062,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 107250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 107250,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 107437,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 107531,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 107625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 107812,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 108000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 108000,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 108187,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 108375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 108375,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 108562,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 108750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 108750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 109125,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 109125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 2,
             "hit_time": 109687,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 3,
             "hit_time": 109875,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 1,
             "hit_time": 110250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 0,
             "hit_time": 110437,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 4,
             "hit_time": 110625,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 111000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 111187,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 111281,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 111375,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 111468,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 111562,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 111656,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 111750,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 112125,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 112125,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 113062,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
             "hit_time": 113250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 113437,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 113625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 1,
             "hit_time": 113812,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 4,
             "hit_time": 114562,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
             "hit_time": 114750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 114937,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 115125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 115312,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 5,
             "hit_time": 116062,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
             "hit_time": 116250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 116437,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 116625,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 2,
             "hit_time": 116812,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 5,
             "hit_time": 117562,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
             "hit_time": 117750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 118125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 117937,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 118312,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 4,
             "hit_time": 119062,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
             "hit_time": 119250,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 119437,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 119625,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 0,
             "hit_time": 119812,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 5,
             "hit_time": 120562,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
             "hit_time": 120750,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 120937,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 121125,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 3,
             "hit_time": 121312,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 4,
             "hit_time": 122062,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
             "hit_time": 122250,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 122437,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 122625,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 122812,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
             "hit_time": 123000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
             "hit_time": 123000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 4,
             "hit_time": 123250,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
             "hit_time": 123250,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 5,
             "hit_time": 123500,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
             "hit_time": 123500,
-            "speed": 10
+            "speed": 10,
+            "type": "blue"
         },
         {
             "line": 4,
             "hit_time": 123750,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
             "hit_time": 123750,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 5,
             "hit_time": 124000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
             "hit_time": 124000,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         },
         {
             "line": 4,
             "hit_time": 124250,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
             "hit_time": 124250,
-            "speed": 10
+            "speed": 10,
+            "type": "orange"
         }
     ],
     "hold_notes": [
@@ -2164,7 +2570,7 @@
             "line": 5,
             "hit_time": 1500,
             "end_time": 2625,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2182,7 +2588,7 @@
             "line": 4,
             "hit_time": 3000,
             "end_time": 7125,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2263,7 +2669,7 @@
             "line": 1,
             "hit_time": 7500,
             "end_time": 9750,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2380,7 +2786,7 @@
             "line": 5,
             "hit_time": 14625,
             "end_time": 16125,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2419,7 +2825,7 @@
             "line": 4,
             "hit_time": 18000,
             "end_time": 18750,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2434,7 +2840,7 @@
             "line": 2,
             "hit_time": 19500,
             "end_time": 20250,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2464,7 +2870,7 @@
             "line": 1,
             "hit_time": 22500,
             "end_time": 23500,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2500,7 +2906,7 @@
             "line": 4,
             "hit_time": 25500,
             "end_time": 28125,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2530,7 +2936,7 @@
             "line": 5,
             "hit_time": 28500,
             "end_time": 31125,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2602,7 +3008,7 @@
             "line": 5,
             "hit_time": 33000,
             "end_time": 37500,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2647,7 +3053,7 @@
             "line": 4,
             "hit_time": 34125,
             "end_time": 37500,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2683,7 +3089,7 @@
             "line": 5,
             "hit_time": 40312,
             "end_time": 41625,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2704,7 +3110,7 @@
             "line": 4,
             "hit_time": 43312,
             "end_time": 44625,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2725,7 +3131,7 @@
             "line": 5,
             "hit_time": 44062,
             "end_time": 44531,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2740,7 +3146,7 @@
             "line": 4,
             "hit_time": 46312,
             "end_time": 47625,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2761,7 +3167,7 @@
             "line": 5,
             "hit_time": 49312,
             "end_time": 50625,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2782,7 +3188,7 @@
             "line": 4,
             "hit_time": 50062,
             "end_time": 50531,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2797,7 +3203,7 @@
             "line": 5,
             "hit_time": 52312,
             "end_time": 53625,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2818,7 +3224,7 @@
             "line": 4,
             "hit_time": 54937,
             "end_time": 56625,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2842,7 +3248,7 @@
             "line": 5,
             "hit_time": 58312,
             "end_time": 59062,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2887,7 +3293,7 @@
             "line": 4,
             "hit_time": 66000,
             "end_time": 67500,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2908,7 +3314,7 @@
             "line": 5,
             "hit_time": 70500,
             "end_time": 72000,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2929,7 +3335,7 @@
             "line": 1,
             "hit_time": 73500,
             "end_time": 75000,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2950,7 +3356,7 @@
             "line": 2,
             "hit_time": 73687,
             "end_time": 73875,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2962,7 +3368,7 @@
             "line": 1,
             "hit_time": 75187,
             "end_time": 75375,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -2974,7 +3380,7 @@
             "line": 1,
             "hit_time": 76687,
             "end_time": 76875,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3007,7 +3413,7 @@
             "line": 2,
             "hit_time": 75000,
             "end_time": 76500,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3028,7 +3434,7 @@
             "line": 2,
             "hit_time": 78187,
             "end_time": 78375,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3061,7 +3467,7 @@
             "line": 2,
             "hit_time": 79687,
             "end_time": 79875,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3073,7 +3479,7 @@
             "line": 4,
             "hit_time": 79500,
             "end_time": 81000,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3094,7 +3500,7 @@
             "line": 1,
             "hit_time": 81187,
             "end_time": 81375,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3106,7 +3512,7 @@
             "line": 5,
             "hit_time": 81000,
             "end_time": 82500,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3127,7 +3533,7 @@
             "line": 2,
             "hit_time": 82687,
             "end_time": 82875,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3139,7 +3545,7 @@
             "line": 4,
             "hit_time": 82500,
             "end_time": 84000,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3160,7 +3566,7 @@
             "line": 1,
             "hit_time": 84187,
             "end_time": 84375,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3172,7 +3578,7 @@
             "line": 4,
             "hit_time": 85500,
             "end_time": 87750,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3199,7 +3605,7 @@
             "line": 5,
             "hit_time": 84000,
             "end_time": 87750,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3286,7 +3692,7 @@
             "line": 1,
             "hit_time": 96750,
             "end_time": 96937,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3310,7 +3716,7 @@
             "line": 2,
             "hit_time": 97125,
             "end_time": 97312,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3322,7 +3728,7 @@
             "line": 4,
             "hit_time": 99000,
             "end_time": 99375,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3334,7 +3740,7 @@
             "line": 5,
             "hit_time": 99375,
             "end_time": 99750,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3346,7 +3752,7 @@
             "line": 4,
             "hit_time": 99750,
             "end_time": 100125,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3358,7 +3764,7 @@
             "line": 4,
             "hit_time": 100500,
             "end_time": 100687,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3394,7 +3800,7 @@
             "line": 4,
             "hit_time": 109500,
             "end_time": 110062,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3409,7 +3815,7 @@
             "line": 5,
             "hit_time": 110062,
             "end_time": 110625,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3424,7 +3830,7 @@
             "line": 4,
             "hit_time": 112687,
             "end_time": 112875,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3436,7 +3842,7 @@
             "line": 4,
             "hit_time": 114187,
             "end_time": 114375,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3448,7 +3854,7 @@
             "line": 5,
             "hit_time": 112500,
             "end_time": 115500,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3481,7 +3887,7 @@
             "line": 5,
             "hit_time": 115687,
             "end_time": 115875,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3493,7 +3899,7 @@
             "line": 5,
             "hit_time": 117187,
             "end_time": 117375,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3505,7 +3911,7 @@
             "line": 4,
             "hit_time": 115500,
             "end_time": 118500,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3538,7 +3944,7 @@
             "line": 4,
             "hit_time": 118687,
             "end_time": 118875,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3550,7 +3956,7 @@
             "line": 5,
             "hit_time": 118500,
             "end_time": 120000,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3571,7 +3977,7 @@
             "line": 5,
             "hit_time": 120187,
             "end_time": 120375,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3583,7 +3989,7 @@
             "line": 4,
             "hit_time": 120000,
             "end_time": 121500,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3604,7 +4010,7 @@
             "line": 4,
             "hit_time": 121687,
             "end_time": 121875,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3616,7 +4022,7 @@
             "line": 1,
             "hit_time": 122062,
             "end_time": 122812,
-            "type": "blue",
+            "type": "orange",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3631,7 +4037,7 @@
             "line": 5,
             "hit_time": 121500,
             "end_time": 122062,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3712,7 +4118,7 @@
             "line": 4,
             "hit_time": 127562,
             "end_time": 127875,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3724,7 +4130,7 @@
             "line": 5,
             "hit_time": 127562,
             "end_time": 127875,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -3735,7 +4141,7 @@
     ],
     "audio_path": "/Users/skyliu/Documents/philine/assets/music/ringedgenesis.ogg",
     "illustration_path": "/Users/skyliu/Documents/philine/assets/illustrations/ringedgenesis.jpg",
-    "previous_highscore": 97228,
+    "previous_highscore": 8591845,
     "offset": 0,
     "name": "ringedgenesis"
 }

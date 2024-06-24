@@ -308,12 +308,14 @@
         {
             "line": 7,
             "hit_time": 15505,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 15674,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -328,7 +330,8 @@
         {
             "line": 6,
             "hit_time": 16179,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -338,7 +341,8 @@
         {
             "line": 6,
             "hit_time": 16348,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -348,7 +352,8 @@
         {
             "line": 6,
             "hit_time": 16853,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -358,7 +363,8 @@
         {
             "line": 7,
             "hit_time": 17022,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -368,7 +374,8 @@
         {
             "line": 7,
             "hit_time": 17528,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -378,7 +385,8 @@
         {
             "line": 6,
             "hit_time": 17696,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -388,12 +396,14 @@
         {
             "line": 6,
             "hit_time": 22247,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 22415,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -408,7 +418,8 @@
         {
             "line": 7,
             "hit_time": 22752,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -423,7 +434,8 @@
         {
             "line": 6,
             "hit_time": 23005,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -448,7 +460,8 @@
         {
             "line": 6,
             "hit_time": 23595,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -473,7 +486,8 @@
         {
             "line": 7,
             "hit_time": 24269,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -498,7 +512,8 @@
         {
             "line": 6,
             "hit_time": 24943,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -523,7 +538,8 @@
         {
             "line": 7,
             "hit_time": 25617,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -548,7 +564,8 @@
         {
             "line": 6,
             "hit_time": 26292,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -573,7 +590,8 @@
         {
             "line": 7,
             "hit_time": 26966,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -598,7 +616,8 @@
         {
             "line": 6,
             "hit_time": 27640,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -623,7 +642,8 @@
         {
             "line": 7,
             "hit_time": 28314,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -663,7 +683,8 @@
         {
             "line": 7,
             "hit_time": 28988,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -703,7 +724,8 @@
         {
             "line": 6,
             "hit_time": 29662,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -743,7 +765,8 @@
         {
             "line": 7,
             "hit_time": 30337,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -783,7 +806,8 @@
         {
             "line": 6,
             "hit_time": 31011,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -823,7 +847,8 @@
         {
             "line": 7,
             "hit_time": 31685,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -863,7 +888,8 @@
         {
             "line": 6,
             "hit_time": 32359,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -903,7 +929,8 @@
         {
             "line": 7,
             "hit_time": 33033,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -943,7 +970,8 @@
         {
             "line": 6,
             "hit_time": 33707,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -988,7 +1016,8 @@
         {
             "line": 6,
             "hit_time": 35561,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -998,7 +1027,8 @@
         {
             "line": 6,
             "hit_time": 35898,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1033,7 +1063,8 @@
         {
             "line": 7,
             "hit_time": 36741,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -1058,7 +1089,8 @@
         {
             "line": 6,
             "hit_time": 37415,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1073,7 +1105,8 @@
         {
             "line": 6,
             "hit_time": 37752,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -1093,7 +1126,8 @@
         {
             "line": 7,
             "hit_time": 38089,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1113,7 +1147,8 @@
         {
             "line": 6,
             "hit_time": 38426,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -1148,7 +1183,8 @@
         {
             "line": 7,
             "hit_time": 39016,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -1163,7 +1199,8 @@
         {
             "line": 7,
             "hit_time": 39438,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1178,7 +1215,8 @@
         {
             "line": 7,
             "hit_time": 39943,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -1213,7 +1251,8 @@
         {
             "line": 6,
             "hit_time": 40786,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -1228,7 +1267,8 @@
         {
             "line": 6,
             "hit_time": 41292,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1293,7 +1333,8 @@
         {
             "line": 6,
             "hit_time": 44494,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -1313,7 +1354,8 @@
         {
             "line": 6,
             "hit_time": 44831,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -1328,7 +1370,8 @@
         {
             "line": 6,
             "hit_time": 45168,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -1343,7 +1386,8 @@
         {
             "line": 7,
             "hit_time": 45421,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -1358,7 +1402,8 @@
         {
             "line": 6,
             "hit_time": 45674,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -1368,7 +1413,8 @@
         {
             "line": 7,
             "hit_time": 45842,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1393,7 +1439,8 @@
         {
             "line": 7,
             "hit_time": 46179,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1413,7 +1460,8 @@
         {
             "line": 6,
             "hit_time": 46685,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -1423,12 +1471,14 @@
         {
             "line": 7,
             "hit_time": 47022,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 47191,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -1443,7 +1493,8 @@
         {
             "line": 6,
             "hit_time": 47443,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -1458,7 +1509,8 @@
         {
             "line": 7,
             "hit_time": 47696,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -1473,17 +1525,20 @@
         {
             "line": 6,
             "hit_time": 47865,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 48033,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 48033,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1503,7 +1558,8 @@
         {
             "line": 6,
             "hit_time": 48370,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -1513,7 +1569,8 @@
         {
             "line": 7,
             "hit_time": 48707,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1523,7 +1580,8 @@
         {
             "line": 6,
             "hit_time": 49044,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1533,17 +1591,20 @@
         {
             "line": 7,
             "hit_time": 49213,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 49382,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 49382,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -1563,7 +1624,8 @@
         {
             "line": 7,
             "hit_time": 49719,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -1573,7 +1635,8 @@
         {
             "line": 6,
             "hit_time": 49971,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -1583,17 +1646,20 @@
         {
             "line": 6,
             "hit_time": 50140,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 50224,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 50393,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -1618,7 +1684,8 @@
         {
             "line": 6,
             "hit_time": 50730,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1628,7 +1695,8 @@
         {
             "line": 7,
             "hit_time": 50898,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -1638,7 +1706,8 @@
         {
             "line": 6,
             "hit_time": 51067,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1648,7 +1717,8 @@
         {
             "line": 7,
             "hit_time": 51320,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -1658,12 +1728,14 @@
         {
             "line": 7,
             "hit_time": 51488,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 51573,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -1673,7 +1745,8 @@
         {
             "line": 6,
             "hit_time": 51741,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -1693,12 +1766,14 @@
         {
             "line": 7,
             "hit_time": 52078,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 52247,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -1713,12 +1788,14 @@
         {
             "line": 7,
             "hit_time": 52415,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 52584,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -1733,7 +1810,8 @@
         {
             "line": 6,
             "hit_time": 53089,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -1753,12 +1831,14 @@
         {
             "line": 6,
             "hit_time": 53595,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 53764,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -1773,12 +1853,14 @@
         {
             "line": 6,
             "hit_time": 54016,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 54101,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -1793,12 +1875,14 @@
         {
             "line": 6,
             "hit_time": 54353,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 54438,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -1813,12 +1897,14 @@
         {
             "line": 7,
             "hit_time": 54691,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 54775,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -1828,102 +1914,122 @@
         {
             "line": 6,
             "hit_time": 54943,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 55000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 55056,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 55112,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 55617,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 55280,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 55280,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 55786,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 56629,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 56292,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 56797,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 57303,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 57977,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 57977,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 58314,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 58483,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 58988,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 59325,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 59494,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 60000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -1938,197 +2044,236 @@
         {
             "line": 6,
             "hit_time": 61685,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 61797,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 61910,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 62134,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 62247,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 62471,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 62584,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 62808,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 62921,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 63146,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 63258,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 63539,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 63623,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 63707,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 63876,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 63960,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 64044,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 64129,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 64297,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 64382,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 64466,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 64634,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 64719,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 64775,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 64831,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 64887,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 64943,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 65000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 65056,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 65112,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 65168,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 65224,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 65280,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 65337,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 63370,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 63455,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 63792,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 64213,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 64550,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -2138,12 +2283,14 @@
         {
             "line": 6,
             "hit_time": 66067,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 66067,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -2153,7 +2300,8 @@
         {
             "line": 6,
             "hit_time": 66573,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -2163,7 +2311,8 @@
         {
             "line": 7,
             "hit_time": 67078,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2173,42 +2322,50 @@
         {
             "line": 6,
             "hit_time": 67415,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 67415,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 67752,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 67921,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 68089,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 68258,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 68426,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 68426,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2223,12 +2380,14 @@
         {
             "line": 6,
             "hit_time": 68764,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 68764,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -2253,12 +2412,14 @@
         {
             "line": 7,
             "hit_time": 70786,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 70955,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -2273,12 +2434,14 @@
         {
             "line": 6,
             "hit_time": 71460,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 71460,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -2298,7 +2461,8 @@
         {
             "line": 7,
             "hit_time": 71966,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -2308,47 +2472,56 @@
         {
             "line": 6,
             "hit_time": 72471,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 72808,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 72808,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 73146,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 73314,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 73483,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 73651,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 73820,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 73820,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2373,12 +2546,14 @@
         {
             "line": 6,
             "hit_time": 74157,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 74157,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2448,7 +2623,8 @@
         {
             "line": 7,
             "hit_time": 76853,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2463,12 +2639,14 @@
         {
             "line": 6,
             "hit_time": 77612,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 78286,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2483,7 +2661,8 @@
         {
             "line": 6,
             "hit_time": 78960,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2493,7 +2672,8 @@
         {
             "line": 7,
             "hit_time": 79634,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2503,7 +2683,8 @@
         {
             "line": 6,
             "hit_time": 80308,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -2513,7 +2694,8 @@
         {
             "line": 7,
             "hit_time": 80983,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -2528,17 +2710,20 @@
         {
             "line": 7,
             "hit_time": 81657,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 82331,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 83005,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2553,7 +2738,8 @@
         {
             "line": 7,
             "hit_time": 83679,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -2563,7 +2749,8 @@
         {
             "line": 6,
             "hit_time": 84353,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2573,7 +2760,8 @@
         {
             "line": 7,
             "hit_time": 85028,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -2583,7 +2771,8 @@
         {
             "line": 6,
             "hit_time": 85702,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -2593,32 +2782,38 @@
         {
             "line": 7,
             "hit_time": 86376,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 87303,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 87303,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 88146,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 88230,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 88398,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -2628,17 +2823,20 @@
         {
             "line": 6,
             "hit_time": 88904,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 88820,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 89073,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2648,17 +2846,20 @@
         {
             "line": 6,
             "hit_time": 89578,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 89494,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 89747,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -2668,7 +2869,8 @@
         {
             "line": 7,
             "hit_time": 90000,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -2678,7 +2880,8 @@
         {
             "line": 7,
             "hit_time": 90168,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2693,7 +2896,8 @@
         {
             "line": 6,
             "hit_time": 90421,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -2703,12 +2907,14 @@
         {
             "line": 6,
             "hit_time": 90589,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 90786,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -2723,7 +2929,8 @@
         {
             "line": 6,
             "hit_time": 91123,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
@@ -2738,7 +2945,8 @@
         {
             "line": 7,
             "hit_time": 91516,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -2753,7 +2961,8 @@
         {
             "line": 6,
             "hit_time": 91769,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -2858,17 +3067,20 @@
         {
             "line": 6,
             "hit_time": 93539,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 93623,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 93792,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2878,17 +3090,20 @@
         {
             "line": 7,
             "hit_time": 94297,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 94213,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 94466,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -2898,17 +3113,20 @@
         {
             "line": 7,
             "hit_time": 94887,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 94971,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 95140,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2923,7 +3141,8 @@
         {
             "line": 6,
             "hit_time": 95617,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
@@ -2938,7 +3157,8 @@
         {
             "line": 7,
             "hit_time": 95786,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2948,7 +3168,8 @@
         {
             "line": 6,
             "hit_time": 96292,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -2963,7 +3184,8 @@
         {
             "line": 7,
             "hit_time": 96573,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -2973,7 +3195,8 @@
         {
             "line": 7,
             "hit_time": 96685,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -2983,12 +3206,14 @@
         {
             "line": 6,
             "hit_time": 96966,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 97022,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -2998,7 +3223,8 @@
         {
             "line": 6,
             "hit_time": 97162,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3008,7 +3234,8 @@
         {
             "line": 7,
             "hit_time": 97640,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3018,7 +3245,8 @@
         {
             "line": 6,
             "hit_time": 97921,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -3028,7 +3256,8 @@
         {
             "line": 6,
             "hit_time": 98033,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
@@ -3038,12 +3267,14 @@
         {
             "line": 6,
             "hit_time": 98764,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 98932,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3058,12 +3289,14 @@
         {
             "line": 6,
             "hit_time": 99101,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 99185,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3073,7 +3306,8 @@
         {
             "line": 7,
             "hit_time": 99438,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 5,
@@ -3088,7 +3322,8 @@
         {
             "line": 7,
             "hit_time": 99775,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3098,12 +3333,14 @@
         {
             "line": 6,
             "hit_time": 99606,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 99859,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3113,7 +3350,8 @@
         {
             "line": 6,
             "hit_time": 100112,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3123,7 +3361,8 @@
         {
             "line": 7,
             "hit_time": 100280,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -3138,7 +3377,8 @@
         {
             "line": 7,
             "hit_time": 100533,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -3148,12 +3388,14 @@
         {
             "line": 6,
             "hit_time": 100449,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 100786,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3163,7 +3405,8 @@
         {
             "line": 6,
             "hit_time": 100955,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3173,7 +3416,8 @@
         {
             "line": 7,
             "hit_time": 101123,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3183,7 +3427,8 @@
         {
             "line": 6,
             "hit_time": 101207,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3198,12 +3443,14 @@
         {
             "line": 7,
             "hit_time": 101460,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 101629,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
@@ -3218,7 +3465,8 @@
         {
             "line": 7,
             "hit_time": 101797,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3228,7 +3476,8 @@
         {
             "line": 6,
             "hit_time": 101966,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
@@ -3248,7 +3497,8 @@
         {
             "line": 7,
             "hit_time": 102191,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3263,7 +3513,8 @@
         {
             "line": 6,
             "hit_time": 102359,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
@@ -3278,7 +3529,8 @@
         {
             "line": 7,
             "hit_time": 102528,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3293,7 +3545,8 @@
         {
             "line": 6,
             "hit_time": 102696,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
@@ -3308,12 +3561,14 @@
         {
             "line": 7,
             "hit_time": 104325,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 104662,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3358,12 +3613,14 @@
         {
             "line": 7,
             "hit_time": 105589,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 105674,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3378,12 +3635,14 @@
         {
             "line": 7,
             "hit_time": 105926,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 106011,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3398,12 +3657,14 @@
         {
             "line": 6,
             "hit_time": 106264,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 106348,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -3418,12 +3679,14 @@
         {
             "line": 6,
             "hit_time": 106601,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 106685,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3433,17 +3696,20 @@
         {
             "line": 7,
             "hit_time": 106853,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 107191,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 107528,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3458,7 +3724,8 @@
         {
             "line": 7,
             "hit_time": 107865,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3473,52 +3740,62 @@
         {
             "line": 6,
             "hit_time": 108202,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 108202,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 108314,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 108426,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 108539,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 108539,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 108651,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 108764,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 108876,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 108876,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -3543,7 +3820,8 @@
         {
             "line": 6,
             "hit_time": 109803,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3568,7 +3846,8 @@
         {
             "line": 7,
             "hit_time": 110308,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3593,17 +3872,20 @@
         {
             "line": 6,
             "hit_time": 110898,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 110983,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 111067,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3618,17 +3900,20 @@
         {
             "line": 7,
             "hit_time": 111320,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 111404,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 111488,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3653,12 +3938,14 @@
         {
             "line": 6,
             "hit_time": 111685,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 111853,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3673,7 +3960,8 @@
         {
             "line": 6,
             "hit_time": 112022,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3688,7 +3976,8 @@
         {
             "line": 7,
             "hit_time": 112191,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3723,17 +4012,20 @@
         {
             "line": 7,
             "hit_time": 113595,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 113679,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 113764,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3748,17 +4040,20 @@
         {
             "line": 6,
             "hit_time": 114016,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 114101,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 114185,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3773,7 +4068,8 @@
         {
             "line": 7,
             "hit_time": 114382,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3788,7 +4084,8 @@
         {
             "line": 6,
             "hit_time": 114550,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3803,7 +4100,8 @@
         {
             "line": 7,
             "hit_time": 114719,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3818,7 +4116,8 @@
         {
             "line": 6,
             "hit_time": 114887,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3833,7 +4132,8 @@
         {
             "line": 7,
             "hit_time": 115112,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -3843,7 +4143,8 @@
         {
             "line": 6,
             "hit_time": 115365,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3853,12 +4154,14 @@
         {
             "line": 6,
             "hit_time": 115617,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 115617,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -3868,12 +4171,14 @@
         {
             "line": 6,
             "hit_time": 115870,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 115870,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3898,7 +4203,8 @@
         {
             "line": 6,
             "hit_time": 116460,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3908,7 +4214,8 @@
         {
             "line": 7,
             "hit_time": 116713,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -3918,7 +4225,8 @@
         {
             "line": 6,
             "hit_time": 116966,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -3933,7 +4241,8 @@
         {
             "line": 7,
             "hit_time": 117219,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -3948,17 +4257,20 @@
         {
             "line": 7,
             "hit_time": 118988,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 119073,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 119157,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -3973,17 +4285,20 @@
         {
             "line": 6,
             "hit_time": 119410,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 119494,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 119578,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -3998,7 +4313,8 @@
         {
             "line": 7,
             "hit_time": 119775,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -4013,7 +4329,8 @@
         {
             "line": 6,
             "hit_time": 119943,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -4028,7 +4345,8 @@
         {
             "line": 7,
             "hit_time": 120112,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -4038,7 +4356,8 @@
         {
             "line": 6,
             "hit_time": 120280,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -4158,17 +4477,20 @@
         {
             "line": 6,
             "hit_time": 123033,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 123117,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 123202,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -4183,17 +4505,20 @@
         {
             "line": 7,
             "hit_time": 123455,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 123539,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 123623,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -4208,7 +4533,8 @@
         {
             "line": 6,
             "hit_time": 123820,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -4223,7 +4549,8 @@
         {
             "line": 7,
             "hit_time": 123988,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -4238,7 +4565,8 @@
         {
             "line": 6,
             "hit_time": 124157,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -4253,7 +4581,8 @@
         {
             "line": 7,
             "hit_time": 124325,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -4338,12 +4667,14 @@
         {
             "line": 6,
             "hit_time": 126067,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 126067,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -4358,7 +4689,8 @@
         {
             "line": 6,
             "hit_time": 126573,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -4368,7 +4700,8 @@
         {
             "line": 6,
             "hit_time": 126825,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -4388,7 +4721,8 @@
         {
             "line": 7,
             "hit_time": 127247,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -4398,7 +4732,8 @@
         {
             "line": 7,
             "hit_time": 127500,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -4433,7 +4768,8 @@
         {
             "line": 7,
             "hit_time": 128539,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -4448,7 +4784,8 @@
         {
             "line": 6,
             "hit_time": 128876,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -4463,7 +4800,8 @@
         {
             "line": 7,
             "hit_time": 129185,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 3,
@@ -4473,12 +4811,14 @@
         {
             "line": 6,
             "hit_time": 129353,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 7,
             "hit_time": 129438,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 2,
@@ -4488,7 +4828,8 @@
         {
             "line": 6,
             "hit_time": 129606,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -4508,7 +4849,8 @@
         {
             "line": 6,
             "hit_time": 129943,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -4518,12 +4860,14 @@
         {
             "line": 7,
             "hit_time": 130112,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 130196,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -4533,7 +4877,8 @@
         {
             "line": 6,
             "hit_time": 130365,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -4548,7 +4893,8 @@
         {
             "line": 7,
             "hit_time": 130617,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 1,
@@ -4558,12 +4904,14 @@
         {
             "line": 7,
             "hit_time": 130786,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 6,
             "hit_time": 130870,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 4,
@@ -4573,7 +4921,8 @@
         {
             "line": 7,
             "hit_time": 131039,
-            "speed": 10
+            "speed": 10,
+            "type": "purple"
         },
         {
             "line": 0,
@@ -4622,7 +4971,7 @@
             "line": 7,
             "hit_time": 3033,
             "end_time": 7078,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4709,7 +5058,7 @@
             "line": 6,
             "hit_time": 3033,
             "end_time": 7078,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4859,7 +5208,7 @@
             "line": 6,
             "hit_time": 12471,
             "end_time": 12724,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4871,7 +5220,7 @@
             "line": 7,
             "hit_time": 12471,
             "end_time": 12724,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4883,7 +5232,7 @@
             "line": 6,
             "hit_time": 13146,
             "end_time": 13398,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4895,7 +5244,7 @@
             "line": 7,
             "hit_time": 13146,
             "end_time": 13398,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4907,7 +5256,7 @@
             "line": 6,
             "hit_time": 13820,
             "end_time": 14073,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4919,7 +5268,7 @@
             "line": 7,
             "hit_time": 13820,
             "end_time": 14073,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4931,7 +5280,7 @@
             "line": 6,
             "hit_time": 14494,
             "end_time": 14747,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4943,7 +5292,7 @@
             "line": 7,
             "hit_time": 14494,
             "end_time": 14747,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4955,7 +5304,7 @@
             "line": 6,
             "hit_time": 15168,
             "end_time": 15421,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4967,7 +5316,7 @@
             "line": 7,
             "hit_time": 15168,
             "end_time": 15421,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4979,7 +5328,7 @@
             "line": 6,
             "hit_time": 15842,
             "end_time": 16095,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -4991,7 +5340,7 @@
             "line": 7,
             "hit_time": 15842,
             "end_time": 16095,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5003,7 +5352,7 @@
             "line": 6,
             "hit_time": 16516,
             "end_time": 16769,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5015,7 +5364,7 @@
             "line": 7,
             "hit_time": 16516,
             "end_time": 16769,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5027,7 +5376,7 @@
             "line": 6,
             "hit_time": 17191,
             "end_time": 17443,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5039,7 +5388,7 @@
             "line": 7,
             "hit_time": 17191,
             "end_time": 17443,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5051,7 +5400,7 @@
             "line": 6,
             "hit_time": 17865,
             "end_time": 21910,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5096,7 +5445,7 @@
             "line": 7,
             "hit_time": 17865,
             "end_time": 21910,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5141,7 +5490,7 @@
             "line": 7,
             "hit_time": 23258,
             "end_time": 23595,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5153,7 +5502,7 @@
             "line": 6,
             "hit_time": 23932,
             "end_time": 24269,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5165,7 +5514,7 @@
             "line": 7,
             "hit_time": 24606,
             "end_time": 24943,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5177,7 +5526,7 @@
             "line": 6,
             "hit_time": 25280,
             "end_time": 25617,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5189,7 +5538,7 @@
             "line": 7,
             "hit_time": 25955,
             "end_time": 26292,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5201,7 +5550,7 @@
             "line": 6,
             "hit_time": 26629,
             "end_time": 26966,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5213,7 +5562,7 @@
             "line": 7,
             "hit_time": 27303,
             "end_time": 27640,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5225,7 +5574,7 @@
             "line": 6,
             "hit_time": 27977,
             "end_time": 28314,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5261,7 +5610,7 @@
             "line": 7,
             "hit_time": 34382,
             "end_time": 35983,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5282,7 +5631,7 @@
             "line": 6,
             "hit_time": 36404,
             "end_time": 36741,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5294,7 +5643,7 @@
             "line": 7,
             "hit_time": 37078,
             "end_time": 37415,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5306,7 +5655,7 @@
             "line": 6,
             "hit_time": 39101,
             "end_time": 40028,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5321,7 +5670,7 @@
             "line": 7,
             "hit_time": 40449,
             "end_time": 41376,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5348,7 +5697,7 @@
             "line": 7,
             "hit_time": 42134,
             "end_time": 42640,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5360,7 +5709,7 @@
             "line": 6,
             "hit_time": 41797,
             "end_time": 42808,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5387,7 +5736,7 @@
             "line": 7,
             "hit_time": 43146,
             "end_time": 44157,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5402,7 +5751,7 @@
             "line": 6,
             "hit_time": 43483,
             "end_time": 43988,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5462,7 +5811,7 @@
             "line": 6,
             "hit_time": 52584,
             "end_time": 52921,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5474,7 +5823,7 @@
             "line": 7,
             "hit_time": 53005,
             "end_time": 53258,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5486,7 +5835,7 @@
             "line": 7,
             "hit_time": 55280,
             "end_time": 55533,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5498,7 +5847,7 @@
             "line": 6,
             "hit_time": 55280,
             "end_time": 56123,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5513,7 +5862,7 @@
             "line": 6,
             "hit_time": 56292,
             "end_time": 56544,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5525,7 +5874,7 @@
             "line": 7,
             "hit_time": 55786,
             "end_time": 57134,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5543,7 +5892,7 @@
             "line": 7,
             "hit_time": 57303,
             "end_time": 57808,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5555,7 +5904,7 @@
             "line": 6,
             "hit_time": 56797,
             "end_time": 57808,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5570,7 +5919,7 @@
             "line": 6,
             "hit_time": 57977,
             "end_time": 58146,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5582,7 +5931,7 @@
             "line": 7,
             "hit_time": 57977,
             "end_time": 58820,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5597,7 +5946,7 @@
             "line": 7,
             "hit_time": 58988,
             "end_time": 59157,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5609,7 +5958,7 @@
             "line": 6,
             "hit_time": 58483,
             "end_time": 59831,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5627,7 +5976,7 @@
             "line": 6,
             "hit_time": 60000,
             "end_time": 60505,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5639,7 +5988,7 @@
             "line": 7,
             "hit_time": 59494,
             "end_time": 60505,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5726,7 +6075,7 @@
             "line": 6,
             "hit_time": 65393,
             "end_time": 65898,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5738,7 +6087,7 @@
             "line": 7,
             "hit_time": 65393,
             "end_time": 65898,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5888,7 +6237,7 @@
             "line": 7,
             "hit_time": 68764,
             "end_time": 70617,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -5912,7 +6261,7 @@
             "line": 6,
             "hit_time": 68764,
             "end_time": 70617,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6125,7 +6474,7 @@
             "line": 6,
             "hit_time": 77359,
             "end_time": 77528,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6137,7 +6486,7 @@
             "line": 7,
             "hit_time": 78033,
             "end_time": 78202,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6173,7 +6522,7 @@
             "line": 6,
             "hit_time": 78707,
             "end_time": 78876,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6209,7 +6558,7 @@
             "line": 7,
             "hit_time": 79382,
             "end_time": 79550,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6245,7 +6594,7 @@
             "line": 6,
             "hit_time": 80056,
             "end_time": 80224,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6281,7 +6630,7 @@
             "line": 7,
             "hit_time": 80730,
             "end_time": 80898,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6341,7 +6690,7 @@
             "line": 7,
             "hit_time": 81404,
             "end_time": 81573,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6353,7 +6702,7 @@
             "line": 6,
             "hit_time": 82078,
             "end_time": 82247,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6389,7 +6738,7 @@
             "line": 6,
             "hit_time": 82752,
             "end_time": 82921,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6425,7 +6774,7 @@
             "line": 7,
             "hit_time": 83426,
             "end_time": 83595,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6461,7 +6810,7 @@
             "line": 6,
             "hit_time": 84101,
             "end_time": 84269,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6497,7 +6846,7 @@
             "line": 7,
             "hit_time": 84775,
             "end_time": 84943,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6533,7 +6882,7 @@
             "line": 6,
             "hit_time": 85449,
             "end_time": 85617,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6569,7 +6918,7 @@
             "line": 7,
             "hit_time": 86123,
             "end_time": 86292,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6737,7 +7086,7 @@
             "line": 6,
             "hit_time": 96067,
             "end_time": 96179,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6761,7 +7110,7 @@
             "line": 6,
             "hit_time": 96741,
             "end_time": 96853,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6785,7 +7134,7 @@
             "line": 7,
             "hit_time": 97415,
             "end_time": 97528,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6809,7 +7158,7 @@
             "line": 7,
             "hit_time": 98089,
             "end_time": 98202,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6845,7 +7194,7 @@
             "line": 6,
             "hit_time": 98426,
             "end_time": 98539,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6857,7 +7206,7 @@
             "line": 7,
             "hit_time": 98426,
             "end_time": 98539,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6893,7 +7242,7 @@
             "line": 6,
             "hit_time": 103483,
             "end_time": 104157,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6905,7 +7254,7 @@
             "line": 7,
             "hit_time": 103483,
             "end_time": 104157,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6941,7 +7290,7 @@
             "line": 6,
             "hit_time": 109213,
             "end_time": 109438,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -6953,7 +7302,7 @@
             "line": 7,
             "hit_time": 109213,
             "end_time": 109438,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7061,7 +7410,7 @@
             "line": 7,
             "hit_time": 116123,
             "end_time": 116292,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7109,7 +7458,7 @@
             "line": 7,
             "hit_time": 117640,
             "end_time": 117724,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7121,7 +7470,7 @@
             "line": 6,
             "hit_time": 117724,
             "end_time": 117808,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7133,7 +7482,7 @@
             "line": 6,
             "hit_time": 117893,
             "end_time": 117977,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7169,7 +7518,7 @@
             "line": 7,
             "hit_time": 118089,
             "end_time": 118202,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7193,7 +7542,7 @@
             "line": 6,
             "hit_time": 118314,
             "end_time": 118398,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7205,7 +7554,7 @@
             "line": 7,
             "hit_time": 118398,
             "end_time": 118483,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7229,7 +7578,7 @@
             "line": 7,
             "hit_time": 118567,
             "end_time": 118651,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7253,7 +7602,7 @@
             "line": 6,
             "hit_time": 118764,
             "end_time": 118876,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7349,7 +7698,7 @@
             "line": 6,
             "hit_time": 125730,
             "end_time": 125983,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7361,7 +7710,7 @@
             "line": 7,
             "hit_time": 125730,
             "end_time": 125983,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7373,7 +7722,7 @@
             "line": 6,
             "hit_time": 126573,
             "end_time": 126741,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7385,7 +7734,7 @@
             "line": 6,
             "hit_time": 126825,
             "end_time": 126994,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7397,7 +7746,7 @@
             "line": 7,
             "hit_time": 127247,
             "end_time": 127415,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7409,7 +7758,7 @@
             "line": 7,
             "hit_time": 127500,
             "end_time": 127668,
-            "type": "blue",
+            "type": "purple",
             "speed": 7.5,
             "checkpoints": [
                 {
@@ -7468,7 +7817,7 @@
     ],
     "audio_path": "/Users/skyliu/Documents/philine/assets/music/testify.ogg",
     "illustration_path": "/Users/skyliu/Documents/philine/assets/illustrations/testify.jpg",
-    "previous_highscore": 9992801,
+    "previous_highscore": 2258955,
     "offset": 337,
     "name": "Testifan"
 }

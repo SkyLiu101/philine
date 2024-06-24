@@ -140,7 +140,7 @@ class ChartPicker(QMainWindow):
         screen = pygame.display.set_mode((config['screen_width'], config['screen_height']), pygame.NOFRAME)
 
         # Initialize and run the game
-        game = Game(screen, chart_path, config, self.autoplay)
+        game = Game(screen, chart_path, config,0, self.autoplay)
         score = game.run()
         self.show_score(screen, score, chart_path, config)
 
@@ -191,13 +191,13 @@ class ChartPicker(QMainWindow):
 
             # Rank and score information
             ranks = config['rank_paths']
-            if score.score >= 10000000:
+            if scoreval >= 10000000:
                 rank_label_path = ranks['Pure_Memory']
-            elif score.score >= 92000000:
+            elif scoreval >= 9200000:
                 rank_label_path = ranks['S']
-            elif score.score >= 82000000:
+            elif scoreval >= 8200000:
                 rank_label_path = ranks['A']
-            elif score.score >= 65000000:
+            elif scoreval >= 6500000:
                 rank_label_path = ranks['B']
             else:
                 rank_label_path = ranks['F']
